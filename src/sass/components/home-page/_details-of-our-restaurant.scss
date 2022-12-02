@@ -1,5 +1,6 @@
+.container {max-width: 1170px; padding-top: 48px; padding-bottom: 40px;}
 .restaurant-details__logo {color: #FFFFFF;
-  margin-bottom: 16px;}
+  margin-bottom: 16px; display: block; text-decoration: none;}
   .restaurant-details__title {font-family: 'Montserrat';
     font-weight: 700;
     font-size: 24px;
@@ -7,3 +8,27 @@
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 8px;}
+    .restaurant-details {background-color: #000;}
+    .restaurant-details__description {font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.02em;
+      color: #BABABA;
+      margin-bottom: 40px;}
+      .restaurant-details__link {font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: #F3C653;
+          text-decoration: none;}
+        .restaurant-details__button {background: rgba(0, 0, 0, 0.4);
+          border: 2px solid #FFFFFF;
+          border-radius: 25px;
+          margin-right: 32px;
+          margin-bottom: 16px;}
+                    .restaurant-details__button--book {padding: 14px 24px;}
+                                         .restaurant-details__button--review {padding-top: 14px; padding-bottom: 14px; padding-left: 31px;
+                                          padding-right: 32px;}
+                                     
