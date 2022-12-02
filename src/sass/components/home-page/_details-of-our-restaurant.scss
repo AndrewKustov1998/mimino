@@ -8,14 +8,16 @@
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 8px;}
-    .restaurant-details {background-color: #000;}
+    .restaurant-details, .hotel-details {background-color: #000;}
+    .hotel-details {text-align: right;}
     .restaurant-details__description {font-family: 'Montserrat';
       font-weight: 600;
       font-size: 16px;
       line-height: 1.25;
       letter-spacing: 0.02em;
       color: #BABABA;
-      margin-bottom: 40px;}
+      margin-bottom: 40px;
+    width: 610px;}
       .restaurant-details__link {font-family: 'Montserrat';
         font-weight: 700;
         font-size: 16px;
