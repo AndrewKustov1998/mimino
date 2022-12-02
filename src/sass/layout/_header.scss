@@ -1,0 +1,129 @@
+.page-header {
+    width: 100vw;
+    // min-width: 414px;
+    height: 64px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.site-nav__logo {
+    display: flex;
+    padding-top: 16px;
+    margin-right: 52px;
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 0.92;
+    letter-spacing: 0.3em;
+    color: var(--primary-white-color);
+    text-decoration: none;
+
+    @media screen and(min-width:1024px) {
+        font-size: 40px;
+        line-height: 1.08;
+    }
+
+    // @media screen and(min-width:1024px) {
+    // padding: 24px 0 33px;
+    // margin-right: 87px;
+
+}
+
+//         @media screen and(min-width:1280px) {
+//         padding: 24px 0 33px;
+//         margin-right: 96px;
+// }
+
+.site-nav__list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.site-nav__page {
+    padding-top: 28px;
+    display: flex;
+
+}
+
+.site-nav__link {
+    margin-right: 6px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--accent-yellow-color);
+    text-decoration: none;
+    // @media screen and(min-width:1024px) {
+    // display: flex;
+    // margin-right: 32px;
+    //         }
+
+}
+
+.site-nav__phone {
+    display: none;
+
+    @media screen and(min-width:1024px) {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.21;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+        color: var(--primary-white-color);
+        text-decoration: none;
+
+    }
+}
+
+.site-nav__contact {
+    border: 0;
+
+    @media screen and(min-width:1024px) {
+        display: flex;
+        height: 40px;
+        flex-direction: row;
+        gap: 16px;
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+    }
+}
+
+.site-nav__icon {
+    fill: var(--accent-yellow-color);
+    width: 12px;
+    height: 20px;
+}
+
+// @media screen and(min-width:414px) {
+
+// }
+// @media screen and(min-width:1024px) {
+
+// }
+// @media screen and(min-width:1280px) {
+
+// }
+
+.site-net__link {
+    display: none;
+}
