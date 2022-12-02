@@ -368,4 +368,19 @@ img {
   line-height: 1.075;
   letter-spacing: 0.3em;
   color: #000;
+}
+
+.restaurant-details__logo {
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.restaurant-details__title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  margin-bottom: 8px;
 }/*# sourceMappingURL=index.css.map */
