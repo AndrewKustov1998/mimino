@@ -1,0 +1,50 @@
+// "box" заміняйте на свій контайнер для правильного розміщення якщо це необхідно
+// <div class="box">
+
+//   <p class="company-slogan">Amet minim mollit non</p>
+//   <p class="company-title">Міміно</p>
+//   <p class="company-title company-title--gray">Міміно</p>
+//   <p class="company-title company-title--inverse">Міміно</p>
+//   <p class="company-title company-title--yellow">Міміно</p>
+
+// </div>
+
+.company-slogan {
+  font-family: Times New Roman, serif;
+  font-size: 20px;
+  line-height: 1.15;
+
+  color: var(--subtitle-color);
+
+  @media screen and (min-width: 1024px) {
+    font-size: 32px;
+    line-height: 1.56;
+  }
+}
+
+.company-title {
+  font-family: Film P3;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.075;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--second-title-color);
+
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+    line-height: 1.078;
+  }
+
+  &--gray {
+    color: var(--accent-gray-color);
+  }
+
+  &--inverse {
+    color: var(--second-title-color);
+  }
+
+  &--yellow {
+    color: var(--accent-yellow-color);
+  }
+}
