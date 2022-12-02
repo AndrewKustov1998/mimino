@@ -18,7 +18,7 @@
 
   @media screen and (min-width: 1024px) {
     font-size: 32px;
-    line-height: 1.56;
+    line-height: 1.1563;
   }
 }
 
@@ -28,8 +28,8 @@
   font-size: 40px;
   line-height: 1.075;
   letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: var(--second-title-color);
+  // text-transform: uppercase;
+  color: var(--title-grey-color);
 
   @media screen and (min-width: 1024px) {
     font-size: 64px;
@@ -37,11 +37,11 @@
   }
 
   &--gray {
-    color: var(--accent-gray-color);
+    color: var(--title-dark-grey-color);
   }
 
   &--inverse {
-    color: var(--second-title-color);
+    color: var(--primary-white-color);
   }
 
   &--yellow {
