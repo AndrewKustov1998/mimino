@@ -1,0 +1,116 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 414px) {
+    width: 414px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
+
+.three-adults {
+  background-color: #f0ecd6;
+
+  &__box {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @media screen and (min-width: 1024px) {
+      padding-bottom: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-top: 72px;
+    }
+  }
+
+  &__title {
+    font-family: 'Times New Roman';
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--primary-black-color);
+
+    @media screen and (min-width: 1024px) {
+      font-size: 30px;
+      line-height: 1.13;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 36px;
+    }
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--first-text-color);
+
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+    }
+  }
+
+  &__img {
+    background-color: blue;
+    width: 244px;
+    height: 322px;
+    @media screen and (min-width: 1024px) {
+      width: 400px;
+      height: 524px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 460px;
+      height: 574px;
+    }
+  }
+
+  &__link,
+  &__button {
+    display: block;
+    width: 236px;
+    height: 48px;
+    background-color: green;
+  }
+}
+
+.slider {
+  &__box {
+    display: flex;
+    gap: 16px;
+  }
+  &__img {
+    background-color: yellow;
+    width: 194px;
+    height: 194px;
+
+    @media screen and (min-width: 1280px) {
+      width: 254px;
+      height: 254px;
+    }
+  }
+  &__button-box {
+    display: flex;
+    gap: 32px;
+  }
+  &__button {
+    width: 32px;
+    height: 32px;
+    background-color: red;
+    border: none;
+  }
+}
