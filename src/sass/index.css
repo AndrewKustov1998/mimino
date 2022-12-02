@@ -430,13 +430,16 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  background-color: rgb(53, 25, 2);
 }
-
-.container {
-  padding: 0 15px;
+@media screen and (min-width: 1024px) {
+  .page-header {
+    height: 100px;
+  }
 }
 
 .site-nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -458,6 +461,13 @@ img {
   .site-nav__logo {
     font-size: 40px;
     line-height: 1.08;
+    padding-top: 24px;
+    margin-right: 87px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .site-nav__logo {
+    margin-right: 96px;
   }
 }
 
@@ -466,14 +476,24 @@ img {
   display: flex;
   gap: 20px;
 }
+@media screen and (min-width: 1024px) {
+  .site-nav__list {
+    gap: 72px;
+  }
+}
 
-.site-nav__page {
+.site-nav__info {
   padding-top: 28px;
   display: flex;
 }
+@media screen and (min-width: 1024px) {
+  .site-nav__info {
+    padding-top: 30px;
+    align-items: center;
+  }
+}
 
-.site-nav__link {
-  margin-right: 6px;
+.site-nav__page {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -483,12 +503,21 @@ img {
   color: var(--accent-yellow-color);
   text-decoration: none;
 }
+@media screen and (min-width: 1024px) {
+  .site-nav__page {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-right: 32px;
+  }
+}
 
 .site-nav__phone {
   display: none;
 }
 @media screen and (min-width: 1024px) {
   .site-nav__phone {
+    margin-left: 8px;
+    margin-right: 8px;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
@@ -508,9 +537,9 @@ img {
 @media screen and (min-width: 1024px) {
   .site-nav__contact {
     display: flex;
+    align-items: center;
     height: 40px;
     flex-direction: row;
-    gap: 16px;
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
   }
@@ -518,12 +547,25 @@ img {
 
 .site-nav__icon {
   fill: var(--accent-yellow-color);
-  width: 12px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
+}
+
+.site-net {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .site-net {
+    display: flex;
+  }
 }
 
 .site-net__link {
   display: none;
+}
+
+.site-net__item {
+  list-style: none;
 }
 
 .logo {
