@@ -1,2 +1,127 @@
-<br />
-Розмітка секції "Герой" (секція 1)
+<div class="room-hero">
+  <div class="slideshow-container">
+    <div class="container room-hero-text">
+      <h1 class="room-hero-text__title">ДВОМІСНИЙ НОМЕР люкс</h1>
+      <p class="room-hero-text__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+        officia
+        consequat duis enim velit
+        mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+    </div>
+    <div class="mySlides fade">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="
+                                      /src/images/desktop-images/hotel-room-hero-background-1280.jpg 1x,
+                                      /src/images/desktop-images/hotel-room-hero-background-1280@2x.jpg 2x
+                                    " />
+          <source media="(min-width: 1024px)" srcset="
+                                      /src/images/tablet-images/hotel-room-hero-background-1024.jpg 1x,
+                                      /src/images/tablet-images/hotel-room-hero-background-1024@2x.jpg 2x
+                                    " />
+          <source media="(max-width: 414px)" srcset="
+                            /src/images/mobile-images/hotel-room-hero-background-414.jpg 1x,
+                            /src/images/mobile-images/hotel-room-hero-background-414@2x.jpg 2x
+                          " />
+          <img src="/src/images/mobile-images/hotel-room-hero-background-414.jpg" alt="" min-width="414"
+            class="slideshow-container__images" />
+        </picture>
+    </div>
+    <div class="mySlides fade">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="
+                                      /src/images/desktop-images/homepage-hero-background-1280.jpg 1x,
+                                      /src/images/desktop-images/homepage-hero-background-1280@2x.jpg 2x
+                                    " />
+          <source media="(min-width: 1024px)" srcset="
+                                      /src/images/tablet-images/homepage-hero-background-1024.jpg 1x,
+                                      /src/images/tablet-images/homepage-hero-background-1024@2x.jpg 2x
+                                    " />
+          <source media="(max-width: 414px)" srcset="
+                            /src/images/mobile-images/homepage-hero-background-414.jpg 1x,
+                            /src/images/mobile-images/homepage-hero-background-414@2x.jpg 2x
+                          " />
+          <img src="/src/images/mobile-images/homepage-hero-background-414.jpg" alt="" min-width="414"
+            class="slideshow-container__images" />
+        </picture>
+    </div>
+    <div class="mySlides fade">
+      <picture>
+        <source media="(min-width: 1280px)" srcset="
+                            /src/images/desktop-images/restaurant-hero-background-1280.jpg 1x,
+                            /src/images/desktop-images/restaurant-hero-background-1280@2x.jpg 2x
+                          " />
+        <source media="(min-width: 1024px)" srcset="
+                            /src/images/tablet-images/restaurant-hero-background-1024.jpg 1x,
+                            /src/images/tablet-images/restaurant-hero-background-1024@2x.jpg 2x
+                          " />
+        <source media="(max-width: 414px)" srcset="
+                            /src/images/mobile-images/restaurant-hero-background-414.jpg 1x,
+                            /src/images/mobile-images/restaurant-hero-background-414@2x.jpg 2x
+                          " />
+            <img src="/src/images/mobile-images/restaurant-hero-background-414.jpg" alt="" min-width="414"
+              class="slideshow-container__images" />
+      </picture>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">
+      <svg width="40" height="40">
+        <use href="/src/images/icons.svg#icon-swiper-heder-prev"></use>
+      </svg>
+    </a>
+    <a class="next" onclick="plusSlides(1)">
+      <svg width="40" height="40">
+        <use href="/src/images/icons.svg#icon-swiper-heder-next"></use>
+      </svg></a>
+    <!-- <ul>
+      <li>
+        <a href="#">
+          <svg class="" width="20" height="20">
+            <use href="#"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <svg class="" width="20" height="20">
+            <use href="#"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <svg class="" width="20" height="20">
+            <use href="#"></use>
+          </svg>
+        </a>
+      </li>
+    </ul> -->
+  </div>
+</div>
+
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
