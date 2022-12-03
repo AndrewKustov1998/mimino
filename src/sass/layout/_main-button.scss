@@ -29,7 +29,7 @@
     font-size: 20px;
     line-height: 1.2;
     text-transform: uppercase;
-    border: 1px solid #F3C653;
+    border: 1px solid var(--accent-yellow-color);
     width: 384px;
     height: 64px;
         &:hover, &:active, &:focus {
@@ -48,7 +48,7 @@
     font-size: 20px;
     line-height: 1.2;
     text-transform: uppercase;
-    border: 1px solid #F3C653;
+    border: 1px solid var(--accent-yellow-color);
     border-radius: 0;
     width: 384px;
     height: 64px;
