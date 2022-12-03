@@ -1,9 +1,16 @@
 .container {width: 1170px; padding-top: 48px; padding-bottom: 96px;}
 .head-container {width: 595px; margin: 0 auto; margin-bottom: 40px;}
-.thumb {display: flex;}
+.head-container--hotel {display: flex; flex-direction: column; justify-content: flex-end; align-items: end;}
+.arrow-logo {fill: #FFF; position: absolute; }
+.arrow-logo--left {
+  // margin-right: 32px; 
+  left: 340px;}
+.arrow-logo--right {left: 404px;}
+.thumb {display: flex; margin-bottom: 24px; position: relative;}
 .button-container {display: flex; flex-direction: column; justify-content: flex-end;}
+.button-container--hotel {margin-left: 32px;}
 .restaurant-details__logo {color: #FFFFFF;
-  margin-bottom: 16px; display: block; text-decoration: none;}
+  margin-bottom: 16px; display: block; text-decoration: none; font-size: 64px;}
   .restaurant-details__title {font-family: 'Montserrat';
     font-weight: 700;
     font-size: 24px;
@@ -12,8 +19,11 @@
     color: #FFFFFF;
     margin-bottom: 8px;}
     .restaurant-details, .hotel-details {background-color: #000;}
-    .hotel-details {text-align: right;}
+    // .hotel-details {text-align: right;}
       .restaurant-details {background-repeat: no-repeat; background-size: cover; background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url('../images/desktop-images/homegape-restaurant.jpg');}
+      .hotel-details {background-repeat: no-repeat;
+        background-size: cover;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/desktop-images/homepage-section5-bad.jpg');}
     .restaurant-details__description {font-family: 'Montserrat';
       font-weight: 600;
       font-size: 16px;
@@ -21,6 +31,7 @@
       letter-spacing: 0.02em;
       color: #BABABA;
     width: 610px;}
+        .hotel-details__description {text-align: end;}
       .restaurant-details__link {font-family: 'Montserrat';
         font-weight: 700;
         font-size: 16px;
@@ -35,6 +46,7 @@
           margin-right: 32px;
           margin-bottom: 16px;
         width: 236px; height: 48px;}
+                .hotel-details__button {margin-right: 0;}
                     .restaurant-details__button--book {padding: 14px 24px;}
                                          .restaurant-details__button--review {padding-top: 14px; padding-bottom: 14px; padding-left: 31px;
                                           padding-right: 32px;}
