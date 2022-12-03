@@ -9,15 +9,84 @@
                 consequat duis enim velit
                 mollit. Exercitation veniam consequat sunt nostrud amet.</p>
         </div>
-        <img class="about-hotel__img" src="../photo/ресторан1.jpg" alt="фото номеру готелю з двухспальним ліжком" width="244">
+        <picture>
+            <source
+                srcset="
+                    ./images/desktop-images/modern-studio-apartment-460.jpg    1x,
+                    ./images/desktop-images/modern-studio-apartment-460@2x.jpg 2x"                       
+                media="(min-width: 1280px)"
+                />
+            <source
+                  srcset="
+                    ./images/tablet-images/modern-studio-apartment-400.jpg    1x,
+                    ./images/tablet-images/modern-studio-apartment-400@2x.jpg 2x"
+                 media="(min-width: 1024px)"
+                />
+            <source
+                srcset="
+                ./images/mobile-images/modern-studio-apartment-244.jpg 1x,
+                ./images/mobile-images/modern-studio-apartment-244@2x.jpg 2x"
+                media="(max-width: 414px)"
+                />
+            <img
+                  src="./images/mobile-images/modern-studio-apartment-244.jpg"
+                  alt="На фото номеру готелю з двухспальним ліжком"
+                  min-width="244"
+                  class="about-hotel__img"
+                />
+        </picture>
         <div class="about-hotel__wrapper">
             <p class="about-hotel__text about-hotel__text--color">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
                 mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            <img class="about-hotel__wrapper-img" src="../photo/Frame9.jpg" alt="фото зони відпочинку з двома диванами та каміном" width="200">
+            <picture>
+                <source srcset="
+                    ./images/desktop-images/hall-interior1-460.jpg    1x,
+                    ./images/desktop-images/hall-interior1-460@2x.jpg 2x"
+                     media="(min-width: 1280px)" />
+                <source srcset="
+                    ./images/tablet-images/hall-interior1-350.jpg    1x,
+                    ./images/tablet-images/hall-interior1-350@2x.jpg 2x"                    
+                    media="(min-width: 1024px)" />
+                <source srcset="
+                    ./images/mobile-images/hall-interior1-200.jpg 1x,
+                    ./images/mobile-images/hall-interior1-200@2x.jpg 2x"
+                    media="(max-width: 414px)" />
+                <img src="./images/mobile-images/hall-interior1-200.jpg" 
+                    alt="На фото зона відпочинку з двома диванами та каміном"
+                    min-width="200" class="about-hotel__wrapper-img" />
+            </picture>
         </div>
         <div class="about-hotel__slider">
-            <img class="about-hotel__slider-photo" src="../photo/Frame11.jpg" alt="фото складених в рулон чотирьох білих рушників на ліжку" width="245">
-            <img class="about-hotel__slider-img" src="../photo/Frame10.jpg" alt="фото рецепшну з адміністратором та клієнтом" width="245">
+            <picture>
+                <source srcset="
+                    ./images/desktop-images/slider/homepage-hotel-section-slider-image2-245.jpg    1x,
+                    ./images/desktop-images/slider/homepage-hotel-section-slider-image2-245@2x.jpg 2x"
+                     media="(min-width: 1280px)" />
+                <source srcset="
+                    ./images/tablet-images/slider/homepage-hotel-section-slider-image2-194.jpg    1x,
+                    ./images/tablet-images/slider/homepage-hotel-section-slider-image2-194@2x.jpg 2x"
+                     media="(max-width: 414px)" />
+                <img src="./images/tablet-images/slider/homepage-hotel-section-slider-image2-194.jpg"
+                    alt="На фото складені в рулон чотири білих рушники на ліжку"
+                    min-width="194" class="about-hotel__slider-photo" />
+            </picture>
+            <picture>
+                <source srcset="
+                    ./images/desktop-images/slider/homepage-hotel-section-slider-image1-245.jpg    1x,
+                    ./images/desktop-images/slider/homepage-hotel-section-slider-image1-245@2x.jpg 2x"
+                    media="(min-width: 1280px)" />
+                <source srcset="
+                    ./images/tablet-images/slider/homepage-hotel-section-slider-image1-194.jpg    1x,
+                    ./images/tablet-images/slider/homepage-hotel-section-slider-image1-194@2x.jpg 2x"
+                    media="(min-width: 1024px)" />
+                <source srcset="
+                    ./images/mobile-images/slider/homepage-hotel-section-slider-image2-245.jpg    1x,
+                    ./images/mobile-images/slider/homepage-hotel-section-slider-image2-245@2x.jpg 2x"
+                    media="(max-width: 414px)" />
+                <img src="./images/mobile-images/slider/homepage-hotel-section-slider-image2-245.jpg"
+                    alt="На фото рецепшн з адміністратором та клієнтом" min-width="245"
+                    class="about-hotel__slider-img" />
+            </picture>                
         </div>
     </div>
 </section>
