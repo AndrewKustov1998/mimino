@@ -1,0 +1,50 @@
+<div class="backdrop">
+  <div class="modal modal--table-reservation">
+    <button class="modal__close-btn" type="button">X</button>
+    <h2 class="modal__title">Забронювати столик</h2>
+    <form class="form" name="table-reservation">
+      <input
+        class="form__input"
+        type="text"
+        id="person-name"
+        name="person-name"
+        placeholder="Ваше ім’я"
+      />
+      <label class="form__label" for="person-name"
+        >На кого забронювати столик?</label
+      >
+
+      <input
+        class="form__input person-phone"
+        type="tel"
+        id="person-phone"
+        name="person-phone"
+        placeholder="+38 (___) ___-__-__"
+      />
+      <label class="form__label" for="person-phone">Номер телефону</label>
+
+      <select class="form__select" id="guests" name="guests">
+        <option value="2" selected>2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+      <label class="form__label" for="guests"
+        >Столик на яку кількість осіб?</label
+      >
+
+      <select class="form__select" id="guests" name="guests">
+        <option value="today" selected>Сьогодні</option>
+        <option value="tomorrow">Завтра</option>
+        <option value="monday">Понеділок, 5 грудня</option>
+      </select>
+
+      <label class="form__label" for="guests">На яку дату бронювати?</label>
+
+      <button type="submit">Оформити бронювання</button>
+    </form>
+  </div>
+</div>
+
+<script src="./js/input-mask.js"></script>
