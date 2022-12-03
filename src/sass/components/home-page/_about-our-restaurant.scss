@@ -1,6 +1,19 @@
+.our-restaurant .container {
+  position: relative;
+}
+
 .our-restaurant {
   padding-top: 16px;
   padding-bottom: 20px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 50px;
+  }
 
   &__text {
     font-weight: 600;
@@ -10,35 +23,94 @@
 
     width: 258px;
 
-    padding-bottom: 28px;
+    margin-bottom: 28px;
 
     color: var(--first-text-color);
+
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+      width: 439px;
+      margin-bottom: 142px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 518px;
+      margin-bottom: 162px;
+    }
 
     &--brown {
       width: 163px;
       margin-left: 20px;
       margin-top: 102px; //замінити після верстки слайдера на margin-bottom
       color: var(--brown-text-color);
+
+      @media screen and (min-width: 1024px) {
+        position: absolute;
+        margin: 0;
+        right: 220px;
+        top: 196px;
+        width: 312px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        top: 186px;
+        right: 306px;
+      }
     }
   }
 
   &__photo {
-    margin-bottom: 32px;
-
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
 
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 32px;
+    }
+
     &--right {
       margin-left: auto;
+
+      @media screen and (min-width: 1024px) {
+        position: absolute;
+        top: -152px;
+        right: 112px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        right: 180px;
+      }
+    }
+
+    &--reset {
+      @media screen and (min-width: 1280px) {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__block {
+    @media screen and (min-width: 1024px) {
     }
   }
 
   &__container {
+    position: relative;
     display: flex;
   }
 }
 
-.company-slogan,
+.company-slogan {
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 4px;
+  }
+}
+
 .company-title {
-  padding-bottom: 12px;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 24px;
+  }
 }
