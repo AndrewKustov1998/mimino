@@ -109,11 +109,8 @@ background-color: rgb(53, 25, 2);
         flex-direction: row;
         border: 1px solid rgba(243, 198, 83, 0.7);
         border-radius: 2px; 
-    } 
-        @media screen and(min-width:1024px) and(max-width:1280px) {
     & +.contact {
-            min-width: 264px;
-        }
+            min-width: 264px;       
 }
 }
 
