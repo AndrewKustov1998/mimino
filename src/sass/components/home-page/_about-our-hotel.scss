@@ -1,0 +1,177 @@
+.about-hotel {
+    background-color: #fffdee;
+    position: relative;
+}
+
+.about-hotel__title{
+    margin-bottom: 6px;
+}
+
+.about-hotel__subtitle{
+    margin-bottom: 16px;
+    color: var(--title-dark-grey-color);
+    @media screen and (min-width: 1280px) {
+           color: var(--title-grey-color);
+        }
+}
+
+.about-hotel__box {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding-top: 18px;
+  @media screen and (min-width: 1024px) {
+        padding-top: 120px;
+    }
+}
+
+.about-hotel__text {
+    margin-bottom: 28px;
+
+    font-family: 'Montserrat';
+    margin-left: 143px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color:var(--first-text-color);
+
+    @media screen and (min-width: 1024px) {
+        margin-left: 511px;
+        font-size: 16px;
+        line-height: 1.22;
+        margin-bottom: 142px;
+    }
+    @media screen and (min-width: 1280px) {
+        line-height: 1.25;
+        margin-left: 622px;
+        margin-bottom: 162px;
+    }
+}
+
+.about-hotel__img{
+    margin-bottom: 32px;
+    background: #DADADA;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+
+    @media screen and (min-width: 1024px) {
+            position: absolute;
+            top: -24px;
+            bottom: -24px;
+            z-index: 999;
+            width: 400px;
+            margin-left: 65px;
+            margin-bottom:0;
+            
+            box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+        }
+    @media screen and (min-width: 1280px) {
+            width: 460px;
+            height: 574px;
+    }
+}
+.about-hotel__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 0;
+    }
+}
+
+.about-hotel__wrapper-img{
+    background: #DADADA;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+
+    @media screen and (min-width: 1024px) {
+        width: 350px;
+        height: 500px;
+        margin-left: 48px;
+        
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    }
+    @media screen and (min-width: 1280px) {
+        min-width: 460px;
+        height: 574px;
+        margin-left: 45px;
+    }
+}
+
+.about-hotel__text--color {
+    color: var(--brown-text-color);
+    margin-left: 0;
+    margin-right: 21px;
+    @media screen and (min-width: 1024px) {
+        margin-left: 220px;
+        align-items: center;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-left: 294px;
+       margin-bottom: 116px;
+    }
+}
+.about-hotel__slider{
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+    
+    @media screen and (min-width: 1024px) {
+        padding-bottom: 32px;
+        margin-bottom: 0;
+        top:-24px;        
+    }
+    @media screen and (min-width: 1280px) {
+        top: -167px;
+        padding-bottom: 40px;
+    }
+}
+
+.about-hotel__slider-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 20px;
+    
+    background: #DADADA;    
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+
+    @media screen and (min-width: 1024px) {
+        width: 194px;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        margin-left: 0;
+        border: 1px solid rgba(186, 186, 186, 0.4);
+        
+    }
+    
+    @media screen and (min-width: 1280px) {
+        min-width: 245px;
+    }
+}
+.about-hotel__slider-photo{
+    background: #DADADA;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+
+    transform: translateX(-180px);
+    
+    @media screen and (min-width: 1024px) {
+        width: 194px;
+        transform: translateX(234px);
+        border: 1px solid rgba(186, 186, 186, 0.4);
+        
+    }
+    @media screen and (min-width: 1280px) {
+        min-width: 245px;
+        transform: translateX(285px);
+    }
+}
