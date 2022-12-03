@@ -122,10 +122,10 @@
   &__buttons-box {
     text-align: center;
     @media screen and (min-width: 1024px) {
-      transform: translateY(41px);
+      padding-top: 41px;
     }
     @media screen and (min-width: 1280px) {
-      transform: translateY(72px);
+      padding-top: 72px;
     }
   }
 
