@@ -5,8 +5,9 @@
     background-color: #0E0C07;
     padding: 30px 40px;
         @media (min-width: 1024px) {
-                padding: 122px 80px;
+                padding: 80px 122px;
             }
+    
 }
 
 .footer__links {
@@ -20,6 +21,10 @@
 
 }
 .footer__nav-links-list {
+    margin-right: 0px;
+        @media (min-width: 1024px){
+            margin-right: 137px;
+        }
 }
 .footer__nav__link-item {
     dasplay:flex;
@@ -41,12 +46,18 @@
 .footer__social-links-list {
 }
 .footer__social-links__item {
+    @media (min-width: 1024px) {
+        border: 0.5px solid var(--accent-yellow-color);
+        border-radius: 2px;
+        padding: 12px 10px;
+        margin-bottom: 12px;
+    }
 }
 .footer__social-link {
-    padding: 12px 10px;
+    display: flex;
         @media (min-width: 1024px) {
-            border: 0.5px solid var(--accent-yellow-color);
-            border-radius: 2px;
+
+            
 
         }
 
