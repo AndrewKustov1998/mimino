@@ -107,7 +107,7 @@ background-color: rgb(53, 25, 2);
         display: flex;
         align-items: center;
         height: 40px;
-        width:fit-content;
+        min-width: 144px;
         flex-direction: row;
         border: 1px solid rgba(243, 198, 83, 0.7);
         border-radius: 2px;
