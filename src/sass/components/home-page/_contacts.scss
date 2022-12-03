@@ -190,20 +190,12 @@
 }
 
 .contacts-list__icon {
+    flex-shrink: 0;
     width: 24px;
     height: 24px;
     margin-right: 8px;
 
     fill: var(--brown-text-color);
-}
-
-.contacts-list__address {
-    max-width: 183px;
-    font-size: 16px;
-    
-    @media screen and (min-width: 1024px) {
-        max-width: 233px;
-    }
 }
 
 .map-responsive {
