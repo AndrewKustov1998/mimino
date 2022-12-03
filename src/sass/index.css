@@ -544,10 +544,14 @@ img {
     display: flex;
     align-items: center;
     height: 40px;
-    min-width: 144px;
     flex-direction: row;
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .site-nav__contact + .contact {
+    min-width: 264px;
   }
 }
 
