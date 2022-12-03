@@ -1,16 +1,18 @@
 .container {
   outline: 1px solid black;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .three-adults {
   background-color: #f0ecd6;
 
   &__box {
+    outline: 1px solid red;
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
     @media screen and (min-width: 1024px) {
+      padding-top: 66px;
       padding-bottom: 40px;
     }
     @media screen and (min-width: 1280px) {
@@ -21,10 +23,43 @@
   &__company {
     margin-bottom: 32px;
     text-align: right;
+    @media screen and (min-width: 1024px) {
+      margin-right: 17px;
+      margin-bottom: 62px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-right: 57px;
+      margin-bottom: 72px;
+    }
   }
 
   &__company-slogan {
     margin-bottom: 8px;
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__company-title {
+    margin-right: -12px;
+    @media screen and (min-width: 1024px) {
+      margin-right: -20px;
+    }
+  }
+
+  &__info {
+    margin-bottom: 32px;
+    @media screen and (min-width: 1024px) {
+      width: 400px;
+      margin-left: auto;
+      margin-right: 17px;
+      margin-bottom: 169px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 454px;
+      margin-right: 57px;
+      margin-bottom: 188px;
+    }
   }
 
   &__title {
@@ -38,6 +73,7 @@
     color: var(--primary-black-color);
 
     @media screen and (min-width: 1024px) {
+      text-align: left;
       font-size: 30px;
       line-height: 1.13;
     }
@@ -49,7 +85,7 @@
 
   &__text {
     max-width: 242px;
-    margin: 0 59px 32px auto;
+    margin: 0 59px 0 auto;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
@@ -57,6 +93,8 @@
     color: var(--first-text-color);
 
     @media screen and (min-width: 1024px) {
+      max-width: 400;
+      margin: 0;
       font-size: 16px;
     }
   }
@@ -67,12 +105,28 @@
     height: 322px;
     margin-bottom: 32px;
     @media screen and (min-width: 1024px) {
+      position: absolute;
+      top: -32px;
+      left: 68px;
       width: 400px;
       height: 524px;
+      margin: 0;
     }
     @media screen and (min-width: 1280px) {
+      left: 95px;
       width: 460px;
       height: 574px;
+    }
+  }
+
+  &__wrapper {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+    @media screen and (min-width: 1280px) {
+      height: 326px;
     }
   }
 
@@ -81,6 +135,12 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    @media screen and (min-width: 1024px) {
+      transform: translateY(41px);
+    }
+    @media screen and (min-width: 1280px) {
+      transform: translateY(72px);
+    }
   }
 
   &__link,
@@ -95,16 +155,21 @@
 .slider {
   position: relative;
   height: 246px;
-  // padding-top: 214px;
   margin-bottom: 20px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+  }
   &__box {
     transform: translateX(115px);
-    // position: absolute;
-    // top: 0;
-    // left: 115px;
     display: flex;
     gap: 16px;
     margin-bottom: 20px;
+    @media screen and (min-width: 1024px) {
+      transform: translateX(0);
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 40px;
+    }
   }
   &__img {
     background-color: yellow;
@@ -119,6 +184,9 @@
     display: flex;
     justify-content: flex-end;
     gap: 32px;
+    @media screen and (min-width: 1024px) {
+      justify-content: flex-start;
+    }
   }
   &__button {
     width: 32px;
