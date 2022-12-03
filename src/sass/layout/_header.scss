@@ -4,7 +4,6 @@
     position: absolute;
     top: 0;
     left: 0;
-background-color: rgb(53, 25, 2);
 @media screen and(min-width:1024px) {
     height: 100px;
 }
@@ -52,6 +51,11 @@ background-color: rgb(53, 25, 2);
         gap: 72px;
 }
 }
+.site-nav__item:nth-of-type(2) {
+    @media screen and(min-width:1024px) {
+    width:366px;
+}
+}
 
 .site-nav__info {
     padding-top: 28px;
@@ -82,7 +86,6 @@ background-color: rgb(53, 25, 2);
 
 .site-nav__phone {
     display: none;
-
     @media screen and(min-width:1024px) {
         margin-left: 8px;
         margin-right: 8px;
@@ -101,27 +104,24 @@ background-color: rgb(53, 25, 2);
 
 .site-nav__contact {
     border: 0;
-
     @media screen and(min-width:1024px) {
+        min-width: 144px;
         display: flex;
         align-items: center;
         height: 40px;
         flex-direction: row;
         border: 1px solid rgba(243, 198, 83, 0.7);
-        border-radius: 2px; 
-    & +.contact {
-            min-width: 264px;       
+        border-radius: 2px;
 }
 }
-
-
-
 
 .site-nav__icon {
+    display: flex;
     fill: var(--accent-yellow-color);
     width: 24px;
     height: 24px;
 }
+
 .site-net {
     width: 112px;
     margin-left: 59px;
@@ -151,5 +151,4 @@ background-color: rgb(53, 25, 2);
     width: 24px;
     height: 24px;
     fill: var(--accent-yellow-color);
-}
 }
