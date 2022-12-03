@@ -17,8 +17,17 @@
     background-color: #FFFDEE;
     padding: 60px 16px;
 
- 
-    
+    @media screen and (min-width:414px) {
+            top: 50%;
+            left: 50%;
+            max-width: 414px;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+    @media screen and (min-width:1024px) {
+            max-width: 712px;
+            padding: 60px;
+        }
 
     &__close-btn {
         position: absolute;
@@ -55,11 +64,17 @@
         line-height: 1,16;
         letter-spacing: 0.05em;
     }
+
+     
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
+
+    @media screen and (min-width:1024px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 28px 16px;
+    }
 
     &__input, &__select {
         margin-bottom: 8px;
@@ -72,24 +87,37 @@
         line-height: 1.15;
         letter-spacing: 0.05em;
         
-            color: #808080;
+        color: #808080;
+        background-color: #FFFDEE;
 
         border: 1px solid var(--brown-text-color);
         border-radius: 2px;
     }
 
     &__label {
+
         color: var(--brown-text-color);
         margin-left: 12px;
         margin-bottom: 20px;
 
         font-family: 'Montserrat';
         font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 1,21;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1,21;
         
-            letter-spacing: 0.02em;
+        letter-spacing: 0.02em;
 
     }
+
+    &__field {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width:1024px) {
+             width: 288px;
+            }
+
+    }
+
 }

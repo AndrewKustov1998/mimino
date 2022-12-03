@@ -451,6 +451,20 @@ img {
   background-color: #FFFDEE;
   padding: 60px 16px;
 }
+@media screen and (min-width: 414px) {
+  .modal {
+    top: 50%;
+    left: 50%;
+    max-width: 414px;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .modal {
+    max-width: 712px;
+    padding: 60px;
+  }
+}
 .modal__close-btn {
   position: absolute;
   top: 16px;
@@ -480,9 +494,12 @@ img {
   letter-spacing: 0.05em;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 1024px) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px 16px;
+  }
 }
 .form__input, .form__select {
   margin-bottom: 8px;
@@ -494,6 +511,7 @@ img {
   line-height: 1.15;
   letter-spacing: 0.05em;
   color: #808080;
+  background-color: #FFFDEE;
   border: 1px solid var(--brown-text-color);
   border-radius: 2px;
 }
@@ -507,4 +525,13 @@ img {
   font-size: 14px;
   line-height: 1, 21;
   letter-spacing: 0.02em;
+}
+.form__field {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .form__field {
+    width: 288px;
+  }
 }/*# sourceMappingURL=index.css.map */
