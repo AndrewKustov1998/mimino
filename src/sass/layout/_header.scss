@@ -111,7 +111,7 @@ background-color: rgb(53, 25, 2);
         border-radius: 2px; 
     } 
         @media screen and(min-width:1024px) and(max-width:1280px) {
-    &+.contact {
+    & +.contact {
             min-width: 264px;
         }
 }
