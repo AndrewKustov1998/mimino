@@ -1,1 +1,73 @@
-<br />Розмітка секції "Про наш ресторан" (секція 2)
+<section class="our-restaurant">
+  <div class="container">
+    <h2 class="visually-hidden">Про ресторан</h2>
+    <p class="company-slogan" lang="la">Amet minim mollit non</p>
+    <p class="company-title company-title--gray" lang="la">mimino</p>
+    <p class="our-restaurant__text" lang="la">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
+    <picture>
+      <source
+        srcset="
+          ./images/mobile-images/restaurant-interior2-244.jpg    1x,
+          ./images/mobile-images/restaurant-interior2-244@2x.jpg 2x
+        "
+        media="(max-width:1023px)"
+      />
+      <source
+        srcset="
+          ./images/tablet-images/restaurant-interior2-400.jpg    1x,
+          ./images/tablet-images/restaurant-interior2-400@2x.jpg 2x
+        "
+        media="(min-width:1024px) and (max-width:1279px)"
+      />
+
+      <img
+        class="our-restaurant__photo our-restaurant__photo--right"
+        srcset="
+          ./images/desktop-images/restaurant-interior2-460.jpg    1x,
+          ./images/desktop-images/restaurant-interior2-460@2x.jpg 2x
+        "
+        src="./images/desktop-images/restaurant-interior2-460.jpg"
+        alt="Вигляд однієї із зал"
+        sizes="(min-width:1024px) 35vw, 60vw"
+      />
+    </picture>
+    <div class="our-restaurant__container">
+      <picture>
+        <source
+          srcset="
+            ./images/mobile-images/restaurant-interior3-200.jpg    1x,
+            ./images/mobile-images/restaurant-interior3-200@2x.jpg 2x
+          "
+          media="(max-width:1023px)"
+        />
+        <source
+          srcset="
+            ./images/tablet-images/restaurant-interior3-350.jpg    1x,
+            ./images/tablet-images/restaurant-interior3-350@2x.jpg 2x
+          "
+          media="(min-width:1024px) and (max-width:1279px)"
+        />
+
+        <img
+          class="our-restaurant__photo"
+          srcset="
+            ./images/desktop-images/restaurant-interior3-460.jpg    1x,
+            ./images/desktop-images/restaurant-interior3-460@2x.jpg 2x
+          "
+          src="./images/desktop-images/restaurant-interior3-460.jpg"
+          alt="Вигляд іншої зали"
+          sizes="(min-width:1024px) 35vw, 60vw"
+        />
+      </picture>
+      <p class="our-restaurant__text our-restaurant__text--brown" lang="la">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,44 @@
+.our-restaurant {
+  padding-top: 16px;
+  padding-bottom: 20px;
+
+  &__text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+    width: 258px;
+
+    padding-bottom: 28px;
+
+    color: var(--first-text-color);
+
+    &--brown {
+      width: 163px;
+      margin-left: 20px;
+      margin-top: 102px; //замінити після верстки слайдера на margin-bottom
+      color: var(--brown-text-color);
+    }
+  }
+
+  &__photo {
+    margin-bottom: 32px;
+
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+
+    &--right {
+      margin-left: auto;
+    }
+  }
+
+  &__container {
+    display: flex;
+  }
+}
+
+.company-slogan,
+.company-title {
+  padding-bottom: 12px;
+}
