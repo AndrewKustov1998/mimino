@@ -3,12 +3,62 @@
 }
 
 .our-restaurant {
+  $one-third0: calc(100% / 3);
+  $one-third1: calc((100% / 3) + 1px);
+  $two-third0: calc(100% / 3 * 2);
+  $two-third1: calc((100% / 3 * 2) - 1px);
+  $three-third0: calc(100% / 4 * 3);
+  $three-third1: calc((100% / 4 * 3) - 1px);
+  $vertical-lines-color: #bababa;
+
   padding-top: 16px;
   padding-bottom: 20px;
+
+  background-image: linear-gradient(
+      90deg,
+      transparent,
+      transparent $one-third0,
+      $vertical-lines-color $one-third1,
+      transparent $one-third1
+    ),
+    linear-gradient(
+      90deg,
+      transparent,
+      transparent $two-third1,
+      $vertical-lines-color $two-third0,
+      transparent $two-third0
+    );
 
   @media screen and (min-width: 1024px) {
     padding-top: 120px;
     padding-bottom: 32px;
+
+    $one-third0: calc(100% / 4);
+    $one-third1: calc((100% / 4) + 1px);
+    $two-third0: calc(100% / 4 * 2);
+    $two-third1: calc((100% / 4 * 2) - 1px);
+
+    background-image: linear-gradient(
+        90deg,
+        transparent,
+        transparent $one-third0,
+        $vertical-lines-color $one-third1,
+        transparent $one-third1
+      ),
+      linear-gradient(
+        90deg,
+        transparent,
+        transparent $two-third1,
+        $vertical-lines-color $two-third0,
+        transparent $two-third0
+      ),
+      linear-gradient(
+        90deg,
+        transparent,
+        transparent $three-third1,
+        $vertical-lines-color $two-third0,
+        transparent $three-third0
+      );
   }
 
   @media screen and (min-width: 1280px) {
@@ -85,11 +135,6 @@
       @media screen and (min-width: 1280px) {
         box-shadow: none;
       }
-    }
-  }
-
-  &__block {
-    @media screen and (min-width: 1024px) {
     }
   }
 
