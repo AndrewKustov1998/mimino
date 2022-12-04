@@ -1,33 +1,54 @@
 .about-hotel {
     background-color: #fffdee;
     position: relative;
+    padding-top: 18px;
+    padding-bottom: 20px;
+
+            @media screen and (min-width: 1024px) {
+                padding-top: 120px;
+                padding-bottom: 32px;
+            }
+            @media screen and (min-width: 1280px) {
+                padding-bottom: 50px;
+            }
     &__title {
         margin-bottom: 6px;
         font-weight: 400;
+        @media screen and (min-width: 1024px) {
+                margin-bottom: 4px;
+            }
     }
     &__subtitle {
+        text-align: right;
+        width: 127px;
         margin-bottom: 16px;
-        color: var(--title-dark-grey-color);
+        @media screen and (min-width: 1024px) {
+                width: 204px;
+                margin-bottom: 24px;
+            }
+        
+            @media screen and (min-width: 1280px) {
+                width: 202px;
+            }
+    }
     
         @media screen and (min-width: 1280px) {
-               color: var(--title-grey-color);
+           .company-title {
+            color: var(--title-grey-color);
         }
         }
     &__box {
         display: flex;
         flex-direction: column;
+        align-items: flex-end;
         text-align: right;
-        padding-top: 18px;
-        
-        @media screen and (min-width: 1024px) {
-            padding-top: 120px;
-                    }
-        }
+    }              
+
     &__text {
         margin-bottom: 28px;
-            
+        width: 242px;
+                   
         font-family: 'Montserrat';
-        margin-left: 143px;
         text-align: left;
         font-weight: 600;
         font-size: 12px;
@@ -36,15 +57,16 @@
         color: var(--first-text-color);
             
         @media screen and (min-width: 1024px) {
-            margin-left: 511px;
+            width: 419px;
             font-size: 16px;
             line-height: 1.22;
             margin-bottom: 142px;
+            
         }
             
          @media screen and (min-width: 1280px) {
             line-height: 1.25;
-            margin-left: 622px;
+            width: 488px;
             margin-bottom: 162px;
             }
             }
@@ -74,7 +96,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 32px;
+        margin-bottom: 32px;
 
         @media screen and (min-width: 1024px) {
             margin-bottom: 0;
@@ -120,19 +142,15 @@
     &__slider {
         display: flex;
         position: relative;
-        margin-bottom: 20px;
-
         @media screen and (min-width: 1024px) {
-            padding-bottom: 32px;
-            margin-bottom: 0;
-            top: -24px;
+               margin-bottom: 0;
+               top: -24px;
         }
 
         @media screen and (min-width: 1280px) {
             top: -167px;
-            padding-bottom: 40px;
         }
-}
+    }
 
     &__slider-img {
         position: absolute;
@@ -178,7 +196,7 @@
             min-width: 245px;
             transform: translateX(285px);
         }
-}
+    }
 }
 
 
