@@ -1,0 +1,68 @@
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--accent-yellow-color);
+    text-align: center;
+    background-color: var(--primary-black-color);
+    border: 2px solid var(--primary-white-color);
+    border-radius: 25px;
+    width: 236px;
+    height: 48px;
+        &:hover, &:active, &:focus {
+            background-color: var(--primary-white-color);
+            border-color: var(--accent-yellow-color)
+    }
+        
+}
+
+.button--header {
+    background-color: var(--button-header-color);
+        &:hover, &:active, &:focus {
+            border: none;
+        }
+}
+
+.button--book {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    border: 1px solid var(--accent-yellow-color);
+    width: 384px;
+    height: 64px;
+        &:hover, &:active, &:focus {
+            background-color: var(--accent-yellow-color);
+            color: var(--primary-black-color);    
+            }
+                @media (min-width: 1024px) {
+                    font-size: 24px;
+                    width: 434px;
+                    height: 64px;
+                }
+}
+
+.button--book-modal {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    border: 1px solid var(--accent-yellow-color);
+    border-radius: 0;
+    width: 384px;
+    height: 64px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: var(--accent-yellow-color);
+        color: var(--primary-black-color);
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 24px;
+        width: 592px;
+        height: 64px;
+    }
+}
