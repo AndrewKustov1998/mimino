@@ -90,21 +90,16 @@
 
     &--brown {
       width: 163px;
-      margin-left: 20px;
-      margin-top: 102px; //замінити після верстки слайдера на margin-bottom
+      margin: 70px 0 0 20px;
       color: var(--brown-text-color);
 
       @media screen and (min-width: 1024px) {
-        position: absolute;
-        margin: 0;
-        right: 220px;
-        top: 196px;
+        margin: 196px 0 0 48px;
         width: 312px;
       }
 
       @media screen and (min-width: 1280px) {
-        top: 186px;
-        right: 306px;
+        margin: 186px 0 0 32px;
       }
     }
   }
@@ -139,23 +134,22 @@
   }
 
   &__container {
-    position: relative;
     display: flex;
   }
-}
 
-.company-slogan {
-  margin-bottom: 12px;
+  &__company-slogan {
+    margin-bottom: 12px;
 
-  @media screen and (min-width: 1024px) {
-    margin-bottom: 4px;
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 4px;
+    }
   }
-}
 
-.company-title {
-  margin-bottom: 12px;
+  &__company-title {
+    margin-bottom: 12px;
 
-  @media screen and (min-width: 1024px) {
-    margin-bottom: 24px;
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 24px;
+    }
   }
 }
