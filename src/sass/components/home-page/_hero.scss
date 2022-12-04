@@ -1,23 +1,196 @@
 .hero{
-    width: 100%;
-    height: 740px;
-    max-width: 1280px;
-    margin-left: auto;
+}
+
+.logo--hero {
+    width: 303px;
     margin-right: auto;
-    background-color: $secondary-bkg-color;
+    margin-left: auto;
+    justify-content: center;
+    margin-bottom: 24px;
+
+    font-size: 96px;
+    color: var(--primary-white-color);
+    
+}
+
+.ordering {
+    margin-bottom: 58px;
+}
+
+
+
+.social-area {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.social-area__item {
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.social-area__icon {
+    fill: var(--accent-yellow-color);
+}
+
+.map-pointer {
+    width: 20px;
+    height: 20px;
+
+    fill: var(--accent-yellow-color);
+    margin-right: 8px;
+}
+
+.hero--homepage {
+    max-width: 1600px;
+
+    padding-top: 64px;
+    padding-bottom: 20px;
+    height: 740px;
+
     text-align: center;
     align-content: center;
     justify-content: center;
+
     background-image: linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url(../);
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+        url(../images/mobile-images/homepage-hero-background-414.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
-    &__home-page{
+    @media screen and(min-width:414px) {
+        width: 414px;
 
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(../images/mobile-images/homepage-hero-background-414@2x.jpg)
+        }
     }
-    &__restaurant{
 
+    @media screen and(min-width:1024px)and(max-width:1279px) {
+        width: 1024px;
+        height: 720px;
+        padding-top: 100px;
+        padding-bottom: 15px;
+
+
+        background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(../images/tablet-images/homepage-hero-background-1024.jpg);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(../images/tablet-images/homepage-hero-background-1024@2x.jpg)
+        }
     }
 
+    @media screen and(min-width:1280px) {
+        width: 100%;
+        height: 720px;
+        padding-top: 100px;
+        padding-bottom: 65px;
+        background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(../images/desktop-images/homepage-hero-background-1280.jpg);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(../images/desktop-images/homepage-hero-background-1280@2x.jpg)
+        }
+    }
+
+}
+
+.hero__address {
+    width: 210px;
+    height: 47px;
+    border: 1px solid var(--accent-yellow-color);
+    border-radius: 2px;
+
+    padding-left: 6px;
+
+    margin-left: auto;
+    margin-bottom: 70px;
+
+    display: flex;
+}
+
+.hero__address-link {
+    text-decoration: none;
+
+
+    color: var(--primary-white-color);
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.hero__address-text{
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+
+}
+.hero-title__description {
+    margin-bottom: 40px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+
+    color: var(--primary-white-color);
+}
+
+.company-slogan--hero {
+    margin-bottom: 113px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.16;
+    /* identical to box height */
+    letter-spacing: 0.05em;
+
+    color: var(--primary-white-color);
+}
+
+.button--transparent {
+    background-color: rgba(0, 0, 0, 0.4);
+
+    &-hero {
+        margin-bottom: 24px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
