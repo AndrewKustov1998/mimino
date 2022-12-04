@@ -3,13 +3,51 @@
     position: relative;
     padding-top: 18px;
     padding-bottom: 20px;
+    background-image: linear-gradient(to right,
+                #0000 140px,
+                rgba(186, 186, 186, 0.4) 140px,
+                rgba(186, 186, 186, 0.4) 141px,
+                #0000 141px,
+                #0000 274px,
+                rgba(186, 186, 186, 0.4) 274px,
+                rgba(186, 186, 186, 0.4) 275px,
+                #0000 275px,
+            );
 
             @media screen and (min-width: 1024px) {
                 padding-top: 120px;
                 padding-bottom: 32px;
-            }
+                background-image: linear-gradient(to right,
+                            #0000 278px,
+                            rgba(186, 186, 186, 0.4) 278px,
+                            rgba(186, 186, 186, 0.4) 279px,
+                            #0000 279px,
+                            #0000 512px,
+                            rgba(186, 186, 186, 0.4) 512px,
+                            rgba(186, 186, 186, 0.4) 513px,
+                            #0000 513px,
+                            #0000 746px,
+                            rgba(186, 186, 186, 0.4) 746px,
+                            rgba(186, 186, 186, 0.4) 747px,
+                            #0000 747px,
+                        );
+                }
             @media screen and (min-width: 1280px) {
                 padding-bottom: 50px;
+                background-image: linear-gradient(to right,
+                            #0000 338px,
+                            rgba(186, 186, 186, 0.4) 338px,
+                            rgba(186, 186, 186, 0.4) 339px,
+                            #0000 339px,
+                            #0000 640px,
+                            rgba(186, 186, 186, 0.4) 640px,
+                            rgba(186, 186, 186, 0.4) 641px,
+                            #0000 641px,
+                            #0000 942px,
+                            rgba(186, 186, 186, 0.4) 942px,
+                            rgba(186, 186, 186, 0.4) 943px,
+                            #0000 943px,
+                        );
             }
     &__title {
         margin-bottom: 6px;
