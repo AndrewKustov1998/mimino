@@ -1,0 +1,144 @@
+.section-menu {
+    background-color: #F0ECD6;
+    padding: 60px 0;
+    padding-bottom: 140px;
+}
+
+.menu__title {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.15;
+    margin-bottom: 40px;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 32px;
+    }
+}
+.menu__type-dish {
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    margin-bottom: 20px;
+
+    @media (max-width: 1024px) {
+        font-size: 20px;
+        line-height: 1.15;
+    }
+}
+.menu__price {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    min-width: 69px;
+}
+.menu__item {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    margin-bottom: 12px;
+
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1024px) {
+        font-size: 14px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+}
+.menu__item:last-child {
+    margin-bottom: 20px;
+}
+.menu__dessert-item,
+.menu__drink-item {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+}
+
+.menu__ingredients {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    width: 257px;
+}
+.menu__weight {
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    min-width: 37px;
+}
+
+.menu__first-container {
+    float: left;
+    width: 100%;
+
+    @media (min-width: 1024px) {
+        float: left;
+        width: 50%;
+        padding-right: 45px;
+    }
+
+    @media (max-width: 1023px) {
+        float: left;
+        width: 100%;
+    }
+
+}
+.menu__second-container {
+
+    @media (min-width: 1024px) {
+        padding-left: 45px;
+    }
+}
+tbody {
+    display: table-row-group;
+    vertical-align: top;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+table {
+    border: none;
+}
+// td {
+//     padding-right: 18px;
+// }
+// .hot {
+//     margin-right: 47px;
+// }
+// .snack {
+//     margin-right: 16px;
+// }
+// .weight-dessert {
+//     width: 145px;
+// }
+// .weight-salad {
+//     width: 150px;
+// }
+// .dessert {
+//     width: 282px;
+// }
+// .weight-drink {
+//     width: 150px;
+// }
+
+// .drink {
+//     width: 282px;
+// }
