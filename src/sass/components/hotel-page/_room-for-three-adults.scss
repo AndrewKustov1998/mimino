@@ -67,6 +67,7 @@
     color: var(--primary-black-color);
 
     @media screen and (min-width: 1024px) {
+      margin-bottom: 16px;
       text-align: left;
       font-size: 30px;
       line-height: 1.13;
@@ -151,6 +152,8 @@
     gap: 16px;
     margin-bottom: 20px;
     @media screen and (min-width: 1024px) {
+      gap: 40px;
+      margin-bottom: 32px;
       transform: translateX(0);
     }
     @media screen and (min-width: 1280px) {
@@ -184,5 +187,6 @@
   &__icon {
     width: 32px;
     height: 32px;
+    fill: var(--modal-text-color);
   }
 }
