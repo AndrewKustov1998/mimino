@@ -69,7 +69,7 @@
 }
 
 .slideshow-container__images {
-    height: 780px;
+    height: 740px;
 @media screen and (min-width: 1024px) {
         height: 720px;
     }
@@ -122,5 +122,64 @@
         width: 400px;
         font-size: 16px;
         line-height: 1.25;
+    }
+}
+
+.room-hero-text {
+    margin-top: 483px;
+    z-index: 1;
+    position: absolute;
+    width: 360px;
+
+    @media screen and (min-width: 1024px) {
+        margin-top: 468px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 524px;
+    }
+}
+
+.room-hero__button{
+    margin-top: 30px;
+    margin-left: 109px;
+    @media screen and (min-width: 1024px) {
+        margin: 0;
+        margin-bottom: 64px;
+    }
+    
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 64px;
+    }
+}
+
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--accent-yellow-color);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid var(--primary-white-color);
+    border-radius: 25px;
+    width: 236px;
+    height: 48px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: var(--primary-white-color);
+        border-color: var(--accent-yellow-color)
+    }
+
+}
+
+.button--header {
+
+    &:hover,
+    &:active,
+    &:focus {
+        border: none;
     }
 }
