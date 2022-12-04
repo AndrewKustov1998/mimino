@@ -81,18 +81,14 @@
     z-index: 12;
 }
 
-.room-hero-text {
-    margin-top: 483px;
-    z-index: 1;
-    position: absolute;
-    width: 360px;
-    @media screen and (min-width: 1024px) {
-        margin-top: 468px;
-    }
-        @media screen and (min-width: 1280px) {
-        margin-top: 524px;
-    }
-}
+// .room-hero-text {
+//     margin-top: 483px;
+//     z-index: 1;
+//     position: absolute;
+//     @media screen and (min-width: 1024px) {
+//         margin-top: 468px;
+//     }
+// }
 
 .room-hero-text__title {
     margin-bottom: 15px;
@@ -104,9 +100,15 @@
     letter-spacing: 0.05em;
     color: var(--primary-white-color);
     @media screen and (min-width: 1024px) {
+        margin-right: 60px;
         width: 509px;
         font-size: 36px;
         line-height: 1.14;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 24px;
+        margin-right: 500px;
+        width: 509px;
     }
 }
 
@@ -117,6 +119,7 @@
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.02em;
+    width: 325px;
     color: var(--primary-white-color);
     @media screen and (min-width: 1024px) {
         width: 400px;
@@ -129,14 +132,15 @@
     margin-top: 483px;
     z-index: 1;
     position: absolute;
-    width: 360px;
 
     @media screen and (min-width: 1024px) {
         margin-top: 468px;
+        display: flex;
+        flex-wrap: wrap;
     }
-
     @media screen and (min-width: 1280px) {
         margin-top: 524px;
+        justify-content: space-between;
     }
 }
 
@@ -144,42 +148,11 @@
     margin-top: 30px;
     margin-left: 109px;
     @media screen and (min-width: 1024px) {
-        margin: 0;
-        margin-bottom: 64px;
+        margin: 0 0 64px 698px;
     }
     
     @media screen and (min-width: 1280px) {
-        margin-bottom: 64px;
-    }
-}
-
-.button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: var(--accent-yellow-color);
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
-    border: 2px solid var(--primary-white-color);
-    border-radius: 25px;
-    width: 236px;
-    height: 48px;
-
-    &:hover,
-    &:active,
-    &:focus {
-        background-color: var(--primary-white-color);
-        border-color: var(--accent-yellow-color)
-    }
-
-}
-
-.button--header {
-
-    &:hover,
-    &:active,
-    &:focus {
-        border: none;
+        margin: 0px;
+        padding-top: 17px;
     }
 }
