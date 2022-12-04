@@ -1,45 +1,45 @@
-.hero {}
+// .hero {}
 
-.logo--hero {
-    margin-bottom: 24px;
+// .logo--hero {
+//     margin-bottom: 24px;
 
-    font-size: 96px;
-    color: var(--primary-white-color);
+//     font-size: 96px;
+//     color: var(--primary-white-color);
 
-}
+// }
 
-.ordering {
-    margin-bottom: 58px;
-}
+// .ordering {
+//     margin-bottom: 58px;
+// }
 
 
 
-.social-area {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
+// .social-area {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+//     display: flex;
+// }
 
-.social-area__item {
-    margin-right: 20px;
+// .social-area__item {
+//     margin-right: 20px;
 
-    &:last-child {
-        margin-right: 0;
-    }
-}
+//     &:last-child {
+//         margin-right: 0;
+//     }
+// }
 
-.social-area__icon {
-    fill: var(--accent-yellow-color);
-}
+// .social-area__icon {
+//     fill: var(--accent-yellow-color);
+// }
 
-.map-pointer {
-    width: 20px;
-    height: 20px;
+// .map-pointer {
+//     width: 20px;
+//     height: 20px;
 
-    fill: var(--accent-yellow-color);
-    margin-right: 8px;
-}
+//     fill: var(--accent-yellow-color);
+//     margin-right: 8px;
+// }
 
 .hero--restaurant {
     max-width: 1600px;
@@ -117,70 +117,70 @@
 
 }
 
-.hero__address {
-    width: 210px;
-    height: 47px;
-    border: 1px solid var(--accent-yellow-color);
-    border-radius: 2px;
+// .hero__address {
+//     width: 210px;
+//     height: 47px;
+//     border: 1px solid var(--accent-yellow-color);
+//     border-radius: 2px;
 
-    // padding: 6px 8px;
+//     // padding: 6px 8px;
 
-    margin-left: auto;
-    margin-bottom: 70px;
+//     margin-left: auto;
+//     margin-bottom: 70px;
 
-    display: flex;
-}
+//     display: flex;
+// }
 
-.hero__address-link {
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.01em;
+// .hero__address-link {
+//     text-decoration: none;
+//     font-family: 'Montserrat';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 12px;
+//     line-height: 1.25;
+//     letter-spacing: 0.01em;
 
-    color: var(--primary-white-color);
-    display: flex;
-    align-items: center;
-}
+//     color: var(--primary-white-color);
+//     display: flex;
+//     align-items: center;
+// }
 
-.hero-title__description {
-    margin-bottom: 40px;
+// .hero-title__description {
+//     margin-bottom: 40px;
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.25;
-    /* identical to box height */
-    letter-spacing: 0.02em;
+//     font-family: 'Montserrat';
+//     font-style: normal;
+//     font-weight: 600;
+//     font-size: 16px;
+//     line-height: 1.25;
+//     /* identical to box height */
+//     letter-spacing: 0.02em;
 
-    color: var(--primary-white-color);
-}
+//     color: var(--primary-white-color);
+// }
 
-.company-slogan--hero {
-    margin-bottom: 113px;
-    text-transform: uppercase;
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1.16;
-    /* identical to box height */
-    letter-spacing: 0.05em;
+// .company-slogan--hero {
+//     margin-bottom: 113px;
+//     text-transform: uppercase;
+//     font-family: 'Times New Roman';
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 32px;
+//     line-height: 1.16;
+//     /* identical to box height */
+//     letter-spacing: 0.05em;
 
-    color: var(--primary-white-color);
-}
+//     color: var(--primary-white-color);
+// }
 
-.button--transparent {
-    background-color: rgba(0, 0, 0, 0.4);
+// .button--transparent {
+//     background-color: rgba(0, 0, 0, 0.4);
 
-    &-hero {
-        margin-bottom: 24px;
+//     &-hero {
+//         margin-bottom: 24px;
 
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-}
+//         &:last-child {
+//             margin-bottom: 0;
+//         }
+//     }
+// }
