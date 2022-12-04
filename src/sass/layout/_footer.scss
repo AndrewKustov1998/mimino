@@ -60,7 +60,7 @@ $line-color: rgba(122, 122, 122, 0.4);
             margin-right: 199px;
         }
 }
-.footer__nav__item {
+.footer__nav-item {
     display: flex;
     margin-bottom: 16px;
         
@@ -74,7 +74,7 @@ $line-color: rgba(122, 122, 122, 0.4);
                 }
 
 }
-.footer__nav__link {
+.footer__nav-link {
     display: block;
     font-weight: 500;
     font-size: 20px;
@@ -94,12 +94,8 @@ $line-color: rgba(122, 122, 122, 0.4);
         gap: 12px;
     }
 }
-.footer__social-links__item {
-    // @media (min-width: 1024px) {
-    //     margin-bottom: 12px;}
 
-}
-.footer__social-links__link {
+.footer__social-links-link {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -114,7 +110,7 @@ $line-color: rgba(122, 122, 122, 0.4);
         }
 
 }
-.footer__social-links__text {
+.footer__social-links-text {
     display:none;
     @media (min-width: 1024px) {
         display:block;
@@ -126,7 +122,7 @@ $line-color: rgba(122, 122, 122, 0.4);
 
     }
 }
-.footer__social-links__icon {
+.footer__social-links-icon {
     fill: var(--accent-yellow-color);
     width: 24px;
     height: 24px;
