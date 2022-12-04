@@ -1,0 +1,23 @@
+.hero{
+    width: 100%;
+    height: 740px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $secondary-bkg-color;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../);
+
+    &__home-page{
+
+    }
+    &__restaurant{
+
+    }
+
+}
