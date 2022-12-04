@@ -1,0 +1,155 @@
+.our-restaurant .container {
+  position: relative;
+}
+
+.our-restaurant {
+  $one-third0: calc(100% / 3);
+  $one-third1: calc((100% / 3) + 1px);
+  $two-third0: calc(100% / 3 * 2);
+  $two-third1: calc((100% / 3 * 2) - 1px);
+  $three-third0: calc(100% / 4 * 3);
+  $three-third1: calc((100% / 4 * 3) - 1px);
+  $vertical-lines-color: #bababa;
+
+  padding-top: 16px;
+  padding-bottom: 20px;
+
+  background-image: linear-gradient(
+      90deg,
+      transparent,
+      transparent $one-third0,
+      $vertical-lines-color $one-third1,
+      transparent $one-third1
+    ),
+    linear-gradient(
+      90deg,
+      transparent,
+      transparent $two-third1,
+      $vertical-lines-color $two-third0,
+      transparent $two-third0
+    );
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 120px;
+    padding-bottom: 32px;
+
+    $one-third0: calc(100% / 4);
+    $one-third1: calc((100% / 4) + 1px);
+    $two-third0: calc(100% / 4 * 2);
+    $two-third1: calc((100% / 4 * 2) - 1px);
+
+    background-image: linear-gradient(
+        90deg,
+        transparent,
+        transparent $one-third0,
+        $vertical-lines-color $one-third1,
+        transparent $one-third1
+      ),
+      linear-gradient(
+        90deg,
+        transparent,
+        transparent $two-third1,
+        $vertical-lines-color $two-third0,
+        transparent $two-third0
+      ),
+      linear-gradient(
+        90deg,
+        transparent,
+        transparent $three-third1,
+        $vertical-lines-color $two-third0,
+        transparent $three-third0
+      );
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 50px;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+    width: 258px;
+
+    margin-bottom: 28px;
+
+    color: var(--first-text-color);
+
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+      width: 439px;
+      margin-bottom: 142px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 518px;
+      margin-bottom: 162px;
+    }
+
+    &--brown {
+      width: 163px;
+      margin: 70px 0 0 20px;
+      color: var(--brown-text-color);
+
+      @media screen and (min-width: 1024px) {
+        margin: 196px 0 0 48px;
+        width: 312px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        margin: 186px 0 0 32px;
+      }
+    }
+  }
+
+  &__photo {
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 32px;
+    }
+
+    &--right {
+      margin-left: auto;
+
+      @media screen and (min-width: 1024px) {
+        position: absolute;
+        top: -152px;
+        right: 112px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        right: 180px;
+      }
+    }
+
+    &--reset {
+      @media screen and (min-width: 1280px) {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__company-slogan {
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__company-title {
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 24px;
+    }
+  }
+}
