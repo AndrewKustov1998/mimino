@@ -56,6 +56,7 @@
                     min-width="200" class="about-hotel__wrapper-img" />
             </picture>
         </div>
+        <!-- Фото для слайдеру -->
         <div class="about-hotel__slider">
             <picture>
                 <source srcset="
@@ -65,10 +66,14 @@
                 <source srcset="
                     ./images/tablet-images/slider/homepage-hotel-section-slider-image2-194.jpg    1x,
                     ./images/tablet-images/slider/homepage-hotel-section-slider-image2-194@2x.jpg 2x"
-                     media="(max-width: 414px)" />
-                <img src="./images/tablet-images/slider/homepage-hotel-section-slider-image2-194.jpg"
+                     media="(min-width: 1024px)" />
+                <source srcset="
+                    ./images/desktop-images/slider/homepage-hotel-section-slider-image2-245.jpg    1x,
+                    ./images/desktop-images/slider/homepage-hotel-section-slider-image2-245@2x.jpg 2x"
+                        media="(max-width: 414px)" />
+                <img src="./images/desktop-images/slider/homepage-hotel-section-slider-image2-245.jpg"
                     alt="На фото складені в рулон чотири білих рушники на ліжку"
-                    min-width="194" class="about-hotel__slider-photo" />
+                    min-width="245" class="about-hotel__slider-photo" />
             </picture>
             <picture>
                 <source srcset="
