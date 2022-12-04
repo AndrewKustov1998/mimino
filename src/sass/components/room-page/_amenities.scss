@@ -47,7 +47,7 @@
         padding-bottom: 16px;
         min-width: auto;
         display: inline-flex;
-        gap: 80px;
+        
     
         @media screen and (min-width: 1024px) { 
             width: 400px;
@@ -55,42 +55,10 @@
         
     }
 
-    &__items--size{
-        width: 400px;
-    
-        @media screen and (min-width: 1024px) { 
-            width: 425px;
-        } 
-        @media screen and (min-width: 1280px) { 
-            width: 495px;
-        } 
-    }
-
     &__list{
         @media screen and (min-width: 1024px) { 
-            // display: flex;
-            justify-content: space-between;
-            margin-right: 50px;  
-            // gap: 80px;
-        } 
-    
-        @media screen and (min-width: 1280px) { 
-            gap: 159px;
-            margin-right: 151px;
-        } 
-    }
-
-    &__list--size{
-        @media screen and (min-width: 1024px) { 
-            // display: inline-flex;
-            margin-right: 50px; 
-            gap: 30px;
-        } 
-    
-        @media screen and (min-width: 1280px) { 
-            gap: 64px;
-            margin-right: 151px;
-        } 
+            justify-content: space-between; 
+        }  
     }
 
     &__subtitle{
@@ -116,15 +84,24 @@
             gap: 159px;
         } 
     }
+
+    &__container--size{
+        @media screen and (min-width: 1024px) { 
+            gap: 30px;
+        }
+       
+        @media screen and (min-width: 1280px) { 
+            gap: 64px;
+        }
+    }
     
     &__items-size{
-
         @media screen and (min-width: 1024px) { 
-            gap: 55px;
+            width: 450px;
         }    
 
         @media screen and (min-width: 1280px) { 
-            gap: 64px;
+            width: 495px;
         } 
     }
 
@@ -148,16 +125,19 @@
     }
     }
 
+    &__package{
+        display: flex;
+        justify-content: flex-end;
+    }
+
     &__wrapper{
         display: flex;
         flex-direction: column;
+        justify-content: flex-end;
+        width: 434px;
     
         @media screen and (min-width: 1024px) { 
-            margin: 26px 0 0 496px;
-        } 
-    
-        @media screen and (min-width: 1280px) { 
-            margin: 26px 113px 0 563px;
+            margin-top: 24px;
         } 
     }
 
