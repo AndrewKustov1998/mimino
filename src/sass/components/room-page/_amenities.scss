@@ -1,5 +1,15 @@
 .amenities{
     background-color: #fffdee;
+    padding: 32px 0 32px 0;
+
+    @media screen and (min-width: 1024px) { 
+        padding-top: 48px;
+        padding-bottom: 40px;
+     } 
+
+     @media screen and (min-width: 1280px) { 
+        padding-bottom: 48px;
+     } 
 
     &__title{
         font-family: 'Times New Roman';
@@ -8,9 +18,9 @@
         line-height: 1.16;
         color: var(--primary-black-color);
     
-        padding: 32px 0 16px 0;
+        padding-bottom: 16px;
     
-        text-transform: uppercase;
+        text-transform: uppercase; 
     }
 
     &__text{
@@ -23,6 +33,10 @@
         padding-bottom: 16px; 
     }
 
+    &__style{
+        list-style: none;
+    }
+
     &__items{
         font-family: 'Montserrat';
         font-weight: 700;
@@ -32,6 +46,8 @@
         color: var(--second-text-color);
         padding-bottom: 16px;
         min-width: auto;
+        display: inline-flex;
+        gap: 80px;
     
         @media screen and (min-width: 1024px) { 
             width: 400px;
@@ -39,11 +55,11 @@
         
     }
 
-    &__items-size{
-        min-width: auto;
+    &__items--size{
+        width: 400px;
     
         @media screen and (min-width: 1024px) { 
-            width: 450px;
+            width: 425px;
         } 
         @media screen and (min-width: 1280px) { 
             width: 495px;
@@ -52,10 +68,10 @@
 
     &__list{
         @media screen and (min-width: 1024px) { 
-            display: flex;
+            // display: flex;
             justify-content: space-between;
             margin-right: 50px;  
-            gap: 80px;
+            // gap: 80px;
         } 
     
         @media screen and (min-width: 1280px) { 
@@ -66,7 +82,7 @@
 
     &__list--size{
         @media screen and (min-width: 1024px) { 
-            display: inline-flex;
+            // display: inline-flex;
             margin-right: 50px; 
             gap: 30px;
         } 
@@ -87,6 +103,29 @@
         margin: 16px 0 16px 0;
         
         text-transform: uppercase;
+
+        display: block;
+    }
+
+    &__container{
+        @media screen and (min-width: 1024px) { 
+            display: flex;
+            gap: 80px;
+        } 
+        @media screen and (min-width: 1280px) { 
+            gap: 159px;
+        } 
+    }
+    
+    &__items-size{
+
+        @media screen and (min-width: 1024px) { 
+            gap: 55px;
+        }    
+
+        @media screen and (min-width: 1280px) { 
+            gap: 64px;
+        } 
     }
 
     &__link{
@@ -110,16 +149,15 @@
     }
 
     &__wrapper{
-        padding-bottom: 32px;
         display: flex;
         flex-direction: column;
     
         @media screen and (min-width: 1024px) { 
-            margin: 40px 0 0 496px;
+            margin: 26px 0 0 496px;
         } 
     
         @media screen and (min-width: 1280px) { 
-            margin: 40px 113px 0 563px;
+            margin: 26px 113px 0 563px;
         } 
     }
 
@@ -149,6 +187,7 @@
         margin-bottom: 32px;
     } 
 }
+
 
 
 
