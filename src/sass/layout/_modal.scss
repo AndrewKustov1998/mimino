@@ -49,19 +49,38 @@
         justify-content: center;
         align-items: center;
 
-        width: 24px;
-        height: 24px;
-
         border: 1px solid transparent;
         background-color: #FFFDEE;
     
-        fill: var(--modal-text-color);
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        stroke: var(--modal-text-color);
+        transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
         &:hover {
-            fill: var(--accent-yellow-color);
+            stroke: var(--accent-yellow-color);
         }
     }
+
+         &__subtitle {
+            font-family: 'Times New Roman';
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 1.16;
+                letter-spacing: 0.05em;
+                color: var(--modal-text-color);
+                margin-bottom: 28px;
+         }
+
+         &__text {
+            font-family: 'Montserrat';
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.25;
+                letter-spacing: 0.02em;
+                color: var(--brown-text-color);
+
+                margin-bottom: 20px;
+         }
+
 
     &__title {
         text-align: center;
@@ -72,20 +91,27 @@
         font-family: 'Times New Roman';
         font-weight: 700;
         font-size: 24px;
-        line-height: 1,16;
+        line-height: 1.16;
         letter-spacing: 0.05em;
+
+        @media screen and (min-width:1024px) {
+                font-size: 32px;
+            }
+
     }
 
      
 }
 
-.form {
-
+.modal--room-reservation .form__field:nth-child(3)
+{ 
     @media screen and (min-width:1024px) {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 28px 16px;
+        margin-left: 304px;
     }
+  
+}
+
+.form {
 
     &__input, &__select {
         margin-bottom: 8px;
@@ -103,6 +129,14 @@
 
         border: 1px solid var(--brown-text-color);
         border-radius: 2px;
+
+        outline: none;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .form__input:hover,
+    .form__select:hover {
+                border-color: var(--accent-yellow-color);
     }
 
     &__label {
@@ -115,13 +149,14 @@
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
-        line-height: 1,21;
+        line-height: 1.21;
         
         letter-spacing: 0.02em;
 
     }
 
     &__field {
+        position: relative;
         display: flex;
         flex-direction: column;
 
@@ -131,4 +166,35 @@
 
     }
 
+    &__information {
+        margin-bottom: 40px;
+    @media screen and (min-width:1024px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 28px 16px;
+    }
+    }
+
+}
+
+
+
+.custom-select::after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 24px;
+    height: 24px;
+    fill: var(--brown-text-color);
+    background-image: url("../images/arrow-down-bold.svg");
+    pointer-events: none;
+    z-index: 2;
+}
+
+.form__select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
 }
