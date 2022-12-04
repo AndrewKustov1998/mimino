@@ -4,17 +4,15 @@ $two-fourth0: calc(100% / 4*2);
 $two-fourth1: calc((100% / 4*2) + 1px);
 $three-fourth0: calc(100% / 4*3);
 $three-fourth1: calc((100% / 4*3) - 1px);
-$one-third0: calc(100% / 3);
-$one-third1: calc((100% / 3) + 1px);
-$two-third0: calc(100% / 3 * 2);
-$two-third1: calc((100% / 3 * 2) - 1px);
+$two-third0: calc((264px / 414px)*100%);
+$two-third1: calc((264px / 414px)*100% - 1px);
 $line-color: rgba(122, 122, 122, 0.4);
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #0E0C07;
-    padding: 30px 40px;
+    padding: 40px 40px 40px 59px;
     background-image: linear-gradient(90deg, transparent, transparent $two-third1, $line-color $two-third0, transparent $two-third0);
         transform: translate3d(0, 0, 0);
         @media (min-width: 1024px) {
