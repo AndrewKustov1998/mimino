@@ -288,13 +288,14 @@ img {
   --primary-white-color: #ffffff;
   --primary-black-color: #000000;
   --accent-yellow-color: #f3c653;
+  --title-grey-color: #828282;
+  --title-dark-grey-color: #494848;
   --subtitle-color: #b4b4b4;
-  --first-title-color: #7a7a7a;
-  --second-title-color: #494848;
   --brown-text-color: #c79002;
   --first-text-color: #5f5f5f;
   --second-text-color: #7a7a7a;
   --modal-text-color: #808080;
+  --button-header-color: rgba(0, 0, 0, 0.4);
 }
 
 /* montserrat-300 - cyrillic */
@@ -361,6 +362,69 @@ img {
   src: url("../fonts/FilmP3Bold.eot");
   src: local("Film P3 Bold"), local("FilmP3Bold"), url("../fonts/FilmP3Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FilmP3Bold.woff2") format("woff2"), url("../fonts/FilmP3Bold.woff") format("woff"), url("../fonts/FilmP3Bold.ttf") format("truetype");
 }
+.company-slogan {
+  font-family: Times New Roman, serif;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--subtitle-color);
+}
+@media screen and (min-width: 1024px) {
+  .company-slogan {
+    font-size: 32px;
+    line-height: 1.1563;
+  }
+}
+
+.company-title {
+  font-family: Film P3;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.075;
+  letter-spacing: 0.3em;
+  color: var(--title-grey-color);
+}
+@media screen and (min-width: 1024px) {
+  .company-title {
+    font-size: 64px;
+    line-height: 1.078;
+  }
+}
+.company-title--gray {
+  color: var(--title-dark-grey-color);
+}
+.company-title--inverse {
+  color: var(--primary-white-color);
+}
+.company-title--yellow {
+  color: var(--accent-yellow-color);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media screen and (min-width: 414px) {
+  .container {
+    width: 414px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
+    padding-right: 47px;
+    padding-left: 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-right: 85px;
+    padding-left: 85px;
+  }
+}
+
 .logo {
   font-family: "Film P3";
   font-weight: 700;
@@ -368,4 +432,78 @@ img {
   line-height: 1.075;
   letter-spacing: 0.3em;
   color: #000;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--accent-yellow-color);
+  text-align: center;
+  background-color: var(--primary-black-color);
+  border: 2px solid var(--primary-white-color);
+  border-radius: 25px;
+  width: 236px;
+  height: 48px;
+}
+.button:hover, .button:active, .button:focus {
+  background-color: var(--primary-white-color);
+  border-color: var(--accent-yellow-color);
+}
+
+.button--header {
+  background-color: var(--button-header-color);
+}
+.button--header:hover, .button--header:active, .button--header:focus {
+  border: none;
+}
+
+.button--book {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  border: 1px solid var(--accent-yellow-color);
+  width: 384px;
+  height: 64px;
+}
+.button--book:hover, .button--book:active, .button--book:focus {
+  background-color: var(--accent-yellow-color);
+  color: var(--primary-black-color);
+}
+@media (min-width: 1024px) {
+  .button--book {
+    font-size: 24px;
+    width: 434px;
+    height: 64px;
+  }
+}
+
+.button--book-modal {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  border: 1px solid var(--accent-yellow-color);
+  border-radius: 0;
+  width: 384px;
+  height: 64px;
+}
+.button--book-modal:hover, .button--book-modal:active, .button--book-modal:focus {
+  background-color: var(--accent-yellow-color);
+  color: var(--primary-black-color);
+}
+@media (min-width: 1024px) {
+  .button--book-modal {
+    font-size: 24px;
+    width: 592px;
+    height: 64px;
+  }
+}
+
+.social-area {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }/*# sourceMappingURL=index.css.map */
