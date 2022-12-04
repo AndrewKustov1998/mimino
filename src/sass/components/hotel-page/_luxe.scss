@@ -73,7 +73,6 @@ justify-content: space-between;
    margin-top: 32px;
   margin-bottom: 24px;
    
-
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 700;
@@ -87,12 +86,14 @@ justify-content: space-between;
 margin-top: 62px;
 margin-bottom: 14px;
 margin-right: 48px;
-      font-size: 30px;
-      line-height:1.133; 
+font-size: 30px;
+ line-height:1.133; 
 max-width: 432px;
     }
     
     @media screen and (min-width:1280px){
+display: flex;
+
       margin-top: 72px;
      margin-bottom: 24px;
 
