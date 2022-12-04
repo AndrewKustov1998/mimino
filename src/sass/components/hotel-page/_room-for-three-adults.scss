@@ -75,6 +75,7 @@
 
     @media screen and (min-width: 1280px) {
       font-size: 36px;
+      margin-bottom: 24px;
     }
   }
 
@@ -92,6 +93,9 @@
       margin: 0;
       font-size: 16px;
     }
+    @media screen and (min-width: 1280px) {
+      ffont-weight: 700;
+    }
   }
 
   &__img {
@@ -99,10 +103,11 @@
     margin-bottom: 32px;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
+    background-color: #dadada;
     @media screen and (min-width: 1024px) {
       position: absolute;
       top: -32px;
-      left: 68px;
+      left: 65px;
       width: 400px;
       margin: 0;
     }
@@ -173,6 +178,7 @@
   }
 
   &__img {
+    background-color: #dadada;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
   }
