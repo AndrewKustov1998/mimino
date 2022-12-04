@@ -1,5 +1,5 @@
 .bcg-hero {
-    max-width: 1600px;
+    max-width: 1700px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
@@ -42,7 +42,7 @@
 
 .hotel-hero__adress {
     display: flex;
-    margin-left: 189px;
+    margin-left: 175px;
     box-sizing: border-box;
     width: 210px;
     height: 47px;
@@ -92,6 +92,7 @@ a {
 .hotel-hero__adresslink {
     display: flex;
     align-items: center;
+    padding: 8px;
 
     font-family: 'Montserrat';
         font-weight: 400;
@@ -115,6 +116,7 @@ a {
 }
 
 .hotel-hero__maintitle {
+        width: 303px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 70px;
@@ -126,9 +128,16 @@ a {
         line-height: 103px;
         letter-spacing: 0.3em;
         color: var(--primary-white-color);
+
+        @media screen and (min-width:1024px) {
+            font-size: 128px;
+            line-height: 138px;
+            width: 404px;
+        }
 }
 
 .hotel-hero__title {
+    width: 71px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -138,11 +147,19 @@ a {
         line-height: 24px;
         letter-spacing: 0.02em;
         color: var(--primary-white-color);
+
+        @media screen and (max-width:1023px) {
+            margin-bottom: 178px;
+            }
 }
 
 .hotel-hero__position-tab {
         display: flex;
         justify-content: space-between;
+
+        @media screen and (min-width:1280px) {
+            padding-bottom: 64px;
+        }
 }
 
 button {
@@ -207,12 +224,22 @@ button {
 
 .hotel-hero__social-link {
     display: flex;
+    padding-bottom: 20px;
 
-    @media screen and (min-width:1023px) {
-        margin-left: -20px;
-    }
+        @media screen and (min-width:1024px) {
+            padding-top: 25px;
+            padding-bottom: 15px;
+        }
+
+        @media screen and (min-width:1280px) {
+            display: none;
+        }
 }
 
 .hotel-hero__list {
-    margin: 20px;
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
