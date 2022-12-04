@@ -1,7 +1,8 @@
 .amenities{
     background-color: #fffdee;
     padding: 32px 0 32px 0;
-
+    margin-right: auto;
+    margin-left: auto;
     @media screen and (min-width: 1024px) { 
         padding-top: 48px;
         padding-bottom: 40px;
@@ -9,10 +10,21 @@
 
      @media screen and (min-width: 1280px) { 
         padding-bottom: 48px;
-        background-image: 
-        linear-gradient(90deg, #0000, #0000 25%, #bababa calc(25% + 1px), #0000 calc(25% + 1px)), 
-        linear-gradient(90deg, #0000, #0000 calc(50% - 1px), #bababa 50%, #0000 50%), 
-        linear-gradient(90deg, #0000, #0000 calc(75% - 1px), #bababa 50%, #0000 75%);
+        height: 1051px;
+        background-image: linear-gradient(to right,
+    #0000 345px,
+    rgba(186, 186, 186, 0.4) 345px,
+    rgba(186, 186, 186, 0.4) 346px,
+    #0000 346px,
+    #0000 643px,
+    rgba(186, 186, 186, 0.4) 643px,
+    rgba(186, 186, 186, 0.4) 644px,
+    #0000 644px,
+    #0000 947px,
+    rgba(186, 186, 186, 0.4) 947px,
+    rgba(186, 186, 186, 0.4) 948px,
+    #0000 948px,
+    )
      } 
 
     &__title{
