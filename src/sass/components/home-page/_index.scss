@@ -1,8 +1,15 @@
 
+.logo--hero{
+    height: 103px;
+    color: #ffff;
+    margin-bottom: 24px;
+}
 
 .ordering{
     margin-bottom: 58px;
 }
+
+
 
 .social-area{
     list-style: none;
@@ -27,7 +34,15 @@
 }
 
 .hero--homepage{
+
+    padding-top: 64px;
+    padding-bottom: 20px;
     height: 740px;
+
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+
         background-image: linear-gradient(to right,
                     rgba(0, 0, 0, 0.65),
                     rgba(0, 0, 0, 0.65)),
@@ -36,8 +51,7 @@
             background-repeat: no-repeat;
             background-position: center;
     @media screen and(min-width:414px) {
-            width: 414px;
-    
+            width: 414px;   
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
@@ -46,7 +60,48 @@
                         rgba(0, 0, 0, 0.65)),
                     url(../images/mobile-images/homepage-hero-background-414@2x.jpg)
             }
-}
+        }
+    @media screen and(min-width:1024px)and(max-width:1279px){
+        width: 1024px;
+        height: 720px;
+        padding-top: 100px;
+        padding-bottom: 15px;
+        
+
+        background-image:linear-gradient(to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+                url(../images/tablet-images/homepage-hero-background-1024.jpg);
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image:linear-gradient(to right,
+                        rgba(0, 0, 0, 0.65),
+                        rgba(0, 0, 0, 0.65)),
+                        url(../images/tablet-images/homepage-hero-background-1024@2x.jpg)
+
+                    }
+            }
+        @media screen and(min-width:1280px) {
+            width: 100%;
+            height: 720px;
+            padding-top: 100px;
+            padding-bottom: 65px;
+            background-image: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(../images/desktop-images/homepage-hero-background-1280.jpg);
+    
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right,
+                        rgba(0, 0, 0, 0.65),
+                        rgba(0, 0, 0, 0.65)),
+                    url(../images/desktop-images/homepage-hero-background-1280@2x.jpg)
+            }
+        }
+    
 }
 
 .hero__address{
@@ -58,6 +113,7 @@
     padding: 6px 8px;
 
     margin-left: auto;
+    margin-bottom: 70px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -71,6 +127,33 @@
 
     justify-content: baseline;
 
+}
+
+.hero-title__description{
+    margin-bottom: 40px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+        /* identical to box height */
+    letter-spacing: 0.02em;
+    
+        color: #FFFFFF;
+}
+
+.company-slogan--hero{
+    margin-bottom: 113px;
+    font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 37px;
+        /* identical to box height */
+        letter-spacing: 0.05em;
+    
+        color: #FFFFFF;
 }
 
 .button--transparent {
