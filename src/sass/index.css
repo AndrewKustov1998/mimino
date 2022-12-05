@@ -433,9 +433,37 @@ img {
   color: #000;
 }
 
-.section-menu {
-  background-color: #F0ECD6;
-  padding: 60px 0;
+.menu {
+  background-color: #fffdee;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    background-color: #f0ecd6;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu {
+    padding-bottom: 60px;
+  }
+}
+
+.menu-page {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .menu-page {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu-page {
+    margin-bottom: 31px;
+  }
 }
 
 .menu__title {
@@ -444,6 +472,12 @@ img {
   font-size: 32px;
   line-height: 1.15;
   margin-bottom: 40px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1024px) {
+  .menu__title {
+    margin-bottom: 32px;
+  }
 }
 
 .menu__type-dish {
@@ -451,31 +485,95 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 1024px) {
+  .menu__type-dish {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .menu__price {
+  padding-left: 32px;
   font-family: inherit;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.25;
   letter-spacing: 0.02em;
+  min-width: 69px;
+}
+@media screen and (min-width: 1024px) {
+  .menu__price {
+    padding-left: 47px;
+    min-width: 60px;
+  }
+}
+
+.menu__box {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.menu__box:last-of-type {
+  margin-bottom: 0px;
+}
+
+.menu__row {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+  margin-bottom: 8px;
+}
+.menu__row:last-of-type {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 1024px) {
+  .menu__row {
+    width: 411px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu__row {
+    width: 485px;
+  }
 }
 
 .menu__item {
+  width: 226px;
+  margin-right: auto;
   font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  margin-bottom: 12px;
   display: flex;
   flex-direction: column;
 }
+.menu__item--wided {
+  width: 200px;
+}
+@media screen and (min-width: 1024px) {
+  .menu__item {
+    width: 256px;
+  }
+}
 
-.menu__item:last-child,
-.menu__dessert-item:last-child,
-.menu__drink-item:last-child {
+.menu__ingredients {
+  width: 220px;
+  margin-top: 4px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+@media screen and (min-width: 1280px) {
+  .menu__ingredients {
+    width: 262px;
+  }
+}
+
+.menu__item:last-child {
   margin-bottom: 20px;
 }
 
@@ -488,37 +586,30 @@ img {
   letter-spacing: 0.02em;
 }
 
-.menu__ingredients {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-}
-
 .menu__weight {
   font-family: inherit;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: 0.02em;
+  min-width: 37px;
 }
 
-.menu__first-container {
-  float: left;
-  width: 45%;
+@media screen and (min-width: 1024px) {
+  .hot-menu,
+.appetizers {
+    width: 430px;
+  }
 }
-
-.menu__second-container {
-  float: right;
-  width: 45%;
-  margin-left: 0;
-  margin-right: 0;
+@media screen and (min-width: 1280px) {
+  .hot-menu,
+.appetizers {
+    width: 485px;
+  }
 }
 
 tbody {
   display: table-row-group;
-  vertical-align: middle;
   border-color: inherit;
 }
 
@@ -526,4 +617,39 @@ tr {
   display: table-row;
   vertical-align: inherit;
   border-color: inherit;
+}
+
+table {
+  border: none;
+}
+
+.menu-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--accent-yellow-color);
+  text-align: center;
+  background-color: var(--primary-black-color);
+  border: 2px solid var(--primary-white-color);
+  border-radius: 25px;
+  width: 236px;
+  height: 48px;
+}
+.menu-button:hover, .menu-button:active, .menu-button:focus {
+  background-color: var(--primary-white-color);
+  border-color: var(--accent-yellow-color);
+}
+@media screen and (max-width: 1023px) {
+  .menu-button {
+    margin-right: auto;
+    display: block;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu-button {
+    margin-left: auto;
+    display: block;
+  }
 }/*# sourceMappingURL=index.css.map */
