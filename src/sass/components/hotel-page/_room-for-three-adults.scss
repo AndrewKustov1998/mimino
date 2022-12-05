@@ -1,8 +1,13 @@
 .three-adults {
+  overflow: hidden;
   background-color: #f0ecd6;
+  @media screen and (min-width: 1024px) {
+    overflow: visible;
+  }
 
   &__box {
     position: relative;
+
     padding-top: 32px;
     padding-bottom: 32px;
     @media screen and (min-width: 1024px) {
@@ -142,12 +147,34 @@
     margin: 0 auto;
     margin-bottom: 16px;
   }
+
+  &__gradients {
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
+      backdrop-filter: blur(0.5px);
+      background-image: linear-gradient(
+        to right,
+        #f0ecd6 338px,
+        rgba(186, 186, 186, 0.4) 338px,
+        rgba(186, 186, 186, 0.4) 339px,
+        #f0ecd6 339px,
+        #f0ecd6 640px,
+        rgba(186, 186, 186, 0.4) 640px,
+        rgba(186, 186, 186, 0.4) 641px,
+        #f0ecd6 641px,
+        #f0ecd6 942px,
+        rgba(186, 186, 186, 0.4) 942px,
+        rgba(186, 186, 186, 0.4) 943px,
+        #f0ecd6 943px
+      );
+    }
+  }
 }
 
 .slider {
   margin-right: -15px;
   margin-bottom: 20px;
-  overflow: hidden;
+
   @media screen and (min-width: 1024px) {
     margin: 0;
   }
