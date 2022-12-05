@@ -111,6 +111,7 @@
 
     @media screen and(min-width:1024px)and(max-width:1279px) {
         padding-top: 164px;
+        padding-bottom: 15px;
         background-image: linear-gradient(to right,
                 rgba(0, 0, 0, 0.65),
                 rgba(0, 0, 0, 0.65)),
@@ -128,7 +129,7 @@
 
     @media screen and(min-width:1280px) {
         padding-top: 164px;
-        
+        padding-bottom: 64px;
         background-image: linear-gradient(to right,
                 rgba(0, 0, 0, 0.65),
                 rgba(0, 0, 0, 0.65)),
