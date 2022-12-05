@@ -3,66 +3,71 @@
 }
 
 .our-restaurant {
-  $one-third0: calc(100% / 3);
-  $one-third1: calc((100% / 3) + 1px);
-  $two-third0: calc(100% / 3 * 2);
-  $two-third1: calc((100% / 3 * 2) - 1px);
-  $three-third0: calc(100% / 4 * 3);
-  $three-third1: calc((100% / 4 * 3) - 1px);
-  $vertical-lines-color: #bababa;
+  &__gradient {
+    $vertical-lines-color: rgba(186, 186, 186, 0.4);
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 16px;
+    padding-bottom: 20px;
 
-  padding-top: 16px;
-  padding-bottom: 20px;
-
-  background-image: linear-gradient(
-      90deg,
-      transparent,
-      transparent $one-third0,
-      $vertical-lines-color $one-third1,
-      transparent $one-third1
-    ),
-    linear-gradient(
-      90deg,
-      transparent,
-      transparent $two-third1,
-      $vertical-lines-color $two-third0,
-      transparent $two-third0
-    );
-
-  @media screen and (min-width: 1024px) {
-    padding-top: 120px;
-    padding-bottom: 32px;
-
-    $one-third0: calc(100% / 4);
-    $one-third1: calc((100% / 4) + 1px);
-    $two-third0: calc(100% / 4 * 2);
-    $two-third1: calc((100% / 4 * 2) - 1px);
+    width: 414px;
 
     background-image: linear-gradient(
-        90deg,
-        transparent,
-        transparent $one-third0,
-        $vertical-lines-color $one-third1,
-        transparent $one-third1
-      ),
-      linear-gradient(
-        90deg,
-        transparent,
-        transparent $two-third1,
-        $vertical-lines-color $two-third0,
-        transparent $two-third0
-      ),
-      linear-gradient(
-        90deg,
-        transparent,
-        transparent $three-third1,
-        $vertical-lines-color $two-third0,
-        transparent $three-third0
-      );
-  }
+      to right,
+      transparent 140px,
+      $vertical-lines-color 140px,
+      $vertical-lines-color 141px,
+      transparent 141px,
+      transparent 274px,
+      $vertical-lines-color 274px,
+      $vertical-lines-color 275px,
+      transparent 275px
+    );
 
-  @media screen and (min-width: 1280px) {
-    padding-bottom: 50px;
+    @media screen and (min-width: 1024px) {
+      padding-top: 120px;
+      padding-bottom: 32px;
+
+      width: 1024px;
+
+      background-image: linear-gradient(
+        to right,
+        transparent 278px,
+        $vertical-lines-color 278px,
+        $vertical-lines-color 279px,
+        transparent 279px,
+        transparent 513px,
+        $vertical-lines-color 513px,
+        $vertical-lines-color 514px,
+        transparent 514px,
+        transparent 748px,
+        $vertical-lines-color 748px,
+        $vertical-lines-color 749px,
+        transparent 749px
+      );
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-bottom: 50px;
+
+      width: 1280px;
+
+      background-image: linear-gradient(
+        to right,
+        transparent 338px,
+        $vertical-lines-color 338px,
+        $vertical-lines-color 339px,
+        transparent 338px,
+        transparent 641px,
+        $vertical-lines-color 641px,
+        $vertical-lines-color 642px,
+        transparent 642px,
+        transparent 944px,
+        $vertical-lines-color 944px,
+        $vertical-lines-color 745px,
+        transparent 945px
+      );
+    }
   }
 
   &__text {
@@ -108,12 +113,9 @@
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
 
-    @media screen and (max-width: 1023px) {
-      margin-bottom: 32px;
-    }
-
     &--right {
       margin-left: auto;
+      margin-bottom: 32px;
 
       @media screen and (min-width: 1024px) {
         position: absolute;
@@ -150,6 +152,123 @@
 
     @media screen and (min-width: 1024px) {
       margin-bottom: 24px;
+    }
+  }
+}
+
+.slider {
+  margin: 0 auto 0;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.slider-list {
+  pointer-events: none;
+}
+
+.slider-list.grab {
+  cursor: grab;
+}
+
+.slider-list.grabbing {
+  cursor: grabbing;
+}
+
+.slide {
+  flex-shrink: 0;
+}
+
+.slider-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 98px;
+}
+
+.next,
+.prev {
+  cursor: pointer;
+}
+
+.next.disabled,
+.prev.disabled {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.image-slider {
+  &__image {
+    pointer-events: none;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+
+    &--reset {
+      @media screen and (min-width: 1280px) {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__list {
+    position: absolute;
+    bottom: 2px;
+    left: 19px;
+    padding: 50px;
+    overflow: hidden;
+
+    @media screen and (min-width: 1024px) {
+      margin: 0;
+      bottom: 14px;
+      left: 499px;
+      width: 517px;
+      overflow: hidden;
+    }
+
+    @media screen and (min-width: 1280px) {
+      bottom: 18px;
+      left: 615px;
+      width: 620px;
+    }
+
+    &--kitchen {
+      @media screen and (min-width: 1280px) {
+      }
+    }
+  }
+
+  &__track {
+    display: flex;
+
+    gap: 25px;
+
+    @media screen and (min-width: 1024px) {
+      gap: 40px;
+    }
+  }
+
+  /*&__slide {
+    
+    &:not(:last-child) {
+      padding-right: 25px;
+
+      @media screen and (min-width: 1024px) {
+        padding-right: 40px;
+      }
+    }
+  }*/
+
+  &__arrows {
+    margin-top: 297px;
+    margin-left: 289px;
+
+    @media screen and (min-width: 1024px) {
+      margin-left: auto;
+      margin-top: 198px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-left: auto;
+      margin-top: 143px;
     }
   }
 }
