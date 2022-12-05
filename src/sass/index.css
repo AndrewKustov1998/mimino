@@ -425,6 +425,10 @@ img {
   }
 }
 
+body {
+  background-color: rgb(71, 48, 4);
+}
+
 .page-header {
   width: 100vw;
   height: 64px;
@@ -439,30 +443,27 @@ img {
 }
 
 .page-header__container {
-  display: flex;
-  flex-direction: row;
-  height: 100px;
-}
-
-.site-nav {
-  display: flex;
+  width: 100%;
   justify-content: space-between;
+  display: flex;
+  height: 64px;
+}
+@media screen and (min-width: 1024px) {
+  .page-header__container {
+    height: 100px;
+  }
 }
 
-.site-nav__logo {
-  display: flex;
+.page-header__company-title {
   padding-top: 16px;
   margin-right: 52px;
-  font-family: "Film P3";
-  font-style: normal;
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.08;
   color: var(--primary-white-color);
   text-decoration: none;
 }
 @media screen and (min-width: 1024px) {
-  .site-nav__logo {
+  .page-header__company-title {
     font-size: 40px;
     line-height: 1.08;
     padding-top: 24px;
@@ -470,7 +471,7 @@ img {
   }
 }
 @media screen and (min-width: 1280px) {
-  .site-nav__logo {
+  .page-header__company-title {
     margin-right: 96px;
   }
 }
@@ -495,29 +496,28 @@ img {
 .site-nav__info {
   padding-top: 28px;
   display: flex;
+  justify-content: space-between;
+  gap: 6px;
 }
 @media screen and (min-width: 1024px) {
   .site-nav__info {
     padding-top: 30px;
     align-items: center;
+    gap: 32px;
   }
 }
 
-.site-nav__page {
-  font-family: "Montserrat";
-  font-style: normal;
+.site-nav__link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: var(--accent-yellow-color);
-  text-decoration: none;
 }
 @media screen and (min-width: 1024px) {
-  .site-nav__page {
+  .site-nav__link {
     font-size: 20px;
     line-height: 1.2;
-    margin-right: 32px;
   }
 }
 
@@ -527,9 +527,6 @@ img {
 @media screen and (min-width: 1024px) {
   .site-nav__phone {
     margin-left: 8px;
-    margin-right: 8px;
-    font-family: "Montserrat";
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.21;
@@ -546,7 +543,12 @@ img {
 }
 @media screen and (min-width: 1024px) {
   .site-nav__contact {
+    padding: 0 8px;
+    height: 40px;
     min-width: 144px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     display: flex;
     align-items: center;
     height: 40px;
