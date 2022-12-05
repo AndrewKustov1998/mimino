@@ -6,6 +6,7 @@
     @media screen and (min-width: 1024px) {
         background-color: #f0ecd6;
         padding-bottom: 40px;
+        padding-top: 58px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -35,21 +36,25 @@
     margin-bottom: 40px;
     text-transform: uppercase;
 
-    @media screen and (max-width: 1024px) {
-        margin-bottom: 32px;
+   @media screen and (min-width: 1024px) {
+        margin-bottom: 40px;
     }
 }
 
 .menu__type-dish {
     font-family: 'Times New Roman';
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.16;
     margin-bottom: 16px;
 
-    @media screen and (max-width: 1024px) {
-        font-size: 20px;
+    @media screen and (min-width: 1280px) {
+        font-size: 24px;
         line-height: 1.15;
+    }
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 20px;
     }
 }
 
@@ -66,6 +71,10 @@
         padding-left: 47px;
         min-width: 60px;
     }
+
+    @media screen and (min-width: 1280px) {
+        padding-left: 60px;
+    }
 }
 
 .menu__box {
@@ -75,6 +84,10 @@
     &:last-of-type {
         margin-bottom: 0px;
     }
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 20px;
+    }   
 }
 
 .menu__row {
@@ -93,6 +106,7 @@
 
     @media screen and (min-width: 1280px) {
         width: 485px;
+        margin-bottom: 12px;
     }
 }
 
@@ -153,15 +167,22 @@
     min-width: 37px;
 }
 
-.hot-menu,
-.appetizers {
+.hot-menu {
+    margin-bottom: 16px;
+
     @media screen and (min-width: 1024px) {
         width: 430px;
+        margin-bottom: 0;
     }
 
     @media screen and (min-width: 1280px) {
         width: 485px;
     }
+}
+
+.appetizers {
+    @extend .hot-menu;
+    margin-bottom: 0;
 }
 
 tbody {
