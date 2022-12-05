@@ -24,7 +24,7 @@
 .modal {
     position: absolute;
     width: 100%;
-    background-color: #FFFDEE;
+    background-color: var(--background-lemon);
     padding: 60px 16px;
     top: 50%;
     left: 50%;
@@ -44,13 +44,14 @@
         position: absolute;
         top: 16px;
         right: 16px;
+        padding: 0;
 
         display: flex;
         justify-content: center;
         align-items: center;
 
         border: 1px solid transparent;
-        background-color: #FFFDEE;
+        background-color: var(--background-lemon);
     
         stroke: var(--modal-text-color);
         transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -95,7 +96,7 @@
         letter-spacing: 0.05em;
 
         @media screen and (min-width:1024px) {
-                font-size: 32px;
+                font-size: 40px;
             }
 
     }
@@ -103,19 +104,11 @@
      
 }
 
-.modal--room-reservation .form__field:nth-child(3)
-{ 
-    @media screen and (min-width:1024px) {
-        margin-left: 304px;
-    }
-  
-}
-
 .form {
 
     &__input, &__select {
         margin-bottom: 8px;
-        padding: 17px 12px;
+        padding: 16px 12px;
 
         font-family: 'Times New Roman';
         font-style: normal;
@@ -125,13 +118,18 @@
         letter-spacing: 0.05em;
         
         color: #808080;
-        background-color: #FFFDEE;
+        background-color: var(--background-lemon);
 
         border: 1px solid var(--brown-text-color);
         border-radius: 2px;
 
         outline: none;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (min-width:1024px) {
+            padding: 18px 12px;
+                font-size: 24px;
+            }
     }
 
     .form__input:hover,
@@ -143,15 +141,17 @@
 
         color: var(--brown-text-color);
         margin-left: 12px;
-        margin-bottom: 20px;
 
         font-family: 'Montserrat';
-        font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.21;
         
         letter-spacing: 0.02em;
+  
+        @media screen and (min-width:1024px) {
+                font-size: 16px;
+            }
 
     }
 
@@ -159,6 +159,12 @@
         position: relative;
         display: flex;
         flex-direction: column;
+
+@media screen and (max-width: 1023px) {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
 
         @media screen and (min-width:1024px) {
              width: 288px;
@@ -168,6 +174,7 @@
 
     &__information {
         margin-bottom: 40px;
+
     @media screen and (min-width:1024px) {
         display: flex;
         flex-wrap: wrap;
@@ -177,6 +184,39 @@
 
 }
 
+.modal--table-reservation {
+    .form__information {
+        @media screen and (min-width:1024px) {
+            height: 214px;
+            flex-direction: column;
+        }
+    }
+}
+
+.modal--room-reservation {
+    .form__field:nth-child(3) {
+        @media screen and (min-width:1024px) {
+            margin-left: 304px;
+        }
+    }
+         .modal__title {
+             @media screen and (min-width:1024px) {
+                margin-bottom: 36px;
+             }
+         }
+}
+
+.modal--room-price {
+    .modal__title {
+            @media screen and (min-width:1024px) {
+                font-size: 32px;
+            }
+        }
+    .modal__label {
+            font-size: 16px;
+            line-height: 1.21;
+    }
+}
 
 
 .custom-select::after {
