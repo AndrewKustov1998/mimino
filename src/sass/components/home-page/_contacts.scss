@@ -1,22 +1,67 @@
 .contacts {
+    background-color: #fffdee;
+}
+
+.gradient {
+    width: 414px;
+    margin-right: auto;
+    margin-left: auto;
+
     padding-top: 36px;
     padding-bottom: 32px;
 
-    background-color: #fffdee;
-    background-image: linear-gradient(to right, #0000 33.5%, #bababa66 33.7% 33.7%, #0000 33.9% 66%, #bababa66 66.2% 66.2%, #0000 66.4% 100%, #0000 0);
-        
-    @media screen and (min-width: 1024px) {
-            padding-top: 56px;
-            padding-bottom: 40px;
-            background-image: linear-gradient(to right, #0000 27%, #bababa66 27.1% 27.1%, #0000 27.2% 49.9%, #bababa66 50% 50%, #0000 50.1% 72.8%, #bababa66 72.9% 72.9%, #0000 73% 100%, #0000 0);
-        }
-    
-        @media screen and (min-width: 1280px) {
-            padding-bottom: 73px;
-            background-image: linear-gradient(to right, #0000 26.3%, #bababa66 26.4% 26.4%, #0000 26.5% 49.9%, #bababa66 50% 50%, #0000 50.1% 73.5%, #bababa66 73.6% 73.6%, #0000 73.7% 100%, #0000 0);
-        }
-}
+    background-image: linear-gradient(to right,
+            #0000 140px,
+            rgba(186, 186, 186, 0.4) 140px,
+            rgba(186, 186, 186, 0.4) 141px,
+            #0000 141px,
+            #0000 274px,
+            rgba(186, 186, 186, 0.4) 274px,
+            rgba(186, 186, 186, 0.4) 275px,
+            #0000 275px,
+        );
 
+    @media screen and (min-width: 1024px) {
+        width: 1024px;
+        padding-top: 56px;
+        padding-bottom: 40px;
+
+        background-image: linear-gradient(to right,
+                #fffdee 277px,
+                rgba(186, 186, 186, 0.4) 277px,
+                rgba(186, 186, 186, 0.4) 278px,
+                #fffdee 278px,
+                #fffdee 511px,
+                rgba(186, 186, 186, 0.4) 511px,
+                rgba(186, 186, 186, 0.4) 512px,
+                #fffdee 512px,
+                #fffdee 746px,
+                rgba(186, 186, 186, 0.4) 746px,
+                rgba(186, 186, 186, 0.4) 747px,
+                #fffdee 747px,
+            );
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+        padding-bottom: 73px;
+
+        background-image: linear-gradient(to right,
+                #fffdee 338px,
+                rgba(186, 186, 186, 0.4) 338px,
+                rgba(186, 186, 186, 0.4) 339px,
+                #fffdee 339px,
+                #fffdee 640px,
+                rgba(186, 186, 186, 0.4) 640px,
+                rgba(186, 186, 186, 0.4) 641px,
+                #fffdee 641px,
+                #fffdee 942px,
+                rgba(186, 186, 186, 0.4) 942px,
+                rgba(186, 186, 186, 0.4) 943px,
+                #fffdee 943px,
+            );
+    }
+}
 .contacts-info {
     @media screen and (min-width: 1024px) {
         display: flex;
