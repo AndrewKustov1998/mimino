@@ -1,0 +1,44 @@
+.slider {
+  margin: 0 auto 0;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.slider-track {
+  display: flex;
+}
+
+.slider-list {
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.slider-list.grab {
+  cursor: grab;
+}
+
+.slider-list.grabbing {
+  cursor: grabbing;
+}
+
+.slide {
+  flex-shrink: 0;
+}
+
+.slider-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 98px;
+}
+
+.next,
+.prev {
+  cursor: pointer;
+}
+
+.next.disabled,
+.prev.disabled {
+  opacity: 0.25;
+  pointer-events: none;
+}
