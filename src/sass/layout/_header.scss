@@ -1,6 +1,9 @@
-
+body {
+background-color: brown;
+}
 .page-header {
     width: 100vw;
+    width: 414px;
     height: 64px;
     position: absolute;
     top: 0;
@@ -18,10 +21,24 @@
             height: 100px;
         }
 }
+.page-header__main-nav {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+    @media screen and(min-width:1024px) {
+            min-width: 930px;
+        }
+    @media screen and (min-width: 1280px) {
+            min-width: 939px;     
+                 }
 
+}
+.site-nav {
+    display: flex;
+}
 .page-header__company-title {
+    display: flex;
     padding-top: 16px;
-    margin-right: 52px;
     font-size: 36px;
     line-height: 1.08;
     color: var(--primary-white-color);
@@ -31,11 +48,7 @@
         font-size: 40px;
         line-height: 1.08;
         padding-top: 24px;
-        margin-right: 87px;
     }
-    @media screen and(min-width:1280px) {
-            margin-right: 96px;
-        }
 }
 
 .site-nav__list {
