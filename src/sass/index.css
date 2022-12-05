@@ -1037,6 +1037,9 @@ img {
 
 .hero--homepage {
   width: 100%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 64px;
   padding-bottom: 20px;
   text-align: center;
@@ -1193,6 +1196,9 @@ img {
 
 .hero--restaurant {
   width: 100%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 64px;
   padding-bottom: 20px;
   text-align: center;
