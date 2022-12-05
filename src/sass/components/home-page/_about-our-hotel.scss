@@ -180,13 +180,15 @@
     &__slider {
         display: flex;
         position: relative;
+        margin-bottom: 20px;
         @media screen and (min-width: 1024px) {
-               margin-bottom: 0;
+               margin-bottom: 8px;
                top: -24px;
-        }
+            }
 
         @media screen and (min-width: 1280px) {
             top: -167px;
+            margin-bottom: -127px;
         }
     }
 
@@ -235,9 +237,68 @@
             transform: translateX(285px);
         }
     }
+        &__pack {
+            display: flex;
+            justify-content: flex-start;
+        }
+        &__package {
+            display: flex;
+           width: 98px;
+           justify-content: space-between;
+        //    margin-left: 15px;
+        //         @media screen and (min-width: 1024px) {
+        //                 margin-left: 47px;
+        //             }
+        //         @media screen and (min-width: 1024px) {
+        //              margin-left: 85px;
+        //         }
+           
+        }
 }
 
+.arrow-logo {
+   
+    // position: absolute;
+    
+    &--left {
+        @media screen and (min-width: 1024px) {
+            left: 325px;
+            gap: 32px;
+        }
 
+        @media screen and (max-width: 1023px) {
+            bottom: 184px;
+            left: 35px;
+        }
+    }
+
+    // &--hotel-left {
+    //     right: 389px;
+
+    //     @media screen and (min-width: 415px) and (max-width: 1023px) {
+    //         left: 276px;
+    //         bottom: 184px;
+    //     }
+    // }
+
+    &--right {
+        left: 389px;
+
+        @media screen and (max-width: 1023px) {
+            left: 100px;
+            bottom: 184px;
+        }
+    }
+
+    // &--hotel-right {
+    //     right: 325px;
+
+    //     @media screen and (min-width: 415px) and (max-width: 1023px) {
+    //         left: 340px;
+    //         bottom: 184px;
+    //     }
+    // }
+}
 
 
 
