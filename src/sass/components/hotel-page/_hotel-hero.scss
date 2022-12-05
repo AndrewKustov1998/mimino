@@ -166,32 +166,6 @@ a {
         }
 }
 
-button {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.02em;
-    color: var(--accent-yellow-color);
-
-    width: 236px;
-    height: 48px;
-    background: rgba(0, 0, 0, 0.4);
-    border: 2px solid var(--primary-white-color);
-    border-radius: 25px;
-    
-
-    &:hover ,
-    :focus {
-        box-sizing: border-box;
-            width: 236px;
-            height: 48px;
-            background: #FFFFFF;
-            border: 2px solid #FFFFFF;
-            border-radius: 25px;
-    }
-}
-
 .hotel-hero-button__table {
     margin-bottom: 24px;
     @media screen and (min-width:1024px) {
