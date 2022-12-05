@@ -1,0 +1,225 @@
+.three-adults {
+  overflow: hidden;
+  background-color: #f0ecd6;
+  @media screen and (min-width: 1024px) {
+    overflow: visible;
+  }
+
+  &__box {
+    position: relative;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @media screen and (min-width: 1024px) {
+      padding-top: 66px;
+      padding-bottom: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-top: 72px;
+    }
+  }
+
+  &__company {
+    margin-bottom: 32px;
+    text-align: right;
+    @media screen and (min-width: 1024px) {
+      margin-right: 17px;
+      margin-bottom: 62px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-right: 57px;
+      margin-bottom: 72px;
+    }
+  }
+
+  &__company-slogan {
+    margin-bottom: 8px;
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__company-title {
+    margin-right: -12px;
+    @media screen and (min-width: 1024px) {
+      margin-right: -20px;
+    }
+  }
+
+  &__info {
+    margin-bottom: 32px;
+    @media screen and (min-width: 1024px) {
+      width: 400px;
+      margin-left: auto;
+      margin-right: 17px;
+      margin-bottom: 169px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 454px;
+      margin-right: 57px;
+      margin-bottom: 188px;
+    }
+  }
+
+  &__title {
+    text-align: right;
+    margin-bottom: 12px;
+    font-family: 'Times New Roman';
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--primary-black-color);
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 16px;
+      text-align: left;
+      font-size: 30px;
+      line-height: 1.13;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 36px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__text {
+    max-width: 242px;
+    margin: 0 59px 0 auto;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--first-text-color);
+
+    @media screen and (min-width: 1024px) {
+      max-width: 400;
+      margin: 0;
+      font-size: 16px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-weight: 700;
+    }
+  }
+
+  &__img {
+    width: 244px;
+    margin-bottom: 32px;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    background-color: #dadada;
+    @media screen and (min-width: 1024px) {
+      position: absolute;
+      top: -32px;
+      left: 65px;
+      width: 400px;
+      margin: 0;
+    }
+    @media screen and (min-width: 1280px) {
+      left: 95px;
+      width: 460px;
+    }
+  }
+
+  &__wrapper {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+
+  &__buttons-box {
+    text-align: center;
+    @media screen and (min-width: 1024px) {
+      padding-top: 41px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-top: 72px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+
+  &__gradients {
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
+      backdrop-filter: blur(0.5px);
+      background-image: linear-gradient(
+        to right,
+        #f0ecd6 338px,
+        rgba(186, 186, 186, 0.4) 338px,
+        rgba(186, 186, 186, 0.4) 339px,
+        #f0ecd6 339px,
+        #f0ecd6 640px,
+        rgba(186, 186, 186, 0.4) 640px,
+        rgba(186, 186, 186, 0.4) 641px,
+        #f0ecd6 641px,
+        #f0ecd6 942px,
+        rgba(186, 186, 186, 0.4) 942px,
+        rgba(186, 186, 186, 0.4) 943px,
+        #f0ecd6 943px
+      );
+    }
+  }
+}
+
+.slider {
+  margin-right: -15px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1024px) {
+    margin: 0;
+  }
+  &__box {
+    transform: translateX(115px);
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 1024px) {
+      gap: 40px;
+      margin-bottom: 32px;
+      transform: translateX(0);
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__button-box {
+    display: flex;
+    justify-content: flex-end;
+    gap: 32px;
+    margin-right: 15px;
+    @media screen and (min-width: 1024px) {
+      justify-content: flex-start;
+      margin: 0;
+    }
+  }
+
+  &__img {
+    background-color: #dadada;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    fill: var(--modal-text-color);
+  }
+}
