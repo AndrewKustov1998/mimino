@@ -1,0 +1,161 @@
+.gradient {
+    position: absolute;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    // width: 100%;
+    max-width: 414px;
+    background-image: linear-gradient(to right,
+            #0000 139px,
+            rgba(122, 122, 122, 0.4) 139px,
+            rgba(122, 122, 122, 0.4) 140px,
+            #0000 140px,
+            #0000 273px,
+            rgba(122, 122, 122, 0.4) 273px,
+            rgba(122, 122, 122, 0.4) 274px,
+            #0000 274px,
+        );
+
+    @media (min-width: 1024px) {
+        padding-top: 48px;
+        padding-bottom: 40px;
+        // height: 641px;
+        max-width: 1024px;
+        background-image: linear-gradient(to right,
+                #0000 277px,
+                rgba(122, 122, 122, 0.4) 277px,
+                rgba(122, 122, 122, 0.4) 278px,
+                #0000 278px,
+                #0000 511px,
+                rgba(122, 122, 122, 0.4) 511px,
+                rgba(122, 122, 122, 0.4) 512px,
+                #0000 512px,
+                #0000 745px,
+                rgba(122, 122, 122, 0.4) 745px,
+                rgba(122, 122, 122, 0.4) 746px,
+                #0000 746px,
+            );
+    }
+
+    @media (min-width: 1170px) {
+        padding-top: 48px;
+        padding-bottom: 40px;
+        // height: 641px;
+        max-width: 1170px;
+        background-image: linear-gradient(to right,
+                #0000 337px,
+                rgba(122, 122, 122, 0.4) 337px,
+                rgba(122, 122, 122, 0.4) 338px,
+                #0000 338px,
+                #0000 639px,
+                rgba(122, 122, 122, 0.4) 639px,
+                rgba(122, 122, 122, 0.4) 640px,
+                #0000 640px,
+                #0000 941px,
+                rgba(122, 122, 122, 0.4) 941px,
+                rgba(122, 122, 122, 0.4) 942px,
+                #0000 942px,
+            );
+    }
+}
+
+.restaurant-details {
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(../images/mobile-images/fresh-meat-200.jpg);
+
+    @media screen and (min-width: 1024px) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url(../images/mobile-images/fresh-meat-200.jpg);
+
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url(../images/mobile-images/fresh-meat-200.jpg);
+    }
+
+}
+
+
+.restaurant-details__company-title {
+    margin-bottom: 12px;
+}
+
+.restaurant-details__meta {
+    padding-left: 140px;
+    margin-bottom: 48px;
+}
+
+.restaurant-details__description {
+    max-width: 259px;
+}
+
+.restaurant-details__slider {
+    margin-left: 25px;
+}
+
+.restaurant-details__image-set {
+    margin-bottom: 16px;
+}
+
+.restaurant-details__list {
+    display: flex;
+}
+
+.restaurant-details__item {
+    margin-right: 20px;
+}
+
+.restaurant-details__arrow {
+    fill: var(--primary-white-color);
+    margin-bottom: 32px;
+}
+
+
+
+
+// .logo--hotel {
+//     @media screen and (max-width: 1023px) {
+//         margin: 0 auto;
+//     }
+// }
+
+// .thumb {
+//     display: flex;
+//     justify-content: center;
+
+//     @media screen and (min-width: 415px) and (max-width: 1022px) {
+//         flex-direction: column-reverse;
+//     }
+
+//     @media screen and (min-width: 1024px) {
+//         margin-bottom: 24px;
+//     }
+
+//     &--hotel {
+//         @media screen and (max-width: 1023px) {
+//             flex-direction: column;
+//         }
+//     }
+// }
+
+// .button-container {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+
+//     @media screen and (max-width: 1023px) {
+//         margin: 0 auto;
+//     }
+
+//     &--hotel {
+//         @media screen and (min-width: 1024px) {
+//             margin-left: 32px;
+//         }
+//     }
+// }
