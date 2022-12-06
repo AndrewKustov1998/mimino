@@ -120,7 +120,6 @@
   margin-top: 32px;
 
   font-family: 'Times New Roman';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
@@ -150,7 +149,6 @@
   margin-bottom: 32px;
 
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -230,12 +228,10 @@
   @media screen and (min-width: 1024px) {
     margin-bottom: 32px;
     transform: translateX(0);
-    // margin-top: 176px;
   }
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 40px;
-    // margin-top: 188px;
   }
 
   & li {
