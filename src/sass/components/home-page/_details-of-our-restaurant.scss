@@ -72,7 +72,7 @@
         url(../images/mobile-images/homepage-details-of-our-restaurant-414@2x.jpg);
         }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 415px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
             url(../images/tablet-images/homepage-details-of-our-restaurant-1024.jpg);
 
@@ -84,7 +84,7 @@
         }
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1025px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
             url(../images/desktop-images/homepage-details-of-our-restaurant-1280.jpg);
 
@@ -107,7 +107,7 @@
                     url(../images/mobile-images/homepage-details-of-our-hotel-414@2x.jpg);
             }
         
-            @media screen and (min-width: 1024px) {
+            @media screen and (min-width: 415px) {
                 background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
                     url(../images/tablet-images/homepage-details-of-our-hotel-1024.jpg);
         
@@ -119,7 +119,7 @@
                 }
             }
         
-            @media screen and (min-width: 1280px) {
+            @media screen and (min-width: 1025px) {
                 background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
                     url(../images/desktop-images/homepage-details-of-our-hotel-1280.jpg);
         
@@ -322,6 +322,14 @@
 
 .restaurant-details__button {
     color: var(--accent-yellow-color);
+
 }
 
+.restaurant-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 236px;
+    height: 48px;
+}
 
