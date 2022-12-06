@@ -1,7 +1,76 @@
+.gradient {
+  position: absolute;
+  height: 735px;
+    margin: 0 auto;
+      padding-top: 24px;
+      padding-bottom: 40px;
+      width: 100%;
+      max-width: 414px;
+      background-image: linear-gradient(to right,
+          #0000 139px,
+          rgba(122, 122, 122, 0.4) 139px,
+          rgba(122, 122, 122, 0.4) 140px,
+          #0000 140px,
+          #0000 273px,
+          rgba(122, 122, 122, 0.4) 273px,
+          rgba(122, 122, 122, 0.4) 274px,
+          #0000 274px,
+        );
+    
+      @media (min-width: 1024px) {
+        padding-top: 48px;
+        padding-bottom: 40px;
+        height: 641px;
+        max-width: 1024px;
+        background-image: linear-gradient(to right,
+            #0000 277px,
+            rgba(122, 122, 122, 0.4) 277px,
+            rgba(122, 122, 122, 0.4) 278px,
+            #0000 278px,
+            #0000 511px,
+            rgba(122, 122, 122, 0.4) 511px,
+            rgba(122, 122, 122, 0.4) 512px,
+            #0000 512px,
+            #0000 745px,
+            rgba(122, 122, 122, 0.4) 745px,
+            rgba(122, 122, 122, 0.4) 746px,
+            #0000 746px,
+          );
+      }
+    
+      @media (min-width: 1170px) {
+        padding-top: 48px;
+        padding-bottom: 40px;
+        height: 641px;
+        max-width: 1170px;
+        background-image: linear-gradient(to right,
+            #0000 337px,
+            rgba(122, 122, 122, 0.4) 337px,
+            rgba(122, 122, 122, 0.4) 338px,
+            #0000 338px,
+            #0000 639px,
+            rgba(122, 122, 122, 0.4) 639px,
+            rgba(122, 122, 122, 0.4) 640px,
+            #0000 640px,
+            #0000 941px,
+            rgba(122, 122, 122, 0.4) 941px,
+            rgba(122, 122, 122, 0.4) 942px,
+            #0000 942px,
+          );
+      }
+    }
 .container {
   padding-top: 48px;
   padding-bottom: 96px;
   position: relative;
+
+  &--restaurant {
+    @media screen and (max-width: 1023px) {padding-right: 0;}
+  }
+  &--hotel {
+    @media screen and (max-width: 1023px) {
+      padding-left: 0;
+    }}
 
   @media screen and (min-width: 1170px) {width: 1140px;}
   @media screen and (max-width: 413px) {
@@ -32,40 +101,47 @@
     margin-bottom: 48px;
     margin-right: 0;
   }
-  @media screen and (min-width: 1170px) {width: 595px;}
+  @media screen and (min-width: 1170px) {width: 650px;}
 &--restaurant {
   @media screen and (max-width: 414px) {
-    width: 243px;
-  }
-@media screen and (min-width: 415px) and (max-width: 1169px) {width: 274px;}
-  @media screen and (min-width: 1024px) {
-    width: 610px;
-  }}
+    width: 243px;}
+    @media screen and (min-width: 415px) and (max-width: 1023px) {width: 274px;}
+    @media screen and (min-width: 1024px) and (max-width: 1169px) {width: 470px;}
+
+    // @media screen and (min-width: 1024px) {
+    //   width: 610px;
+    // }
+}
   &--hotel {display: flex;
-  flex-direction: column;
-  @media screen and (min-width: 415px) and (max-width: 1023px) {margin: 0 auto;}
-    @media screen and (min-width: 1024px) {
-      width: 549px;
-    }
+  flex-direction: column; 
+  @media screen and (min-width: 1024px) and (max-width: 1169px) {align-items: flex-end; width: 450px;}
+  @media screen and (min-width: 415px) and (max-width: 1023px) {margin: 0 auto; margin-bottom: 48px;}
   @media screen and (min-width: 1170px) {justify-content: flex-end;
   align-items: end;}
 }
 }
 .arrow-logo {
-  fill: #FFF;
+  fill: var(--primary-white-color);
   position: absolute;
   &--left {
-    @media screen and (min-width: 1024px) {
-      left: 280px;
+    left: 280px;
+    @media screen and (min-width: 1024px) and (max-width: 1169px) {
+      left: 295px;
     }
     @media screen and (max-width: 1023px) {bottom: 184px; left: 35px;}
 }
 &--hotel-left {right: 344px;
+  @media screen and (min-width: 1024px) and (max-width: 1169px) {right: 375px;}
 @media screen and (min-width: 415px) and (max-width: 1023px) {left: 276px; bottom: 184px;}}
-&--right {left: 344px;
+&--right {
+  @media screen and (min-width: 1170px) {left: 344px;}
+  left: 359px;
 @media screen and (max-width: 1023px) {left: 100px;
     bottom: 184px;}}
 &--hotel-right {right: 280px;
+  @media screen and (min-width: 1024px) and (max-width: 1169px) {
+      right: 310px;
+    }
   @media screen and (min-width: 415px) and (max-width: 1023px) {left: 340px; bottom: 184px;}}
 }
 .logo--hotel {
@@ -96,8 +172,8 @@
   background-repeat: no-repeat;
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/desktop-images/homegape-restaurant.jpg');
-    @media screen and (max-width: 1023px) {background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/mobile-images/homepage-restaurant-glass.jpg')}
-    &__image {
+    @media screen and (max-width: 1023px) {background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/mobile-images/homepage-restaurant-glass.jpg');}
+    &__image {border-radius: 2px;
       &--meat {
         @media screen and (min-width: 1024px) {width: 270px; height: 270px;}
         @media screen and (max-width: 1023px) {
@@ -110,8 +186,14 @@
 &--salad {
   @media screen and (min-width: 1023px) {width: 162px; height: 270px;
   @media screen and (min-width: 1169px) {width: 270px; height: 270px;}}
+}
+&--service {
+  @media screen and (min-width: 1024px) and (max-width: 1169px) {
+    width: 162px;
+    height: 270px;
+  }
 }}
-  &__logo {color: #FFFFFF;
+  &__logo {color: var(--primary-white-color);
     margin-bottom: 16px;
     display: block;
     text-decoration: none;
@@ -132,7 +214,7 @@
   font-size: 24px;
   line-height: 1.20;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: var(--primary-white-color);
   margin-bottom: 8px;
   @media screen and (max-width: 1023px) {
     // margin: 0 auto;
@@ -146,23 +228,22 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: #BABABA;
-    width: 610px;
-  
+    @media screen and (min-width: 1170px) {width: 595px;}
+    @media screen and (min-width: 1024px) and (max-width: 1169px) {width: 610px;}
     @media screen and (max-width: 1023px) {
       width: 259px;
       font-size: 12px;
-      // padding-left: 12px;
     }}
     &__link {font-family: 'Montserrat';
       font-weight: 700;
       font-size: 16px;
       line-height: 1.25;
       letter-spacing: 0.02em;
-      color: #F3C653;
+      color: var(--accent-yellow-color);
       text-decoration: none;
       white-space: nowrap;}
       &__button {background: rgba(0, 0, 0, 0.4);
-        border: 2px solid #FFFFFF;
+        border: 2px solid var(--primary-white-color);
         border-radius: 25px;
         margin-bottom: 16px;
         width: 236px;
@@ -188,33 +269,41 @@
             height: 270px;
           }
         }
-        &__list {display: flex; overflow: hidden;
+        &__list {display: flex; overflow: hidden; list-style-type: none;
             @media screen and (max-width: 1023px) {margin-bottom: 80px;}
             &--hotel {
               @media screen and (max-width: 1169px) {
               flex-direction: row-reverse;}
           }}
-          
-          &__item:first-child {
-            @media screen and (min-width: 415px) and (max-width: 1023px) {margin-right: 20px; margin-left: 25px;}}
-                &__item:not(:last-child) {
-                   @media screen and (min-width: 1024px) and (max-width: 1169px) {
+          &__item {
+            @media screen and (min-width: 1170px) {
+                  margin-right: 86px;}
+                  @media screen and (min-width: 1024px) and (max-width: 1169px) {
                     margin-right: 34px;
                   }
-                  @media screen and (min-width: 1170px) {
-                  margin-right: 86px;}
-                }}
+                  &--hotel {margin-right: 0;
+                  // @media screen and (min-width: 1024px) and (max-width: 1169px) {
+                  //   margin-right: 34px;
+                  // }
+                @media screen and (min-width: 1170px) {margin-right: 85px;}}
+          &:first-child {
+            @media screen and (min-width: 415px) and (max-width: 1023px) {margin-right: 20px; margin-left: 25px;}}}}
 
 .hotel-details {
-  background-color: #000; 
+  background-color: var(--primary-black-color); 
   background-repeat: no-repeat;
-  background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/desktop-images/homepage-section5-bad.jpg');
-  @media screen and (min-width: 415px) and (max-width: 1023px) {background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/mobile-images/homepage-hotel-bad-mobile.jpg');}
+  background-size: cover; 
+      background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../images/tablet-images/homepage-hotel-bad-1024.jpg');
+  @media screen and (min-width: 415px) and (max-width: 1023px) {background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/mobile-images/homepage-hotel-bad-mobile.jpg');
+  @media screen and (min-width: 1024px) and (max-width: 1169px) {background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../images/tablet-images/homepage-hotel-bad-1024.jpg');}
+}
+@media screen and (min-width: 1170px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/desktop-images/homepage-section5-bad.jpg'); 
+  }
   &__description {
     @media screen and (min-width: 415px) and (max-width: 1023px) {
-    margin-bottom: 48px;
-  padding-left: 12px;}}
+  padding-left: 32px;
+width: 273px;}}
   &__title {
     @media screen and (min-width: 415px) and (max-width: 1023px) {
       text-align: end;
