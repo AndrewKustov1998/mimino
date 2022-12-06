@@ -30,8 +30,10 @@
     );
   }
   &--tablet {
-   @media screen and (min-width: 1024px) {
+
+   @media screen and (min-width: 1024px) and (max-width:1279px) {
     width: 1024px;
+    margin: 0 auto;
     backdrop-filter: blur(0.5px);
     background-image: linear-gradient(
       to right,
