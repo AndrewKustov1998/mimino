@@ -5,6 +5,10 @@
     position: absolute;
     top: 0;
     left: 0;
+    @media screen and(min-width:1024px) {
+        height: 100px;
+    }
+
 }
 .page-header__container {
     max-width: 414px;
@@ -16,6 +20,7 @@
     @media screen and(min-width:1024px) {
             padding: 24px 47px;
             max-width: 1024px;
+            height: 100px;
         }
                 @media screen and(min-width:1280px) {
                     padding: 24px 85px;
@@ -80,6 +85,7 @@
     display: none;
     margin-left: 8px;
     font-size: 14px;
+    min-width:fit-content;
     line-height: 1.21;
     align-items: center;
     letter-spacing: 0.02em;
@@ -87,6 +93,7 @@
     text-decoration: none;
     @media screen and(min-width:1024px) {
         display: flex;
+        
     }
 }
 .site-nav__phone--second {
