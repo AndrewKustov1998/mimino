@@ -1,0 +1,273 @@
+.hero{
+}
+
+.logo--hero {
+    width: 303px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 24px;
+
+    font-size: 96px;
+    color: var(--primary-white-color);
+
+    @media screen and(min-width:1024px) {
+        width: 404px;
+        font-size: 128px;
+        margin-bottom: 16px;
+        line-height: 1.08;
+        
+        letter-spacing: 0.3em;
+    }
+    
+}
+
+.ordering {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @media screen and(min-width:1024px) {
+        display: flex;
+        
+    }
+}
+.ordering__item{
+    @media screen and(max-width:1023px){
+        margin-bottom: 24px;
+    }
+    @media screen and (min-width:1024px) {
+        margin-right: 40px;   
+    }
+    &:last-child {
+            margin: 0;
+        }
+}
+
+
+
+.social-area {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    @media screen and(min-width:1280px) {
+        display: none;
+    }
+}
+
+.social-area__item {
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.social-area__icon {
+    fill: var(--accent-yellow-color);
+}
+
+.map-pointer {
+    width: 20px;
+    height: 20px;
+
+    fill: var(--accent-yellow-color);
+    margin-right: 8px;
+}
+
+.hero--homepage {
+    width: 100%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    padding-top: 64px;
+    padding-bottom: 20px;
+
+
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+        url(../images/mobile-images/homepage-hero-background-414.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and(min-width:414px) {
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(../images/mobile-images/homepage-hero-background-414@2x.jpg)
+        }
+    }
+
+    @media screen and(min-width:1024px)and(max-width:1279px) {
+        padding-top: 164px;
+        padding-bottom: 15px;
+        background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(../images/tablet-images/homepage-hero-background-1024.jpg);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(../images/tablet-images/homepage-hero-background-1024@2x.jpg)
+        }
+    }
+
+    @media screen and(min-width:1280px) {
+        padding-top: 164px;
+        padding-bottom: 64px;
+        background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(../images/desktop-images/homepage-hero-background-1280.jpg);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(../images/desktop-images/homepage-hero-background-1280@2x.jpg)
+        }
+    }
+
+}
+
+.hero__address {
+    border: 1px solid var(--accent-yellow-color);
+    border-radius: 2px;
+    padding-left: 6px;
+    display: none;
+
+    &--mobile{
+        @media screen and (max-width:1023px) {
+            width: 210px;
+            height: 47px;
+            margin-left: auto;
+            margin-bottom: 70px;
+            display: flex;
+            
+        }
+    }
+
+    &--tablet{
+        @media screen and(min-width:1024px) {
+            display: flex;
+            width: 285px;
+            height: 56px;
+        }
+
+    }
+}
+
+.hero__adress-position--tab{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 58px;
+    @media screen and(min-width:1024px) {
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 25px;
+    }
+    @media screen and(min-width:1280px) {
+        margin-bottom: 0px;
+        
+    }
+}
+
+
+
+.hero__address-link {
+    text-decoration: none;
+
+
+    color: var(--primary-white-color);
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.hero__address-text{
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    @media screen and(min-width:1024px) {
+        font-size: 16px;
+    }
+
+
+}
+.hero-title__description {
+    margin-bottom: 40px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+
+    color: var(--primary-white-color);
+
+    @media screen and(min-width:1024px) {
+        margin-bottom: 56px;
+        font-size:20px;
+        line-height: 1.2;
+        }
+}
+
+
+.company-slogan--hero {
+    padding: 0;
+    margin: 0;
+    // display: flex;
+    // width: 320px;
+    // margin-left: auto;
+    // margin-right: auto;
+    margin-bottom: 113px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.16;
+    /* identical to box height */
+    letter-spacing: 0.05em;
+
+    color: var(--primary-white-color);
+
+    @media screen and(min-width:1024px) {
+        margin-bottom: 137px;
+        font-size: 36px;
+        line-height: 1.14;
+    }
+
+}
+
+.button--transparent {
+    background-color: rgba(0, 0, 0, 0.4);
+    @media screen and(min-width:1024px) and(max-width:1280px) {
+        background-color: var(--primary-black-color);
+    }
+}
