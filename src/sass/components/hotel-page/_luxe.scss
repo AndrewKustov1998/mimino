@@ -2,6 +2,7 @@
 .section-room-luxe {
   overflow: hidden;
  background-color: #fffdee;
+
  &__gradients {
   @media screen and (min-width: 1024px) {
     overflow:visible;
@@ -23,7 +24,8 @@
     #fffdee 747px,
     );
   }
-  @media screen and (min-width: 1024px) {
+  &--tablet {
+   @media screen and (min-width: 1024px) {
     width: 1024px;
     backdrop-filter: blur(0.5px);
     background-image: linear-gradient(
@@ -43,8 +45,8 @@
     );
   }
   }
-
-}
+ }
+} 
 
 
 
