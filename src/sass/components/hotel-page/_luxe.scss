@@ -311,7 +311,7 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
 
-  color: var(--accent-yellow-color);
+  caret-color: inherit;
   text-align: center;
   background-color: var(--primary-black-color);
   border: 2px solid var(--primary-white-color);
@@ -322,7 +322,7 @@
   &:active,
   &:focus {
     background-color: var(--primary-white-color);
-    border-color: var(--accent-yellow-color);
+    border-color: inherit;
   }
 }
 .list-group__list {
