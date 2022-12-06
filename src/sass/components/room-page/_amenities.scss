@@ -1,29 +1,34 @@
-.amenities{
+.amenities-section {
     background-color: #fffdee;
+}
+.amenities{
     padding: 32px 0 32px 0;
     margin-right: auto;
     margin-left: auto;
+    max-width: 414px;
     @media screen and (min-width: 1024px) { 
+        max-width: 1024px;
         padding-top: 48px;
         padding-bottom: 40px;
      } 
 
      @media screen and (min-width: 1280px) { 
+        max-width: 1280px;
         padding-bottom: 48px;
-        height: 1051px;
+        // height: 1051px;
         background-image: linear-gradient(to right,
-    #0000 345px,
-    rgba(186, 186, 186, 0.4) 345px,
-    rgba(186, 186, 186, 0.4) 346px,
-    #0000 346px,
-    #0000 643px,
-    rgba(186, 186, 186, 0.4) 643px,
-    rgba(186, 186, 186, 0.4) 644px,
-    #0000 644px,
-    #0000 947px,
-    rgba(186, 186, 186, 0.4) 947px,
-    rgba(186, 186, 186, 0.4) 948px,
-    #0000 948px,
+    #0000 338px,
+    rgba(186, 186, 186, 0.4) 338px,
+    rgba(186, 186, 186, 0.4) 339px,
+    #0000 339px,
+    #0000 640px,
+    rgba(186, 186, 186, 0.4) 640px,
+    rgba(186, 186, 186, 0.4) 641px,
+    #0000 641px,
+    #0000 942px,
+    rgba(186, 186, 186, 0.4) 942px,
+    rgba(186, 186, 186, 0.4) 943px,
+    #0000 943px,
     )
      } 
 
