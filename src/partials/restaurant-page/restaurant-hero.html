@@ -1,80 +1,104 @@
 <section class="hero hero--restaurant">
-    <div class="container">
-        <address class="hero__address hero__address--mobile">
-            <a class='hero__address-link' href="https://goo.gl/maps/ToohiT1EE4uoueaX7" target="_blank"
-                rel="noopener noreferrer nofollow">
-                <svg class="map-pointer" width="20px" height="20px">
-                    <use href='./images/icons.svg#icon-location'></use>
-                </svg>
-                <p class="hero__address-text">
-                    Україна, м. Полтава, <br>
-                    вул. Маршала Бірюзова, 15
-                </p>
-            </a>
-        </address>
-        <h1 class="logo logo--hero">mimiho</h1>
-        <h2 class="hero-title__description">Ресторан</h2>
-        <h3 class="company-slogan company-slogan--hero">Смак життя 24/7</h3>
-        <div class="hero__adress-position--tab">
-            <address class="hero__address hero__address--tablet">
-                <a class='hero__address-link' href="https://goo.gl/maps/ToohiT1EE4uoueaX7" target="_blank"
-                    rel="noopener noreferrer nofollow">
-                    <svg class="map-pointer" width="20px" height="20px">
-                        <use href='./images/icons.svg#icon-location'></use>
-                    </svg>
-                    <p class="hero__address-text">
-                        Україна, м. Полтава, <br>
-                        вул. Маршала Бірюзова, 15
-                    </p>
-                </a>
-            </address>
-            <ul class="ordering">
-                <li class="ordering__item">
-                    <button data-modal-open class="button button--transparent button--transparent-hero"
-                        type="button">Забронювати
-                        столик</button>
-                </li>
-                <!-- модальне вікно замовити столик -->
-                <li class="ordering__item">
-                    <a class="button button--transparent button--transparent-hero menu-anchor" href="#menu-anchor">Переглянути меню</a>
-                    <!-- <button data-modal-open class="button button--transparent button--transparent-hero"
-                        type="button">Переглянути меню</button> -->
-                    <!-- модальне вікно замовити  -->
-                </li>
+  <div class="container">
+    <address class="hero__address hero__address--mobile">
+      <a
+        class="hero__address-link"
+        href="https://goo.gl/maps/ToohiT1EE4uoueaX7"
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+      >
+        <svg class="map-pointer" width="20px" height="20px">
+          <use href="./images/icons.svg#icon-location"></use>
+        </svg>
+        <p class="hero__address-text">
+          Україна, м. Полтава, <br />
+          вул. Маршала Бірюзова, 15
+        </p>
+      </a>
+    </address>
+    <h1 class="logo logo--hero">mimiho</h1>
+    <h2 class="hero-title__description">Ресторан</h2>
+    <h3 class="company-slogan company-slogan--hero">Смак життя 24/7</h3>
+    <div class="hero__adress-position--tab">
+      <address class="hero__address hero__address--tablet">
+        <a
+          class="hero__address-link"
+          href="https://goo.gl/maps/ToohiT1EE4uoueaX7"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          <svg class="map-pointer" width="20px" height="20px">
+            <use href="./images/icons.svg#icon-location"></use>
+          </svg>
+          <p class="hero__address-text">
+            Україна, м. Полтава, <br />
+            вул. Маршала Бірюзова, 15
+          </p>
+        </a>
+      </address>
+      <ul class="ordering">
+        <li class="ordering__item">
+          <button
+            data-modal-open
+            class="button button--transparent button--transparent-hero js-open-modal"
+            data-modal="1"
+            type="button"
+          >
+            Забронювати столик
+          </button>
+        </li>
 
-            </ul>
-        </div>
-
-
-        <ul class="social-area">
-            <!--прибрати поінтери списку-->
-            <li class="social-area__item">
-                <!-- інстаграм -->
-                <a class="social-area__link" href="https://www.instagram.com" aria-label="Instagram">
-                    <span class="visually-hidden">інстаграм</span>
-                    <svg class="social-area__icon" width="24px" height="24px">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="social-area__item">
-                <!-- фейсбук -->
-                <a class="social-area__link" href="https://www.facebook.com/" aria-label="Facebook">
-                    <span class="visually-hidden">фейсбук</span>
-                    <svg class="social-area__icon" width="24px" height="24px">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="social-area__item">
-                <!-- лінкед ін -->
-                <a class="social-area__link" href="https://telegram.org" aria-label="LinkedIn">
-                    <span class="visually-hidden">телеграм</span>
-                    <svg class="social-area__icon" width="24px" height="24px">
-                        <use href="./images/icons.svg#icon-telegram4"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
+        <!-- модальне вікно замовити столик -->
+        <li class="ordering__item">
+            <a class="button button--transparent button--transparent-hero menu-anchor" href="#menu-anchor">Переглянути меню</a>
+            <!-- <button data-modal-open class="button button--transparent button--transparent-hero"
+                                type="button">Переглянути меню</button> -->
+            <!-- модальне вікно замовити  -->
+        </li>
+      </ul>
     </div>
+
+    <ul class="social-area">
+      <!--прибрати поінтери списку-->
+      <li class="social-area__item">
+        <!-- інстаграм -->
+        <a
+          class="social-area__link"
+          href="https://www.instagram.com"
+          aria-label="Instagram"
+        >
+          <span class="visually-hidden">інстаграм</span>
+          <svg class="social-area__icon" width="24px" height="24px">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-area__item">
+        <!-- фейсбук -->
+        <a
+          class="social-area__link"
+          href="https://www.facebook.com/"
+          aria-label="Facebook"
+        >
+          <span class="visually-hidden">фейсбук</span>
+          <svg class="social-area__icon" width="24px" height="24px">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-area__item">
+        <!-- лінкед ін -->
+        <a
+          class="social-area__link"
+          href="https://telegram.org"
+          aria-label="LinkedIn"
+        >
+          <span class="visually-hidden">телеграм</span>
+          <svg class="social-area__icon" width="24px" height="24px">
+            <use href="./images/icons.svg#icon-telegram4"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
 </section>
