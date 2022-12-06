@@ -1,0 +1,200 @@
+<div class="backdrop is-hidden" table-reservation-modal>
+  <div class="modal modal--table-reservation">
+    <button class="modal__close-btn" type="button" table-reservation-close>
+      <svg width="24px" height="24px">
+        <use href="./images/icons.svg#icon-x"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">Забронювати столик</h2>
+    <form class="form" name="table-reservation">
+      <div class="form__information">
+        <div class="form__field">
+          <input
+            class="form__input"
+            type="text"
+            id="person-name"
+            name="person-name"
+            placeholder="Ваше ім’я"
+            minlength="6"
+            maxlength="20"
+            pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
+            title="Введіть значення у форматі 'Ім'я Прізвище'"
+            required
+          />
+          <label class="form__label" for="person-name"
+            >На кого забронювати столик?</label
+          >
+        </div>
+        <div class="form__field">
+          <input
+            class="form__input person-phone"
+            type="tel"
+            id="person-phone"
+            name="person-phone"
+            placeholder="+38 (___) ___-__-__"
+            pattern="^\+[0-9]{12}"
+            title="Введіть значення у форматі '+38___ ___ __ __'"
+            required
+          />
+          <label class="form__label" for="person-phone">Номер телефону</label>
+        </div>
+        <div class="form__field">
+          <div class="custom-select">
+            <select class="form__select" id="guests" name="guests">
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <label class="form__label" for="guests"
+            >Столик на яку кількість осіб?</label
+          >
+        </div>
+        <div class="form__field">
+          <div class="custom-select">
+            <select class="form__select" id="guests" name="guests">
+              <option value="today" selected>Сьогодні</option>
+              <option value="tomorrow">Завтра</option>
+              <option value="monday">Понеділок, 5 грудня</option>
+            </select>
+          </div>
+          <label class="form__label" for="guests">На яку дату бронювати?</label>
+        </div>
+      </div>
+      <button class="button button--book-modal" type="submit">
+        Оформити бронювання
+      </button>
+    </form>
+  </div>
+</div>
+
+<div class="backdrop is-hidden" room-reservation-modal>
+  <div class="modal modal--room-reservation">
+    <button class="modal__close-btn" type="button" room-reservation-close>
+      <svg width="24px" height="24px">
+        <use href="./images/icons.svg#icon-x"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">Забронювати номер</h2>
+    <form class="form" name="room-reservation">
+      <div class="form__information">
+        <div class="form__field">
+          <input
+            class="form__input"
+            type="text"
+            id="person-name"
+            name="person-name"
+            placeholder="Ваше ім’я"
+            minlength="6"
+            maxlength="20"
+            pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
+            title="Введіть значення у форматі 'Ім'я Прізвище'"
+            required
+          />
+          <label class="form__label" for="person-name"
+            >На кого забронювати столик?</label
+          >
+        </div>
+        <div class="form__field">
+          <input
+            class="form__input person-phone"
+            type="tel"
+            id="person-phone"
+            name="person-phone"
+            placeholder="+38 (___) ___-__-__"
+            pattern="^\+[0-9]{12}"
+            title="Введіть значення у форматі '+38 ___ ___ __ __'"
+            required
+          />
+          <label class="form__label" for="person-phone">Номер телефону</label>
+        </div>
+
+        <div class="form__field">
+          <div class="custom-select">
+            <select class="form__select" id="room-type" name="room-type">
+              <option value="2" selected>Двомісний люкс</option>
+              <option value="3">Трьохмісний номер</option>
+              <option value="4">Двомісний номер</option>
+            </select>
+          </div>
+
+          <label class="form__label" for="room-type">Категорія номеру</label>
+        </div>
+
+        <div class="form__field">
+          <div class="custom-select">
+            <select class="form__select" id="guests" name="guests">
+              <option value="today" selected>Сьогодні</option>
+              <option value="tomorrow">Завтра</option>
+              <option value="monday">Понеділок, 5 грудня</option>
+            </select>
+          </div>
+          <label class="form__label" for="guests">Дата заїзду</label>
+        </div>
+        <div class="form__field">
+          <div class="custom-select">
+            <select class="form__select" id="guests" name="guests">
+              <option value="today" selected>Сьогодні</option>
+              <option value="tomorrow">Завтра</option>
+              <option value="monday">Понеділок, 5 грудня</option>
+            </select>
+          </div>
+          <label class="form__label" for="guests">Дата виїзду</label>
+        </div>
+      </div>
+      <button class="button button--book-modal" type="submit">
+        Оформити бронювання
+      </button>
+    </form>
+  </div>
+</div>
+
+<div class="backdrop is-hidden" room-price-modal>
+  <div class="modal modal--room-price">
+    <button class="modal__close-btn" type="button" room-price-close>
+      <svg width="24px" height="24px">
+        <use href="./images/icons.svg#icon-x"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">Ціни на номер</h2>
+
+    <p class="modal__subtitle">Двомісний люкс</p>
+
+    <p class="modal__text">Категорія номеру</p>
+    <form class="form" name="room-price">
+      <div class="form__information">
+        <div class="form__field">
+          <div class="custom-select">
+            <select class="form__select" id="nights" name="nights">
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <label class="form__label" for="nights">Кількість ночей</label>
+        </div>
+
+        <div class="form__field">
+          <input
+            class="form__input"
+            type="number"
+            id="price"
+            name="price"
+            placeholder="1000"
+            disabled
+          />
+          <label class="form__label" for="price">грн</label>
+        </div>
+      </div>
+      <button class="button button--book-modal" type="submit">
+        Оформити бронювання
+      </button>
+    </form>
+  </div>
+</div>
+
+<script src="./js/table-reservation.js"></script>
+<script src="./js/room-reservation.js"></script>
+<script src="./js/room-price.js"></script>
