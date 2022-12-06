@@ -63,19 +63,38 @@
     background-size: cover;
     background-position: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(../images/mobile-images/fresh-meat-200.jpg);
+        url(../images/mobile-images/homepage-details-of-our-restaurant-414.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(../images/mobile-images/homepage-details-of-our-restaurant-414@2x.jpg);
+        }
 
     @media screen and (min-width: 1024px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-            url(../images/mobile-images/fresh-meat-200.jpg);
+            url(../images/tablet-images/homepage-details-of-our-restaurant-1024.jpg);
 
+            @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(../images/tablet-images/homepage-details-of-our-restaurant-1024@2x.jpg);
+        }
     }
 
     @media screen and (min-width: 1280px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-            url(../images/mobile-images/fresh-meat-200.jpg);
-    }
+            url(../images/desktop-images/homepage-details-of-our-restaurant-1280.jpg);
 
+            @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(../images/desktop-images/homepage-details-of-our-restaurant-1280@2x.jpg);
+        }
+    }
 }
 
 
