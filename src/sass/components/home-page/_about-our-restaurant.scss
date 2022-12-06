@@ -34,18 +34,18 @@
 
       background-image: linear-gradient(
         to right,
-        transparent 278px,
+        transparent 277px,
+        $vertical-lines-color 277px,
         $vertical-lines-color 278px,
-        $vertical-lines-color 279px,
-        transparent 279px,
-        transparent 513px,
-        $vertical-lines-color 513px,
-        $vertical-lines-color 514px,
-        transparent 514px,
-        transparent 748px,
-        $vertical-lines-color 748px,
-        $vertical-lines-color 749px,
-        transparent 749px
+        transparent 278px,
+        transparent 511px,
+        $vertical-lines-color 511px,
+        $vertical-lines-color 512px,
+        transparent 512px,
+        transparent 746px,
+        $vertical-lines-color 746px,
+        $vertical-lines-color 747px,
+        transparent 747px
       );
     }
 
@@ -60,14 +60,14 @@
         $vertical-lines-color 338px,
         $vertical-lines-color 339px,
         transparent 338px,
-        transparent 641px,
+        transparent 640px,
+        $vertical-lines-color 640px,
         $vertical-lines-color 641px,
-        $vertical-lines-color 642px,
-        transparent 642px,
-        transparent 944px,
-        $vertical-lines-color 944px,
-        $vertical-lines-color 745px,
-        transparent 945px
+        transparent 641px,
+        transparent 942px,
+        $vertical-lines-color 942px,
+        $vertical-lines-color 943px,
+        transparent 943px
       );
     }
   }
