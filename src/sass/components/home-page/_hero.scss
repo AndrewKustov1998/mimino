@@ -1,5 +1,5 @@
-.hero{
-}
+// .hero{
+// }
 
 .logo--hero {
     width: 303px;
@@ -100,19 +100,17 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @media screen and(min-width:414px) {
-
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            background-image: linear-gradient(to right,
-                    rgba(0, 0, 0, 0.65),
-                    rgba(0, 0, 0, 0.65)),
-                url(../images/mobile-images/homepage-hero-background-414@2x.jpg)
-        }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+        url(../images/mobile-images/homepage-hero-background-414@2x.jpg)
     }
 
-    @media screen and(min-width:1024px)and(max-width:1279px) {
+
+    @media screen and(min-width: 415px) {
         padding-top: 164px;
         padding-bottom: 15px;
         background-image: linear-gradient(to right,
@@ -120,9 +118,9 @@
                 rgba(0, 0, 0, 0.65)),
             url(../images/tablet-images/homepage-hero-background-1024.jpg);
 
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
             background-image: linear-gradient(to right,
                     rgba(0, 0, 0, 0.65),
                     rgba(0, 0, 0, 0.65)),
@@ -130,7 +128,7 @@
         }
     }
 
-    @media screen and(min-width:1280px) {
+    @media screen and (min-width: 1025px) {
         padding-top: 164px;
         padding-bottom: 64px;
         background-image: linear-gradient(to right,
@@ -138,9 +136,9 @@
                 rgba(0, 0, 0, 0.65)),
             url(../images/desktop-images/homepage-hero-background-1280.jpg);
 
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
             background-image: linear-gradient(to right,
                     rgba(0, 0, 0, 0.65),
                     rgba(0, 0, 0, 0.65)),
