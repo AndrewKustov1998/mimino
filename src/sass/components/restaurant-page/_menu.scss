@@ -1,17 +1,56 @@
 .menu {
     background-color: #fffdee;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
 
     @media screen and (min-width: 1024px) {
         background-color: #f0ecd6;
-        padding-bottom: 40px;
-        padding-top: 58px;
+        // padding-bottom: 40px;
+        // padding-top: 58px;
     }
 
     @media screen and (min-width: 1280px) {
-        padding-bottom: 60px;
+        // padding-bottom: 60px;
     }
+}
+.container--decoration{
+            padding-top: 32px;
+            padding-bottom: 32px;
+            max-width: 414px;
+            margin-left: auto;
+            margin-right: auto;
+
+        
+            @media screen and (min-width: 1024px) {
+                padding-top: 58px;
+                padding-bottom: 40px;
+                max-width: 1024px;
+                background-image: linear-gradient(to right,
+                        #f0ecd6 746px,
+                        rgba(186, 186, 186, 0.4) 746px,
+                        rgba(186, 186, 186, 0.4) 747px,
+                        #f0ecd6 747px,
+                    );
+            }
+        
+            @media screen and (min-width: 1280px) {
+                padding-bottom: 60px;
+                max-width: 1280px;
+                background-image: linear-gradient(to right,
+                        #f0ecd6 338px,
+                        rgba(186, 186, 186, 0.4) 338px,
+                        rgba(186, 186, 186, 0.4) 339px,
+                        #f0ecd6 339px,
+                        #f0ecd6 640px,
+                        rgba(186, 186, 186, 0.4) 640px,
+                        rgba(186, 186, 186, 0.4) 641px,
+                        #f0ecd6 641px,
+                        #f0ecd6 942px,
+                        rgba(186, 186, 186, 0.4) 942px,
+                        rgba(186, 186, 186, 0.4) 943px,
+                        #f0ecd6 943px,
+                    );
+}
 }
 
 .menu-page {
