@@ -3,30 +3,15 @@
   overflow: hidden;
  background-color: #fffdee;
 
+@media screen and (min-width:1024px) {
+   overflow:visible;
+}
  &__gradients {
-  @media screen and (min-width: 1024px) {
-    overflow:visible;
-    width: 1024px;
-    backdrop-filter: blur(0.5px);
-    background-image: linear-gradient(
-      to right,
-      #fffdee 278px,
-      rgba(186, 186, 186, 0.4) 278px,
-      rgba(186, 186, 186, 0.4) 279px,
-    #fffdee 279px,
-    #fffdee 512px,
-      rgba(186, 186, 186, 0.4) 512px, 
-      rgba(186, 186, 186, 0.4) 513px,
-    #fffdee 513px,
-    #fffdee 746px,
-      rgba(186, 186, 186, 0.4) 746px,
-      rgba(186, 186, 186, 0.4) 747px,
-    #fffdee 747px,
-    );
-  }
-  &--tablet {
-   @media screen and (min-width: 1024px) {
-    width: 1024px;
+  margin:0 auto;
+
+  @media screen and (min-width: 1280px) {
+   
+    width: 1280px;
     backdrop-filter: blur(0.5px);
     background-image: linear-gradient(
       to right,
@@ -42,6 +27,26 @@
       rgba(186, 186, 186, 0.4) 942px,
       rgba(186, 186, 186, 0.4) 943px,
     #fffdee 943px
+    );
+  }
+  &--tablet {
+   @media screen and (min-width: 1024px) {
+    width: 1024px;
+    backdrop-filter: blur(0.5px);
+    background-image: linear-gradient(
+      to right,
+        #fffdee 278px,
+      rgba(186, 186, 186, 0.4) 278px,
+      rgba(186, 186, 186, 0.4) 279px,
+    #fffdee 279px,
+    #fffdee 512px,
+      rgba(186, 186, 186, 0.4) 512px, 
+      rgba(186, 186, 186, 0.4) 513px,
+    #fffdee 513px,
+    #fffdee 746px,
+      rgba(186, 186, 186, 0.4) 746px,
+      rgba(186, 186, 186, 0.4) 747px,
+    #fffdee 747px,
     );
   }
   }
