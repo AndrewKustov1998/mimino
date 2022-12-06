@@ -1,0 +1,62 @@
+.image-slider {
+  &__image {
+    pointer-events: none;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+
+    &--reset {
+      @media screen and (min-width: 1280px) {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__list {
+    position: absolute;
+    bottom: 2px;
+    left: 19px;
+    padding: 50px;
+
+    @media screen and (min-width: 1024px) {
+      margin: 0;
+      bottom: 14px;
+      left: 499px;
+      width: 517px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      bottom: 18px;
+      left: 598px;
+      width: 620px;
+    }
+
+    &--kitchen {
+      @media screen and (min-width: 1280px) {
+        left: 615px;
+      }
+    }
+  }
+
+  &__track {
+    gap: 25px;
+
+    @media screen and (min-width: 1024px) {
+      gap: 40px;
+    }
+  }
+
+  &__arrows {
+    margin-top: 297px;
+    margin-left: 289px;
+
+    @media screen and (min-width: 1024px) {
+      margin-left: auto;
+      margin-top: 198px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-left: auto;
+      margin-top: 143px;
+    }
+  }
+}
