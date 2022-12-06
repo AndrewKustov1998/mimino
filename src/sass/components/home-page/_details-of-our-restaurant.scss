@@ -1,5 +1,4 @@
-.gradient {
-    position: absolute;
+.restaurant-details__gradient {
     margin: 0 auto;
     padding-top: 24px;
     padding-bottom: 40px;
@@ -37,11 +36,11 @@
             );
     }
 
-    @media (min-width: 1170px) {
+    @media (min-width: 1280px) {
         padding-top: 48px;
         padding-bottom: 40px;
         // height: 641px;
-        max-width: 1170px;
+        max-width: 1280px;
         background-image: linear-gradient(to right,
                 #0000 337px,
                 rgba(122, 122, 122, 0.4) 337px,
@@ -73,7 +72,6 @@
     }
 
     @media screen and (min-width: 1280px) {
-        width: 1280px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
             url(../images/mobile-images/fresh-meat-200.jpg);
     }
@@ -83,23 +81,80 @@
 
 .restaurant-details__company-title {
     margin-bottom: 12px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 16px;
+    }
+}
+
+.restaurant-details__subtitle {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--primary-white-color);
+
+    @media screen and (min-width: 1024px) {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+}
+
+.restaurant-details__thumb {
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
 }
 
 .restaurant-details__meta {
     padding-left: 140px;
     margin-bottom: 48px;
+
+    @media screen and (min-width: 1024px) {
+        padding-left: 231px;
+        margin-bottom: 40px;
+    }
+
+     @media screen and (min-width: 1280px) {
+        padding-left: 253px;
+    }
 }
 
 .restaurant-details__description {
     max-width: 259px;
+    margin-bottom: 0;
+
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+
+    color: #bababa;
+
+    @media screen and (min-width: 1024px) {
+        max-width: 610px;
+        font-size: 16px;
+        line-height: 1.25;
+    }
 }
 
 .restaurant-details__slider {
     margin-left: 25px;
+    @media screen and (min-width: 1024px) {
+        margin-left: 0;
+    }
 }
 
 .restaurant-details__image-set {
     margin-bottom: 16px;
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 24px;
+    }
 }
 
 .restaurant-details__list {
@@ -111,51 +166,46 @@
 }
 
 .restaurant-details__arrow {
-    fill: var(--primary-white-color);
+    display: flex;
+    gap: 32px;
+
     margin-bottom: 32px;
+
+    fill: var(--primary-white-color);
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 0;
+    }
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 16px;
+
+    @media screen and (min-width: 1024px) {
+        margin-right: 29px;
+        margin-left: 0;
+        justify-content: flex-end;
+        padding-bottom: 56px;
+    }
+
+     @media screen and (min-width: 1280px) {
+        margin-right: 32px; 
+    }
+
+    &--hotel {
+        @media screen and (min-width: 1024px) {
+            margin-left: 32px;
+        }
+    }
+}
+
+.restaurant-details__button {
+    color: var(--accent-yellow-color);
 }
 
 
-
-
-// .logo--hotel {
-//     @media screen and (max-width: 1023px) {
-//         margin: 0 auto;
-//     }
-// }
-
-// .thumb {
-//     display: flex;
-//     justify-content: center;
-
-//     @media screen and (min-width: 415px) and (max-width: 1022px) {
-//         flex-direction: column-reverse;
-//     }
-
-//     @media screen and (min-width: 1024px) {
-//         margin-bottom: 24px;
-//     }
-
-//     &--hotel {
-//         @media screen and (max-width: 1023px) {
-//             flex-direction: column;
-//         }
-//     }
-// }
-
-// .button-container {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-
-//     @media screen and (max-width: 1023px) {
-//         margin: 0 auto;
-//     }
-
-//     &--hotel {
-//         @media screen and (min-width: 1024px) {
-//             margin-left: 32px;
-//         }
-//     }
-// }
