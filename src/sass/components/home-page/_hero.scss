@@ -266,6 +266,7 @@
 }
 
 .button--transparent {
+    cursor: pointer;
     background-color: rgba(0, 0, 0, 0.4);
     @media screen and(min-width:1024px) and(max-width:1280px) {
         background-color: var(--primary-black-color);
