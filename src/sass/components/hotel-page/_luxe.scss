@@ -1,4 +1,4 @@
-.section-room-luxe {
+.room-luxe {
   overflow: hidden;
   background-color: #fffdee;
 
@@ -115,7 +115,7 @@
   }
 }
 
-.section-room-luxe__title {
+.room-luxe__title {
   margin-bottom: 12px;
   margin-top: 32px;
 
@@ -145,7 +145,7 @@
   }
 }
 
-.section-room-periud {
+.room-luxe__text {
   max-width: 258px;
   margin-bottom: 32px;
 
@@ -171,7 +171,7 @@
   }
 }
 
-.hotel-image {
+.room-luxe__image {
   width: 244px;
   height: 322px;
 
@@ -204,7 +204,7 @@
     height: 574px;
   }
 }
-.image {
+.room-luxe__image-box {
   margin-bottom: 32px;
   display: flex;
   justify-content: end;
@@ -271,12 +271,12 @@
     margin-left: 0;
   }
 }
-// .icon-arrow-left, .icon-arrow-right {
-
-// }
-
-.icon-arrow-left__icon,
-.icon-arrow-right__icon {
+.arrows-group__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
   fill: var(--primary-black-color);
 }
 

@@ -1,5 +1,5 @@
-<section class="section-room-luxe">
-  <div class="section-room-luxe__gradients">
+<section class="section room-luxe">
+  <div class="room-luxe__gradients">
     <div class="container">
       <div class="conteiner-group">
         <div class="set-group">
@@ -8,17 +8,17 @@
               Amet minim mollit non
             </p>
 
-            <h2 class="company-title company-hotel__title">MIMIHO</h2>
+            <p class="company-title company-hotel__title">MIMIHO</p>
 
-            <h3 class="section-room-luxe__title">ДВОМІСНИЙ НОМЕР</h3>
-            <p class="section-room-periud">
+            <h2 class="room-luxe__title">ДВОМІСНИЙ НОМЕР</h2>
+            <p class="room-luxe__text">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </p>
           </div>
 
-          <div class="image">
+          <div class="room-luxe__image-box">
             <picture>
               <source
                 media="(max-width:414px)"
@@ -47,7 +47,7 @@
                 src="/src/images/mobile-images/modern-studio-apartment-244.jpg"
                 alt=""
                 min-width="414px"
-                class="hotel-image"
+                class="room-luxe__image"
               />
             </picture>
           </div>
@@ -125,24 +125,29 @@
             </ul>
 
             <div class="arrows-group">
-              <div class="icon-arrow-left">
-                <svg class="icon-arrow-left__icon" width="32" height="32">
+              <button
+                type="button"
+                class="arrows-group__button icon-arrow-left"
+              >
+                <svg class="arrows-group__icon" width="32" height="32">
                   <use href="/src/images/icons.svg#icon-arrow-left"></use>
                 </svg>
-              </div>
-
-              <div class="icon-arrow-right">
-                <svg class="icon-arrow-right__icon" width="32" height="32">
+              </button>
+              <button
+                type="button"
+                class="arrows-group__button icon-arrow-right"
+              >
+                <svg class="arrows-group__icon" width="32" height="32">
                   <use href="/src/images/icons.svg#icon-arrow-right"></use>
                 </svg>
-              </div>
+              </button>
             </div>
           </div>
           <div class="list-group list">
-            <a href="/src/room-page.html" class="list-group__list link"
+            <a href="/src/room-page.html" class="button list-group__list link"
               >Детальніше</a
             >
-            <button type="button" class="list-group__button">
+            <button type="button" class="button list-group__button">
               Переглянути ціни
             </button>
           </div>
