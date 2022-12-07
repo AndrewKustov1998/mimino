@@ -51,6 +51,8 @@
     
         stroke: var(--modal-text-color);
         transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        cursor: pointer;
         
         &:hover {
             stroke: var(--accent-yellow-color);
@@ -139,6 +141,10 @@
                 border-color: var(--accent-yellow-color);
     }
 
+    &__select {
+        cursor: pointer;
+    }
+        
     &__label {
 
         color: var(--brown-text-color);
