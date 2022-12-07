@@ -192,10 +192,13 @@ a {
 
 .hotel-hero__position-tab {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+    margin-bottom: 58px;
+ 
   @media screen and (min-width: 1024px) {
     margin-bottom: 25px;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 
   @media screen and (min-width: 1280px) {
@@ -203,27 +206,25 @@ a {
   }
 }
 
-.hotel-hero-button__table {
-  margin-bottom: 24px;
-  @media screen and (min-width: 1024px) {
-    display: none;
-  }
-}
+// .hotel-hero-button__table {
+//   margin-bottom: 24px;
+//   @media screen and (min-width: 1024px) {
+//     display: none;
+//   }
+// }
 
 .hotel-hero-button__room {
+  margin-bottom: 24px;
   @media screen and (min-width: 1024px) {
     margin-right: 40px;
+    margin-bottom: 0px;
   }
   @media screen and (min-width: 1280px) {
     margin-right: 60px;
   }
 }
 
-.hotel-hero-button__price {
-  @media screen and (max-width: 1023px) {
-    display: none;
-  }
-}
+
 
 .hotel-hero-button__contain {
   @media screen and (min-width: 1024px) {
@@ -233,7 +234,7 @@ a {
 
   @media screen and (max-width: 1023px) {
     margin-left: 74px;
-    margin-bottom: 58px;
+ 
   }
 }
 
