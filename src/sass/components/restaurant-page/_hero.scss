@@ -1,79 +1,86 @@
 .hero--restaurant {
-    width: 100%;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 100%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 
+  padding-top: 64px;
+  padding-bottom: 20px;
 
-    padding-top: 64px;
-    padding-bottom: 20px;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
 
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(../images/mobile-images/restaurant-hero-background-414.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
-    text-align: center;
-    align-content: center;
-    justify-content: center;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/mobile-images/restaurant-hero-background-414@2x.jpg);
+  }
 
-    background-image: linear-gradient(to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)),
-        url(../images/mobile-images/restaurant-hero-background-414.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  @media screen and(min-width: 1024px) {
+    padding-top: 188px;
+    padding-bottom: 15px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/tablet-images/restaurant-hero-background-1024.jpg);
 
     @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: linear-gradient(to right,
-                    rgba(0, 0, 0, 0.65),
-                    rgba(0, 0, 0, 0.65)),
-                url(../images/mobile-images/restaurant-hero-background-414@2x.jpg)
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/tablet-images/restaurant-hero-background-1024@2x.jpg);
     }
-    
+  }
 
-    @media screen and(min-width: 415px) {
-        padding-top: 164px;
-        padding-bottom: 15px;
-        background-image: linear-gradient(to right,
-                rgba(0, 0, 0, 0.65),
-                rgba(0, 0, 0, 0.65)),
-            url(../images/tablet-images/restaurant-hero-background-1024.jpg);
+  @media screen and(min-width: 1280px) {
+    padding-top: 164px;
+    padding-bottom: 64px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/desktop-images/restaurant-hero-background-1280.jpg);
 
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: linear-gradient(to right,
-                    rgba(0, 0, 0, 0.65),
-                    rgba(0, 0, 0, 0.65)),
-                url(../images/tablet-images/restaurant-hero-background-1024@2x.jpg)
-        }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/desktop-images/restaurant-hero-background-1280@2x.jpg);
     }
-
-    @media screen and(min-width: 1025px) {
-        padding-top: 164px;
-        padding-bottom: 64px;
-        background-image: linear-gradient(to right,
-                rgba(0, 0, 0, 0.65),
-                rgba(0, 0, 0, 0.65)),
-            url(../images/desktop-images/restaurant-hero-background-1280.jpg);
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: linear-gradient(to right,
-                    rgba(0, 0, 0, 0.65),
-                    rgba(0, 0, 0, 0.65)),
-                url(../images/desktop-images/restaurant-hero-background-1280@2x.jpg)
-        }
-    }
-
+  }
 }
 
-
 .menu-anchor {
-    display: inline-block;
-    padding: 12px 24px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+  display: inline-block;
+  padding: 12px 24px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
