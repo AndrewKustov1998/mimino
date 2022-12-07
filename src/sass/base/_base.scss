@@ -1,5 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: var(--background-lemon);
 }
 
 h1,
@@ -16,7 +17,7 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
+  // max-width: 100%;
   height: auto;
 }
 
