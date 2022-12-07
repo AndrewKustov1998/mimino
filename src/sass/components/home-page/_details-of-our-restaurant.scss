@@ -206,7 +206,7 @@
 }
 
 .restaurant-details__description {
-    width: 259px;
+    max-width: 259px;
     margin-bottom: 0;
 
     font-size: 12px;
@@ -218,20 +218,20 @@
 
 
     @media screen and (min-width: 1024px) {
-        width: 610px;
+        max-width: 610px;
         font-size: 16px;
         line-height: 1.25;
     }
 
     &--hotel {
         text-align: left;
-        width: 243px;
+        max-width: 243px;
 @media screen and (min-width: 1024px) {
-    width: 549px;
+    max-width: 549px;
 }
 
 @media screen and (min-width: 1280px) {
-    width: 595px;
+    max-width: 595px;
 }
     }
 }
