@@ -1,8 +1,13 @@
-.about-hotel {
+.our-hotel-sectoin {
     background-color: #fffdee;
+}
+.about-hotel {
     position: relative;
     padding-top: 18px;
     padding-bottom: 20px;
+    max-width: 414px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: linear-gradient(to right,
                 #0000 140px,
                 rgba(186, 186, 186, 0.4) 140px,
@@ -17,6 +22,7 @@
             @media screen and (min-width: 1024px) {
                 padding-top: 120px;
                 padding-bottom: 32px;
+                max-width: 1024px;
                 background-image: linear-gradient(to right,
                         #fffdee 277px,
                         rgba(186, 186, 186, 0.4) 277px,
@@ -34,6 +40,7 @@
                 }
             @media screen and (min-width: 1280px) {
                 padding-bottom: 50px;
+                max-width: 1280px;
                 background-image: linear-gradient(to right,
                             #0000 338px,
                             rgba(186, 186, 186, 0.4) 338px,
