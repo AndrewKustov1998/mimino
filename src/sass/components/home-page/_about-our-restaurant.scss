@@ -12,7 +12,7 @@
     padding-top: 16px;
     padding-bottom: 20px;
 
-    width: 414px;
+    max-width: 414px;
 
     background-image: linear-gradient(
       to right,
@@ -30,7 +30,7 @@
       padding-top: 120px;
       padding-bottom: 32px;
 
-      width: 1024px;
+      max-width: 1024px;
 
       background-image: linear-gradient(
         to right,
@@ -52,7 +52,7 @@
     @media screen and (min-width: 1280px) {
       padding-bottom: 50px;
 
-      width: 1280px;
+      max-width: 1280px;
 
       background-image: linear-gradient(
         to right,
