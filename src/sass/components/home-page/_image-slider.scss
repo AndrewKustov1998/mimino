@@ -63,4 +63,14 @@
       margin-top: 143px;
     }
   }
+
+  &__button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  &__icon {
+    pointer-events: none;
+  }
 }
