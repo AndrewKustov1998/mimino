@@ -26,23 +26,6 @@
     padding: 24px 85px;
     max-width: 1280px;
   }
-
-  &--room {
-    height: 143px;
-    padding: 16px 15px 89px;
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 54.17%, rgba(0, 0, 0, 0) 100%);
-      
-    @media screen and(min-width:1024px) {
-      height: 116px;
-      padding: 24px 47px 45px;
-    }
-      
-    @media screen and(min-width:1280px) {
-        height: 147px;
-        padding: 24px 85px 77px;
-    }
-  }
-
 }
 
 
