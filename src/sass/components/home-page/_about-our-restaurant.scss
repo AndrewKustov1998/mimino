@@ -3,6 +3,7 @@
 }
 
 .our-restaurant {
+  position: relative;
   background-color: #fffdee;
 
   &__gradient {
@@ -28,7 +29,7 @@
 
     @media screen and (min-width: 1024px) {
       padding-top: 120px;
-      padding-bottom: 32px;
+      padding-bottom: 262px;
 
       width: 1024px;
 
@@ -50,7 +51,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-      padding-bottom: 50px;
+      padding-bottom: 225px;
 
       width: 1280px;
 
@@ -156,4 +157,46 @@
       margin-bottom: 24px;
     }
   }
+}
+
+// slick slider styles
+.slick {
+  position: absolute;
+  bottom: -170;
+  right: 90;
+
+  width: 548px;
+  height: 322px;
+}
+
+.my-slick-prev {
+  background: url(/src/images/arrow-left.svg);
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  position: absolute;
+  bottom: -70;
+  right: 64;
+
+  cursor: pointer;
+}
+
+.my-slick-next {
+  background: url(/src/images/arrow-right.svg);
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  position: absolute;
+  bottom: -70;
+  right: 10;
+
+  cursor: pointer;
 }

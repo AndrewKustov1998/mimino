@@ -242,6 +242,7 @@ summary {
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: var(--background-lemon);
 }
 
 h1,
@@ -556,6 +557,10 @@ img {
     width: 144px;
     height: 40px;
     box-sizing: border-box;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer__social-links-link:focus, .footer__social-links-link:hover {
+    border: 1px solid rgba(243, 198, 83, 0.7);
   }
 }
 
@@ -577,6 +582,11 @@ img {
   fill: var(--accent-yellow-color);
   width: 24px;
   height: 24px;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__social-links-icon:focus, .footer__social-links-icon:hover {
+  opacity: 0.7;
 }
 
 .page-header {
@@ -707,9 +717,13 @@ img {
     display: flex;
     padding: 8px;
     align-items: center;
-    border: 1px solid rgba(243, 198, 83, 0.7);
+    border: 1px solid rgb(243, 198, 83);
     height: 40px;
     border-radius: 2px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .site-nav__contact:focus, .site-nav__contact:hover {
+    border: 1px solid rgba(243, 198, 83, 0.7);
   }
 }
 
@@ -744,6 +758,11 @@ img {
   width: 24px;
   height: 24px;
   fill: var(--accent-yellow-color);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-net__icon:focus, .site-net__icon:hover {
+  opacity: 0.7;
 }
 
 .logo {
@@ -826,35 +845,31 @@ img {
   }
 }
 
-.backdrop {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 1001;
   background-color: rgba(0, 0, 0, 0.2);
-  opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;
-}
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.9);
+  transition: 0.3s all;
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   width: 100%;
   background-color: var(--background-lemon);
   padding: 60px 16px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1002;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all;
 }
 @media screen and (min-width: 414px) {
   .modal {
@@ -916,6 +931,12 @@ img {
   .modal__title {
     font-size: 40px;
   }
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .form__input, .form__select {
@@ -1546,6 +1567,7 @@ img {
 }
 
 .our-restaurant {
+  position: relative;
   background-color: #fffdee;
 }
 .our-restaurant__gradient {
@@ -1559,14 +1581,14 @@ img {
 @media screen and (min-width: 1024px) {
   .our-restaurant__gradient {
     padding-top: 120px;
-    padding-bottom: 32px;
+    padding-bottom: 262px;
     width: 1024px;
     background-image: linear-gradient(to right, transparent 278px, rgba(186, 186, 186, 0.4) 278px, rgba(186, 186, 186, 0.4) 279px, transparent 279px, transparent 513px, rgba(186, 186, 186, 0.4) 513px, rgba(186, 186, 186, 0.4) 514px, transparent 514px, transparent 748px, rgba(186, 186, 186, 0.4) 748px, rgba(186, 186, 186, 0.4) 749px, transparent 749px);
   }
 }
 @media screen and (min-width: 1280px) {
   .our-restaurant__gradient {
-    padding-bottom: 50px;
+    padding-bottom: 225px;
     width: 1280px;
     background-image: linear-gradient(to right, transparent 338px, rgba(186, 186, 186, 0.4) 338px, rgba(186, 186, 186, 0.4) 339px, transparent 338px, transparent 641px, rgba(186, 186, 186, 0.4) 641px, rgba(186, 186, 186, 0.4) 642px, transparent 642px, transparent 944px, rgba(186, 186, 186, 0.4) 944px, rgba(186, 186, 186, 0.4) 745px, transparent 945px);
   }
@@ -1652,6 +1674,42 @@ img {
   .our-restaurant__company-title {
     margin-bottom: 24px;
   }
+}
+
+.slick {
+  position: absolute;
+  bottom: -170;
+  right: 90;
+  width: 548px;
+  height: 322px;
+}
+
+.my-slick-prev {
+  background: url(/src/images/arrow-left.svg);
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: -70;
+  right: 64;
+  cursor: pointer;
+}
+
+.my-slick-next {
+  background: url(/src/images/arrow-right.svg);
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: -70;
+  right: 10;
+  cursor: pointer;
 }
 
 .image-slider__image {
@@ -1805,31 +1863,31 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
-@media screen and (min-width: 414px) and (min-device-pixel-ratio: 2), screen and (min-width: 414px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 414px) and (min-resolution: 192dpi), screen and (min-width: 414px) and (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero--homepage {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/mobile-images/homepage-hero-background-414@2x.jpg);
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-width: 415px) {
   .hero--homepage {
     padding-top: 164px;
     padding-bottom: 15px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/tablet-images/homepage-hero-background-1024.jpg);
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1279px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (max-width: 1279px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (max-width: 1279px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (max-width: 1279px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 415px) and (min-device-pixel-ratio: 2), screen and (min-width: 415px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 415px) and (min-resolution: 192dpi), screen and (min-width: 415px) and (min-resolution: 2dppx) {
   .hero--homepage {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/tablet-images/homepage-hero-background-1024@2x.jpg);
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1025px) {
   .hero--homepage {
     padding-top: 164px;
     padding-bottom: 64px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/desktop-images/homepage-hero-background-1280.jpg);
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1025px) and (min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-resolution: 192dpi), screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   .hero--homepage {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/desktop-images/homepage-hero-background-1280@2x.jpg);
   }
@@ -1985,22 +2043,22 @@ img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/mobile-images/homepage-details-of-our-restaurant-414@2x.jpg);
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 415px) {
   .restaurant-details {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/tablet-images/homepage-details-of-our-restaurant-1024.jpg);
   }
 }
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 415px) and (min-device-pixel-ratio: 2), screen and (min-width: 415px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 415px) and (min-resolution: 192dpi), screen and (min-width: 415px) and (min-resolution: 2dppx) {
   .restaurant-details {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/tablet-images/homepage-details-of-our-restaurant-1024@2x.jpg);
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1025px) {
   .restaurant-details {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/desktop-images/homepage-details-of-our-restaurant-1280.jpg);
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1025px) and (min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-resolution: 192dpi), screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   .restaurant-details {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/desktop-images/homepage-details-of-our-restaurant-1280@2x.jpg);
   }
@@ -2013,22 +2071,22 @@ img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/mobile-images/homepage-details-of-our-hotel-414@2x.jpg);
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 415px) {
   .restaurant-details--hotel {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/tablet-images/homepage-details-of-our-hotel-1024.jpg);
   }
 }
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 415px) and (min-device-pixel-ratio: 2), screen and (min-width: 415px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 415px) and (min-resolution: 192dpi), screen and (min-width: 415px) and (min-resolution: 2dppx) {
   .restaurant-details--hotel {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/tablet-images/homepage-details-of-our-hotel-1024@2x.jpg);
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1025px) {
   .restaurant-details--hotel {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/desktop-images/homepage-details-of-our-hotel-1280.jpg);
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1025px) and (min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-resolution: 192dpi), screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   .restaurant-details--hotel {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/desktop-images/homepage-details-of-our-hotel-1280@2x.jpg);
   }
@@ -2225,6 +2283,14 @@ img {
   color: var(--accent-yellow-color);
 }
 
+.restaurant-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 236px;
+  height: 48px;
+}
+
 .hero--restaurant {
   width: 100%;
   max-width: 1600px;
@@ -2240,34 +2306,42 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
-@media screen and (min-width: 414px) and (min-device-pixel-ratio: 2), screen and (min-width: 414px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 414px) and (min-resolution: 192dpi), screen and (min-width: 414px) and (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero--restaurant {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/mobile-images/restaurant-hero-background-414@2x.jpg);
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-width: 415px) {
   .hero--restaurant {
     padding-top: 164px;
     padding-bottom: 15px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/tablet-images/restaurant-hero-background-1024.jpg);
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1279px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (max-width: 1279px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (max-width: 1279px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (max-width: 1279px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 415px) and (min-device-pixel-ratio: 2), screen and (min-width: 415px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 415px) and (min-resolution: 192dpi), screen and (min-width: 415px) and (min-resolution: 2dppx) {
   .hero--restaurant {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/tablet-images/restaurant-hero-background-1024@2x.jpg);
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1025px) {
   .hero--restaurant {
     padding-top: 164px;
     padding-bottom: 64px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/desktop-images/restaurant-hero-background-1280.jpg);
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1025px) and (min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-resolution: 192dpi), screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   .hero--restaurant {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/desktop-images/restaurant-hero-background-1280@2x.jpg);
   }
+}
+
+.menu-anchor {
+  display: inline-block;
+  padding: 12px 24px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .menu {
@@ -2523,27 +2597,27 @@ table {
   background-position: center;
   background-repeat: no-repeat;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .bcg-hero {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/mobile-images/hotel-room-hero-background-414@2x.jpg);
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-width: 415px) {
   .bcg-hero {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/tablet-images/hotel-room-hero-background-1024.jpg");
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1279px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (max-width: 1279px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (max-width: 1279px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 415px) and (min-device-pixel-ratio: 2), screen and (min-width: 415px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 415px) and (min-resolution: 192dpi), screen and (min-width: 415px) and (min-resolution: 2dppx) {
   .bcg-hero {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/tablet-images/hotel-room-hero-background-1024@2x.jpg");
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1025px) {
   .bcg-hero {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/desktop-images/hotel-room-hero-background-1280.jpg");
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1025px) and (min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-resolution: 192dpi), screen and (min-width: 1025px) and (min-resolution: 2dppx) {
   .bcg-hero {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/desktop-images/hotel-room-hero-background-1280@2x.jpg");
   }
