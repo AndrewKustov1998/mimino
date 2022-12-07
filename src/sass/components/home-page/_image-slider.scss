@@ -47,6 +47,10 @@
   }
 
   &__arrows {
+    @media screen and (max-width: 413px) {
+      margin-left: 260px;
+    }
+
     margin-top: 297px;
     margin-left: 289px;
 
