@@ -49,12 +49,16 @@
   @media screen and(min-width:1024px) {
     gap: 72px;
   }
+  @media screen and(max-width:413px) {
+    gap: 5px;
+}
 }
 .site-nav__item:nth-of-type(2) {
   @media screen and(min-width:1024px) {
     width: 366px;
   }
 }
+
 
 .site-nav__info {
   display: flex;
@@ -63,6 +67,9 @@
   gap: 6px;
   @media screen and(min-width:1024px) {
     gap: 32px;
+  }
+  @media screen and(max-width:413px) {
+    gap: 2px;
   }
 }
 
@@ -74,6 +81,10 @@
   color: var(--accent-yellow-color);
   @media screen and(min-width:1024px) {
     font-size: 20px;
+    line-height: 1.2;
+  }
+    @media screen and(max-width:413px) {
+    font-size: 14px;
     line-height: 1.2;
   }
 }
