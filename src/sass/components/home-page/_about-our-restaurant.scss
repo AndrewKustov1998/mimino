@@ -96,13 +96,13 @@
     }
 
     &--brown {
-      width: 163px;
+      max-width: 163px;
       margin: 70px 0 0 20px;
       color: var(--brown-text-color);
 
       @media screen and (min-width: 1024px) {
         margin: 196px 0 0 48px;
-        width: 312px;
+        max-width: 312px;
       }
 
       @media screen and (min-width: 1280px) {
