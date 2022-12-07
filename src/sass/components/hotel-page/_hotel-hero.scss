@@ -193,6 +193,7 @@ a {
 .hotel-hero__position-tab {
   display: flex;
   justify-content: center;
+    margin-bottom: 58px;
  
   @media screen and (min-width: 1024px) {
     margin-bottom: 25px;
@@ -232,7 +233,7 @@ a {
 
   @media screen and (max-width: 1023px) {
     margin-left: 74px;
-    margin-bottom: 58px;
+ 
   }
 }
 
