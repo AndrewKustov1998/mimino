@@ -29,6 +29,7 @@
 
 .prev-hero{
     padding-left: 15px;
+    z-index: 1;
     @media screen and (min-width: 1024px) {
         padding-left: 47px;
         }
@@ -39,6 +40,7 @@
 
 .next-hero{
     padding-right: 15px;
+    z-index: 1;
 @media screen and (min-width: 1024px) {
         padding-right: 47px;
     }
