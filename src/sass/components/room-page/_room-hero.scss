@@ -29,6 +29,7 @@
 
 .prev-hero{
     padding-left: 15px;
+    z-index: 1;
     @media screen and (min-width: 1024px) {
         padding-left: 47px;
         }
@@ -39,6 +40,7 @@
 
 .next-hero{
     padding-right: 15px;
+    z-index: 1;
 @media screen and (min-width: 1024px) {
         padding-right: 47px;
     }
@@ -77,8 +79,36 @@
 
 .room-hero {
     position: relative;
-    min-width: 414px;
+    max-width: 414px;
     z-index: 12;
+    margin-left: auto;margin-right: auto;
+
+@media screen and (min-width: 1024px) {
+    max-width: 1024px;
+}
+
+@media screen and (min-width: 1280px) {
+    max-width: 1280px;
+}
+
+}
+
+.room-hero__gradient {
+    width: 414px;
+    height: 143px;
+    z-index: 2;
+    background: linear-gradient(#000 0%, rgba(0, 0, 0, .55) 54.17%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    z-index: 1;
+
+    @media screen and (min-width: 1024px){
+        width: 100%;
+        height: 100px;
+    }
+    
+    @media screen and (min-width: 1280px) {
+        height: 147px;
+    }
 }
 
 .room-hero-text {

@@ -3,6 +3,8 @@
 }
 
 .our-restaurant {
+  background-color: #fffdee;
+
   &__gradient {
     $vertical-lines-color: rgba(186, 186, 186, 0.4);
     margin-right: auto;
@@ -10,7 +12,7 @@
     padding-top: 16px;
     padding-bottom: 20px;
 
-    width: 414px;
+    max-width: 414px;
 
     background-image: linear-gradient(
       to right,
@@ -28,29 +30,29 @@
       padding-top: 120px;
       padding-bottom: 32px;
 
-      width: 1024px;
+      max-width: 1024px;
 
       background-image: linear-gradient(
         to right,
-        transparent 278px,
+        transparent 277px,
+        $vertical-lines-color 277px,
         $vertical-lines-color 278px,
-        $vertical-lines-color 279px,
-        transparent 279px,
-        transparent 513px,
-        $vertical-lines-color 513px,
-        $vertical-lines-color 514px,
-        transparent 514px,
-        transparent 748px,
-        $vertical-lines-color 748px,
-        $vertical-lines-color 749px,
-        transparent 749px
+        transparent 278px,
+        transparent 511px,
+        $vertical-lines-color 511px,
+        $vertical-lines-color 512px,
+        transparent 512px,
+        transparent 746px,
+        $vertical-lines-color 746px,
+        $vertical-lines-color 747px,
+        transparent 747px
       );
     }
 
     @media screen and (min-width: 1280px) {
       padding-bottom: 50px;
 
-      width: 1280px;
+      max-width: 1280px;
 
       background-image: linear-gradient(
         to right,
@@ -58,14 +60,14 @@
         $vertical-lines-color 338px,
         $vertical-lines-color 339px,
         transparent 338px,
-        transparent 641px,
+        transparent 640px,
+        $vertical-lines-color 640px,
         $vertical-lines-color 641px,
-        $vertical-lines-color 642px,
-        transparent 642px,
-        transparent 944px,
-        $vertical-lines-color 944px,
-        $vertical-lines-color 745px,
-        transparent 945px
+        transparent 641px,
+        transparent 942px,
+        $vertical-lines-color 942px,
+        $vertical-lines-color 943px,
+        transparent 943px
       );
     }
   }
@@ -94,13 +96,13 @@
     }
 
     &--brown {
-      width: 163px;
+      max-width: 163px;
       margin: 70px 0 0 20px;
       color: var(--brown-text-color);
 
       @media screen and (min-width: 1024px) {
         margin: 196px 0 0 48px;
-        width: 312px;
+        max-width: 312px;
       }
 
       @media screen and (min-width: 1280px) {

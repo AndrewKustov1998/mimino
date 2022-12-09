@@ -12,13 +12,7 @@
     padding-bottom: 40px;
     width: 100%;
     max-width: 414px;
-    background-image: linear-gradient(to right,
 
-                #0000 263px,
-                rgba(122, 122, 122, 0.4) 263px,
-                rgba(122, 122, 122, 0.4) 264px,
-                #0000 264px,
-            );
         @media (min-width: 1024px) {
             padding-top: 80px;
             padding-bottom: 80px;
@@ -143,6 +137,12 @@
             width: 144px;
             height: 40px;
             box-sizing: border-box;
+            transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            
+                &:focus,
+                &:hover {
+                    border: 1px solid rgba(243, 198, 83, 0.7);
+                }
 
         }
 
@@ -163,5 +163,11 @@
     fill: var(--accent-yellow-color);
     width: 24px;
     height: 24px;
-
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:focus,
+        &:hover {
+            opacity: .7;
+        }
 }

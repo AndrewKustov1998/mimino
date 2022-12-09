@@ -14,8 +14,9 @@
   &__list {
     position: absolute;
     bottom: 2px;
-    left: 19px;
+    left: 34px;
     padding: 50px;
+    width: 380px;
 
     @media screen and (min-width: 1024px) {
       margin: 0;
@@ -46,6 +47,10 @@
   }
 
   &__arrows {
+    @media screen and (max-width: 413px) {
+      margin-left: 260px;
+    }
+
     margin-top: 297px;
     margin-left: 289px;
 
@@ -55,8 +60,17 @@
     }
 
     @media screen and (min-width: 1280px) {
-      margin-left: auto;
       margin-top: 143px;
     }
+  }
+
+  &__button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  &__icon {
+    pointer-events: none;
   }
 }
