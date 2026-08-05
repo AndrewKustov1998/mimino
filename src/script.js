@@ -199,4 +199,12 @@ function initSlider(slider) {
   });
 }
 
-document.querySelectorAll('.slider').forEach(initSlider);
+function initAllSliders() {
+  document.querySelectorAll('.slider').forEach(initSlider);
+}
+
+if (document.readyState === 'complete') {
+  initAllSliders();
+} else {
+  window.addEventListener('load', initAllSliders);
+}
