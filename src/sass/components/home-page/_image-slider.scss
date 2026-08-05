@@ -15,25 +15,25 @@
     position: absolute;
     bottom: 2px;
     left: 34px;
-    width: 245px;
+    padding: 50px;
+    width: 380px;
 
     @media screen and (min-width: 1024px) {
       margin: 0;
       bottom: 14px;
       left: 499px;
-      width: 194px;
+      width: 517px;
     }
 
     @media screen and (min-width: 1280px) {
       bottom: 18px;
       left: 598px;
-      width: 254px;
+      width: 620px;
     }
 
     &--kitchen {
       @media screen and (min-width: 1280px) {
         left: 615px;
-        width: 245px;
       }
     }
   }
