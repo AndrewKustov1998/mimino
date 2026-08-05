@@ -236,60 +236,50 @@
     }
 }
 
-.restaurant-details__slider {
+.details-slider {
     margin-left: 25px;
     @media screen and (min-width: 1024px) {
         margin-left: 0;
     }
 
     &--hotel {
-       
         margin-left: 0;
         margin-right: 25px;
         @media screen and (min-width: 1024px) {
             margin-right: 0;
         }
     }
-}
 
-.restaurant-details__image-set {
-    margin-bottom: 16px;
-
-    @media screen and (min-width: 1024px) {
-        margin-bottom: 24px;
-    }
-}
-
-.restaurant-details__list {
-    display: flex;
-    
-    &--hotel {
-        justify-content: flex-end;
-    }
-}
-
-.restaurant-details__item {
-    margin-right: 20px;
-
-    &--hotel {
-        margin-right: 0;
-        margin-left: 20px;
-    }
-}
-
-.restaurant-details__arrow {
-    display: flex;
-    gap: 32px;
-
-    margin-bottom: 32px;
-    fill: var(--primary-white-color);
-
-    &--hotel {
-        justify-content:flex-end;
+    &__list {
+        width: 270px;
     }
 
-    @media screen and (min-width: 1024px) {
-        margin-bottom: 0;
+    &__image {
+        display: block;
+        width: 270px;
+        height: 270px;
+    }
+
+    &__arrows {
+        margin-bottom: 32px;
+        fill: var(--primary-white-color);
+
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    &__icon {
+        pointer-events: none;
     }
 }
 

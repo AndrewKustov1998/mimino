@@ -185,76 +185,66 @@
         }
         }
 
-    &__slider {
-        display: flex;
-        position: relative;
-        margin-bottom: 20px;
-        @media screen and (min-width: 1024px) {
-               margin-bottom: 8px;
-               top: -24px;
-            }
-
-        @media screen and (min-width: 1280px) {
-            top: -167px;
-            margin-bottom: -127px;
-        }
-    }
-
-    &__slider-img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-left: 20px;
-
-        background: #DADADA;
-        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-        border-radius: 2px;
-
-        @media screen and (min-width: 1024px) {
-            width: 194px;
-            top: 0;
-            left: 0;
-            transform: translate(0);
-            margin-left: 0;
-            border: 1px solid rgba(186, 186, 186, 0.4);
-
-        }
-
-        @media screen and (min-width: 1280px) {
-            min-width: 245px;
-        }
 }
 
-    &__slider-photo {
-        background: #DADADA;
-        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-        border-radius: 2px;
+.about-hotel-slider {
+    position: relative;
+    margin-bottom: 20px;
 
-        transform: translateX(-180px);
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 8px;
+        top: -24px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        top: -167px;
+        margin-bottom: -127px;
+    }
+
+    &__list {
+        width: 245px;
 
         @media screen and (min-width: 1024px) {
             width: 194px;
-            transform: translateX(234px);
-            border: 1px solid rgba(186, 186, 186, 0.4);
-
         }
 
         @media screen and (min-width: 1280px) {
-            min-width: 245px;
-            transform: translateX(285px);
+            width: 245px;
         }
     }
-        &__pack {
-            display: flex;
-            justify-content: flex-start;
+
+    &__image {
+        display: block;
+        width: 245px;
+        background: #dadada;
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+
+        @media screen and (min-width: 1024px) {
+            width: 194px;
+            border: 1px solid rgba(186, 186, 186, 0.4);
         }
-        &__package {
-            display: flex;
-           width: 98px;
-           justify-content: space-between;
-             
+
+        @media screen and (min-width: 1280px) {
+            width: 245px;
         }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    &__icon {
+        width: 32px;
+        height: 32px;
+        fill: var(--modal-text-color);
+        pointer-events: none;
+    }
 }
 
 

@@ -54,6 +54,30 @@
     right: 0;
 }
 
+/* Slide indicators */
+.dots-hero {
+    position: absolute;
+    left: 50%;
+    bottom: 16px;
+    z-index: 1;
+    display: flex;
+    gap: 8px;
+    transform: translateX(-50%);
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &.active {
+        background-color: var(--accent-yellow-color);
+    }
+}
+
 /* Fading animation */
 .fade {
     animation-name: fade;

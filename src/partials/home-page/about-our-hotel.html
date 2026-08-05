@@ -79,74 +79,82 @@
         </picture>
       </div>
       <!-- Фото для слайдеру -->
-      <div class="about-hotel__slider">
-        <picture>
-          <source
-            srcset="
-              ./images/desktop-images/slider/homepage-hotel-section-slider-image2-245.jpg    1x,
-              ./images/desktop-images/slider/homepage-hotel-section-slider-image2-245@2x.jpg 2x
-            "
-            media="(min-width: 1280px)"
-          />
-          <source
-            srcset="
-              ./images/tablet-images/slider/homepage-hotel-section-slider-image2-194.jpg    1x,
-              ./images/tablet-images/slider/homepage-hotel-section-slider-image2-194@2x.jpg 2x
-            "
-            media="(min-width: 1024px)"
-          />
-          <source
-            srcset="
-              ./images/desktop-images/slider/homepage-hotel-section-slider-image2-245.jpg    1x,
-              ./images/desktop-images/slider/homepage-hotel-section-slider-image2-245@2x.jpg 2x
-            "
-            media="(max-width: 414px)"
-          />
-          <img
-            src="./images/desktop-images/slider/homepage-hotel-section-slider-image2-245.jpg"
-            alt="На фото складені в рулон чотири білих рушники на ліжку"
-            min-width="245"
-            class="about-hotel__slider-photo"
-          />
-        </picture>
-        <picture>
-          <source
-            srcset="
-              ./images/desktop-images/slider/homepage-hotel-section-slider-image1-245.jpg    1x,
-              ./images/desktop-images/slider/homepage-hotel-section-slider-image1-245@2x.jpg 2x
-            "
-            media="(min-width: 1280px)"
-          />
-          <source
-            srcset="
-              ./images/tablet-images/slider/homepage-hotel-section-slider-image1-194.jpg    1x,
-              ./images/tablet-images/slider/homepage-hotel-section-slider-image1-194@2x.jpg 2x
-            "
-            media="(min-width: 1024px)"
-          />
-          <source
-            srcset="
-              ./images/mobile-images/slider/homepage-hotel-section-slider-image2-245.jpg    1x,
-              ./images/mobile-images/slider/homepage-hotel-section-slider-image2-245@2x.jpg 2x
-            "
-            media="(max-width: 414px)"
-          />
-          <img
-            src="./images/mobile-images/slider/homepage-hotel-section-slider-image2-245.jpg"
-            alt="На фото рецепшн з адміністратором та клієнтом"
-            min-width="245"
-            class="about-hotel__slider-img"
-          />
-        </picture>
-      </div>
-      <div class="about-hotel__pack">
-        <div class="about-hotel__package">
-          <svg width="32" height="32">
-            <use href="./images/icons.svg#icon-arrow-left"></use>
-          </svg>
-          <svg width="32" height="32">
-            <use href="./images/icons.svg#icon-arrow-right"></use>
-          </svg>
+      <div class="about-hotel-slider slider">
+        <div class="about-hotel-slider__list slider-list">
+          <ul class="list about-hotel-slider__track slider-track">
+            <li class="about-hotel-slider__slide slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop-images/slider/homepage-hotel-section-slider-image1-245.jpg    1x,
+                    ./images/desktop-images/slider/homepage-hotel-section-slider-image1-245@2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-images/slider/homepage-hotel-section-slider-image1-194.jpg    1x,
+                    ./images/tablet-images/slider/homepage-hotel-section-slider-image1-194@2x.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile-images/slider/homepage-hotel-section-slider-image1-245.jpg    1x,
+                    ./images/mobile-images/slider/homepage-hotel-section-slider-image1-245@2x.jpg 2x
+                  "
+                  media="(max-width: 414px)"
+                />
+                <img
+                  class="about-hotel-slider__image"
+                  src="./images/mobile-images/slider/homepage-hotel-section-slider-image1-245.jpg"
+                  alt="На фото рецепшн з адміністратором та клієнтом"
+                />
+              </picture>
+            </li>
+            <li class="about-hotel-slider__slide slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop-images/slider/homepage-hotel-section-slider-image2-245.jpg    1x,
+                    ./images/desktop-images/slider/homepage-hotel-section-slider-image2-245@2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-images/slider/homepage-hotel-section-slider-image2-194.jpg    1x,
+                    ./images/tablet-images/slider/homepage-hotel-section-slider-image2-194@2x.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile-images/slider/homepage-hotel-section-slider-image2-245.jpg    1x,
+                    ./images/mobile-images/slider/homepage-hotel-section-slider-image2-245@2x.jpg 2x
+                  "
+                  media="(max-width: 414px)"
+                />
+                <img
+                  class="about-hotel-slider__image"
+                  src="./images/mobile-images/slider/homepage-hotel-section-slider-image2-245.jpg"
+                  alt="На фото складені в рулон чотири білих рушники на ліжку"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
+        <div class="about-hotel-slider__arrows slider-arrows">
+          <button type="button" class="about-hotel-slider__button prev">
+            <svg class="about-hotel-slider__icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <button type="button" class="about-hotel-slider__button next">
+            <svg class="about-hotel-slider__icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </div>

@@ -83,4 +83,44 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.modal.active').classList.remove('active');
         this.classList.remove('active');
     });
+
+    /* Маска номеру телефону у форматі +38 (___) ___-__-__ */
+    var phoneInputs = document.querySelectorAll('.person-phone'),
+        phonePrefix = '+38 (';
+
+    function phoneDigits(value) {
+        var digits = value.replace(/\D/g, '');
+        if (digits.slice(0, 2) === '38') {
+            digits = digits.slice(2);
+        }
+        return digits.slice(0, 10);
+    }
+
+    function formatPhone(digits) {
+        var result = phonePrefix + digits.slice(0, 3);
+        if (digits.length >= 3) result += ')';
+        if (digits.length > 3) result += ' ' + digits.slice(3, 6);
+        if (digits.length > 6) result += '-' + digits.slice(6, 8);
+        if (digits.length > 8) result += '-' + digits.slice(8, 10);
+        return result;
+    }
+
+    phoneInputs.forEach(function (input) {
+        input.addEventListener('focus', function () {
+            if (!this.value) {
+                this.value = phonePrefix;
+            }
+        });
+
+        input.addEventListener('input', function () {
+            var digits = phoneDigits(this.value);
+            this.value = digits ? formatPhone(digits) : phonePrefix;
+        });
+
+        input.addEventListener('blur', function () {
+            if (!phoneDigits(this.value)) {
+                this.value = '';
+            }
+        });
+    });
 }); // end ready
