@@ -40,6 +40,10 @@ function initSlider(slider) {
       next.classList.toggle('disabled', slideIndex === lastIndex);
     },
     swipeStart = function (evt) {
+      if (evt.target.closest('.slider-arrows')) {
+        return;
+      }
+
       let pos = getEvent(evt);
 
       if (allowSwipe) {
