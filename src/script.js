@@ -175,22 +175,36 @@ function initSlider(slider) {
 
   sliderTrack.style.transform = 'translate3d(0px, 0px, 0px)';
   sliderList.classList.add('grab');
+  prev.classList.toggle('disabled', slideIndex === 0);
+  next.classList.toggle('disabled', slideIndex === lastIndex);
 
   sliderTrack.addEventListener('transitionend', () => (allowSwipe = true));
   slider.addEventListener('touchstart', swipeStart);
   slider.addEventListener('mousedown', swipeStart);
 
   arrows.addEventListener('click', function (evt) {
-    if (evt.target.closest('.next')) {
-      slideIndex++;
-    } else if (evt.target.closest('.prev')) {
-      slideIndex--;
-    } else {
+    let target = evt.target.closest('.next, .prev');
+
+    if (!target || target.classList.contains('disabled')) {
       return;
+    }
+
+    if (target.classList.contains('next')) {
+      slideIndex++;
+    } else {
+      slideIndex--;
     }
 
     slide();
   });
 }
 
-document.querySelectorAll('.slider').forEach(initSlider);
+function initAllSliders() {
+  document.querySelectorAll('.slider').forEach(initSlider);
+}
+
+if (document.readyState === 'complete') {
+  initAllSliders();
+} else {
+  window.addEventListener('load', initAllSliders);
+}
